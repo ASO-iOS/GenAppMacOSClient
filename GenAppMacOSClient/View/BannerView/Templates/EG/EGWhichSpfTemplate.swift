@@ -1,0 +1,112 @@
+//
+//  EGWhichSpfTemplate.swift
+//  GenMacOSClient
+//
+//  Created by admin on 8/10/23.
+//
+
+import SwiftUI
+
+struct EGWhichSpfTemplate {
+    static func template1(primaryColor: Color, buttonColorPrimary: Color, buttonColorSecondary: Color, textColorSecondary: Color, backColorPrimary: Color, buttonTextColorPrimary: Color, errorColor: Color, textColorPrimary: Color) -> TemplateData {
+        
+        let rect1691588863618 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: false, x: 79, y: 20, width: 230, height: 35, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691588898721 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: false, x: 397, y: 20, width: 230, height: 35, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691588906681 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: false, x: 715, y: 20, width: 230, height: 35, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691589458401 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 715, y: 90, width: 80, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691589518188 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 798, y: 90, width: 50, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691589629602 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 851, y: 90, width: 55, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691589691487 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 715, y: 122, width: 80, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691589725798 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 798, y: 122, width: 55, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691589764985 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 480, y: 122, width: 55, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691589778685 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 397, y: 122, width: 80, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691589808120 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 533, y: 90, width: 55, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691589881494 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 480, y: 90, width: 50, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691589898861 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 397, y: 90, width: 80, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590024620 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 79, y: 90, width: 80, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590049644 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 162, y: 90, width: 50, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590084438 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 215, y: 90, width: 55, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590101380 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 79, y: 122, width: 80, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590148597 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 162, y: 122, width: 55, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590330416 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 79, y: 182, width: 90, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590403640 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 172, y: 182, width: 40, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590425617 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 397, y: 182, width: 90, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590436232 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 715, y: 182, width: 90, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590467568 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 490, y: 182, width: 40, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590498320 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 808, y: 182, width: 40, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590525400 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 851, y: 182, width: 40, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590540964 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 533, y: 182, width: 40, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590562468 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 215, y: 182, width: 40, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590588244 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 894, y: 182, width: 40, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590613316 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 576, y: 182, width: 40, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590627724 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 258, y: 182, width: 40, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590667036 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 715, y: 214, width: 90, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590679396 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 397, y: 214, width: 90, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590696685 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 79, y: 214, width: 90, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        
+        let rect1691590859480 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 150, y: 433, width: 90, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590904824 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 468, y: 433, width: 90, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590914968 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 786, y: 433, width: 90, height: 27, rounded: true, cornerRadius: 16, lineWidth: 2)
+        
+        let rect1691590758020 = RectShapeModel(shape: .rect, color: primaryColor, fill: true, x: 79, y: 261, width: 230, height: 150, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590804436 = RectShapeModel(shape: .rect, color: primaryColor, fill: true, x: 397, y: 261, width: 230, height: 150, rounded: true, cornerRadius: 16, lineWidth: 2)
+        let rect1691590813929 = RectShapeModel(shape: .rect, color: primaryColor, fill: true, x: 715, y: 261, width: 230, height: 150, rounded: true, cornerRadius: 16, lineWidth: 2)
+        
+        let text1691588995883 = TextShapeModel(shape: .text, color: textColorPrimary, x: 89, y: 30, width: 100, height: 100, text: "City", size: 12, font: .light)
+        
+        let text1691589154647 = TextShapeModel(shape: .text, color: textColorSecondary, x: 407, y: 28, width: 100, height: 100, text: "Seul", size: 14, font: .regular)
+        let text1691589221321 = TextShapeModel(shape: .text, color: textColorSecondary, x: 725, y: 28, width: 100, height: 100, text: "Los-Angeles", size: 14, font: .regular)
+        let text1691589332061 = TextShapeModel(shape: .text, color: textColorSecondary, x: 79, y: 65, width: 200, height: 100, text: "Choose your skin tone", size: 14, font: .regular)
+        let text1691589383172 = TextShapeModel(shape: .text, color: textColorSecondary, x: 397, y: 65, width: 200, height: 100, text: "Choose your skin tone", size: 14, font: .regular)
+        let text1691589392675 = TextShapeModel(shape: .text, color: textColorSecondary, x: 715, y: 65, width: 200, height: 100, text: "Choose your skin tone", size: 14, font: .regular)
+        let text1691590193468 = TextShapeModel(shape: .text, color: textColorSecondary, x: 715, y: 159, width: 230, height: 100, text: "Choose the time you stay outside", size: 14, font: .regular)
+        let text1691590252397 = TextShapeModel(shape: .text, color: textColorSecondary, x: 397, y: 159, width: 230, height: 100, text: "Choose the time you stay outside", size: 14, font: .regular)
+        let text1691590270232 = TextShapeModel(shape: .text, color: textColorSecondary, x: 79, y: 159, width: 230, height: 100, text: "Choose the time you stay outside", size: 14, font: .regular)
+        let text1691590983408 = TextShapeModel(shape: .text, color: textColorSecondary, x: 109, y: 320, width: 200, height: 100, text: "Enter the required data and press the button", size: 14, font: .regular)
+        let text1691591110028 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 95, y: 96, width: 100, height: 100, text: "very fair", size: 12, font: .regular)
+        let text1691591153116 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 177, y: 96, width: 100, height: 100, text: "fair", size: 12, font: .regular)
+        let text1691591197212 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 413, y: 96, width: 100, height: 100, text: "very fair", size: 12, font: .regular)
+        let text1691591215924 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 495, y: 96, width: 100, height: 100, text: "fair", size: 12, font: .regular)
+        let text1691591234108 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 813, y: 96, width: 100, height: 100, text: "fair", size: 12, font: .regular)
+        let text1691591253020 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 731, y: 96, width: 100, height: 100, text: "very fair", size: 12, font: .regular)
+        let text1691591304144 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 231, y: 95, width: 100, height: 100, text: "light", size: 12, font: .regular)
+        let text1691591349356 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 95, y: 127, width: 100, height: 100, text: "medium", size: 12, font: .regular)
+        let text1691591402464 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 177, y: 127, width: 100, height: 100, text: "dark", size: 12, font: .regular)
+        let text1691591429951 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 549, y: 95, width: 100, height: 100, text: "light", size: 12, font: .regular)
+        let text1691591449879 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 867, y: 95, width: 100, height: 100, text: "light", size: 12, font: .regular)
+        let text1691591473681 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 413, y: 127, width: 100, height: 100, text: "medium", size: 12, font: .regular)
+        let text1691591492967 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 731, y: 127, width: 100, height: 100, text: "medium", size: 12, font: .regular)
+        let text1691591512999 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 495, y: 127, width: 100, height: 100, text: "dark", size: 12, font: .regular)
+        let text1691591530599 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 813, y: 127, width: 100, height: 100, text: "dark", size: 12, font: .regular)
+        let text1691591589485 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 728, y: 187, width: 100, height: 100, text: "less than 1h", size: 12, font: .regular)
+        let text1691591657547 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 410, y: 187, width: 100, height: 100, text: "less than 1h", size: 12, font: .regular)
+        let text1691591670893 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 92, y: 187, width: 100, height: 100, text: "less than 1h", size: 12, font: .regular)
+        let text1691591715267 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 88, y: 219, width: 100, height: 100, text: "more than 5h", size: 12, font: .regular)
+        let text1691591762699 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 406, y: 219, width: 100, height: 100, text: "more than 5h", size: 12, font: .regular)
+        let text1691591775376 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 724, y: 219, width: 100, height: 100, text: "more than 5h", size: 12, font: .regular)
+        let text1691591813490 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 185, y: 187, width: 100, height: 100, text: "2h", size: 12, font: .regular)
+        let text1691591854667 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 228, y: 187, width: 100, height: 100, text: "3h", size: 12, font: .regular)
+        let text1691591913920 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 271, y: 187, width: 100, height: 100, text: "4h", size: 12, font: .regular)
+        let text1691591940401 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 589, y: 187, width: 100, height: 100, text: "4h", size: 12, font: .regular)
+        let text1691591954217 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 907, y: 187, width: 100, height: 100, text: "4h", size: 12, font: .regular)
+        let text1691591974627 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 502, y: 187, width: 100, height: 100, text: "2h", size: 12, font: .regular)
+        let text1691592015899 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 545, y: 187, width: 100, height: 100, text: "3h", size: 12, font: .regular)
+        let text1691592055133 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 863, y: 187, width: 100, height: 100, text: "3h", size: 12, font: .regular)
+        let text1691592083301 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 820, y: 187, width: 100, height: 100, text: "2h", size: 12, font: .regular)
+        let text1691592162171 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 417, y: 283, width: 100, height: 100, text: "33°", size: 35, font: .regular)
+        let text1691592226565 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 735, y: 283, width: 100, height: 100, text: "21°", size: 35, font: .regular)
+        let text1691592308719 = TextShapeModel(shape: .text, color: textColorPrimary, x: 735, y: 324, width: 100, height: 100, text: "UV index: 1.0", size: 10, font: .light)
+        let text1691592353696 = TextShapeModel(shape: .text, color: textColorPrimary, x: 417, y: 324, width: 100, height: 100, text: "UV index: 8.0", size: 10, font: .light)
+        let text1691592435167 = TextShapeModel(shape: .text, color: textColorSecondary, x: 453, y: 348, width: 200, height: 100, text: "SPF 36", size: 35, font: .regular)
+        let text1691592513480 = TextShapeModel(shape: .text, color: textColorSecondary, x: 786, y: 348, width: 200, height: 100, text: "SPF 7", size: 35, font: .regular)
+        
+        let text1691592582778 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 806, y: 438, width: 100, height: 100, text: "calculate", size: 12, font: .regular)
+        let text1691592614243 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 488, y: 438, width: 100, height: 100, text: "calculate", size: 12, font: .regular)
+        let text1691592625859 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 170, y: 438, width: 100, height: 100, text: "calculate", size: 12, font: .regular)
+        let image1691593061840 = ImageShapeModel(color: .clear, template: false, shape: .image, location: "\(Constant.homeDir)GeneratorProjects/resources/bannerResources/egwhichspf/sunny.png", x: 520, y: 260, width: 100, height: 100)
+        let image1691593154314 = ImageShapeModel(color: .clear, template: false, shape: .image, location: "\(Constant.homeDir)GeneratorProjects/resources/bannerResources/egwhichspf/cloud.png", x: 838, y: 260, width: 100, height: 100)
+        
+        return TemplateData(shapes: ["object1691588863618" : rect1691588863618, "object1691588898721" : rect1691588898721, "object1691588906681" : rect1691588906681, "object1691588995883" : text1691588995883, "object1691589154647" : text1691589154647, "object1691589221321" : text1691589221321, "object1691589332061" : text1691589332061, "object1691589383172" : text1691589383172, "object1691589392675" : text1691589392675, "object1691589458401" : rect1691589458401, "object1691589518188" : rect1691589518188, "object1691589629602" : rect1691589629602, "object1691589691487" : rect1691589691487, "object1691589725798" : rect1691589725798, "object1691589764985" : rect1691589764985, "object1691589778685" : rect1691589778685, "object1691589808120" : rect1691589808120, "object1691589881494" : rect1691589881494, "object1691589898861" : rect1691589898861, "object1691590024620" : rect1691590024620, "object1691590049644" : rect1691590049644, "object1691590084438" : rect1691590084438, "object1691590101380" : rect1691590101380, "object1691590148597" : rect1691590148597, "object1691590193468" : text1691590193468, "object1691590252397" : text1691590252397, "object1691590270232" : text1691590270232, "object1691590330416" : rect1691590330416, "object1691590403640" : rect1691590403640, "object1691590425617" : rect1691590425617, "object1691590436232" : rect1691590436232, "object1691590467568" : rect1691590467568, "object1691590498320" : rect1691590498320, "object1691590525400" : rect1691590525400, "object1691590540964" : rect1691590540964, "object1691590562468" : rect1691590562468, "object1691590588244" : rect1691590588244, "object1691590613316" : rect1691590613316, "object1691590627724" : rect1691590627724, "object1691590667036" : rect1691590667036, "object1691590679396" : rect1691590679396, "object1691590696685" : rect1691590696685, "object1691590758020" : rect1691590758020, "object1691590804436" : rect1691590804436, "object1691590813929" : rect1691590813929, "object1691590859480" : rect1691590859480, "object1691590904824" : rect1691590904824, "object1691590914968" : rect1691590914968, "object1691590983408" : text1691590983408, "object1691591110028" : text1691591110028, "object1691591153116" : text1691591153116, "object1691591197212" : text1691591197212, "object1691591215924" : text1691591215924, "object1691591234108" : text1691591234108, "object1691591253020" : text1691591253020, "object1691591304144" : text1691591304144, "object1691591349356" : text1691591349356, "object1691591402464" : text1691591402464, "object1691591429951" : text1691591429951, "object1691591449879" : text1691591449879, "object1691591473681" : text1691591473681, "object1691591492967" : text1691591492967, "object1691591512999" : text1691591512999, "object1691591530599" : text1691591530599, "object1691591589485" : text1691591589485, "object1691591657547" : text1691591657547, "object1691591670893" : text1691591670893, "object1691591715267" : text1691591715267, "object1691591762699" : text1691591762699, "object1691591775376" : text1691591775376, "object1691591813490" : text1691591813490, "object1691591854667" : text1691591854667, "object1691591913920" : text1691591913920, "object1691591940401" : text1691591940401, "object1691591954217" : text1691591954217, "object1691591974627" : text1691591974627, "object1691592015899" : text1691592015899, "object1691592055133" : text1691592055133, "object1691592083301" : text1691592083301, "object1691592162171" : text1691592162171, "object1691592226565" : text1691592226565, "object1691592308719" : text1691592308719, "object1691592353696" : text1691592353696, "object1691592435167" : text1691592435167, "object1691592513480" : text1691592513480, "object1691592582778" : text1691592582778, "object1691592614243" : text1691592614243, "object1691592625859" : text1691592625859, "object1691593061840" : image1691593061840, "object1691593154314" : image1691593154314])
+        
+    }
+}
