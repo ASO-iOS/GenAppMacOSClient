@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct GenAppMacOSClientApp: App {
-    var a = "a tak?"
+    var a = "a tak???"
     var body: some Scene {
         WindowGroup {
             ContentView()
