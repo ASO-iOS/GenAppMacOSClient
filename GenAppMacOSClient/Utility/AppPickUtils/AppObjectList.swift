@@ -630,7 +630,11 @@ extension GenMainViewViewModel {
                     .textColorPrimaryNeeded,
                     .buttonColorPrimaryNeeded,
                     .buttonTextColorPrimaryNeeded,
-                    .surfaceColorNeeded]))
+                    .surfaceColorNeeded])),
+            GenAppType(type: .akQuiz, prefix: .ak, protocolId: nil, appId: AppIDs.AK_QUIZ, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .backColorPrimaryNeeded, .buttonColorSecondaryNeeded, .buttonColorPrimaryNeeded, .textColorPrimaryNeeded, .textColorSecondaryNeeded])),
+            GenAppType(type: .akMythologyQuiz, prefix: .ak, protocolId: nil, appId: AppIDs.AK_MYTHOLOGY_QUIZ, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .backColorPrimaryNeeded, .buttonColorPrimaryNeeded, .buttonColorSecondaryNeeded, .textColorPrimaryNeeded, .textColorSecondaryNeeded])),
+            GenAppType(type: .akDodger, prefix: .ak, protocolId: nil, appId: AppIDs.AK_DODGER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .textColorPrimaryNeeded, .buttonTextColorPrimaryNeeded, .buttonColorPrimaryNeeded, .backColorPrimaryNeeded])),
+            GenAppType(type: .akFrogClicker, prefix: .ak, protocolId: nil, appId: AppIDs.AK_FROG_CLICKER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .textColorPrimaryNeeded, .textColorSecondaryNeeded, .buttonColorPrimaryNeeded, .backColorPrimaryNeeded]))
             
         ]
         

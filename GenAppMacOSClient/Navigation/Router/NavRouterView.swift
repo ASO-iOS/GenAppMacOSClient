@@ -14,14 +14,10 @@ struct NavRouterView: View {
         switch router.route {
         case .ui:
             GenMainViewColorSelectView(uiViewModel: viewModelFactory.makeGenMainViewColorSelectViewModel()).environmentObject(router)
-//        case .versions:
-//            GenMainViewVersionsView(versionsViewModel: viewModelFactory.makeGenMainViewVersionsViewModel()).environmentObject(router)
         case .banner:
             PView(handler: viewModelFactory.makeShapesHandler()).environmentObject(router)
-//            GenMainViewBannerView(bannerViewModel: viewModelFactory.makeGenMainViewBannerViewModel()).environmentObject(router)
         case .icon:
             GenMainViewIconView(handler: viewModelFactory.makeShapesHandlerIcon()).environmentObject(router)
-//            GenMainViewIconView(iconViewModel: viewModelFactory.makeGenMainViewIconViewModel()).environmentObject(router)
         case .finish:
             GenMainViewFinishView(finishViewModel: viewModelFactory.makeGenMainViewFinishViewModel()).environmentObject(router)
         default:
@@ -29,9 +25,3 @@ struct NavRouterView: View {
         }
     }
 }
-
-//struct NavRouterView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NavRouterView()
-//    }
-//}

@@ -172,7 +172,9 @@ extension GenAppController {
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     primaryColor: .init(hex: values.ui?.primaryColor) ?? .white,
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
-                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white)
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
+                    appName: values.mainData.appName
+                )
             ]
         default: return []
         }

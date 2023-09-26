@@ -43,16 +43,21 @@ struct GenMainView: View {
                 }.pickerStyle(.segmented)
                 Text(mainViewModel.appType.type.rawValue)
                 Toggle("Auto fill", isOn: $mainViewModel.autoFill)
+                Toggle("App Name As Type", isOn: $mainViewModel.appNameAsType)
                 Button(action: {
                     settingsPresented.toggle()
                 }, label: {
                     Text("Settings")
                 })
                 Button(action: {
-                    print(NamesManager.shared.createDirectories())
-//                    readerPresented.toggle()
+                    //                    print(NamesManager.shared.createDirectories())
+                    let app = mainViewModel.apps().randomElement() ?? mainViewModel.apps()[0]
+                    mainViewModel.appType = app
+                    setupApp()
+                    
+                    //                    readerPresented.toggle()
                 }, label: {
-                    Text("Reader")
+                    Text("Random")
                 })
             }
             
@@ -65,11 +70,7 @@ struct GenMainView: View {
                     ForEach(searchResults, id: \.id) { item in
                         Button(action: {
                             mainViewModel.appType = item
-                            if mainViewModel.autoFill {
-                                mainViewModel.appNameTextField = mainViewModel.randomAppName()
-                                mainViewModel.appPackageNameTextField = mainViewModel.randomPackage()
-                                mainViewModel.applicationNameTextField = mainViewModel.randomApplicationName()
-                            }
+                            setupApp()
                         }, label: {
                             ZStack {
                                 HStack {
@@ -86,11 +87,11 @@ struct GenMainView: View {
                             .background(Color(hex: "645a59"))
                             .cornerRadius(10)
                         }).buttonStyle(.plain)
-
+                        
                     }
                 }).searchable(text: $searchText)
             }
-
+            
         }
         HStack {
             TextField("App Name", text: $mainViewModel.appNameTextField)
@@ -164,14 +165,34 @@ struct GenMainView: View {
                     } else {
                         ProgressView().frame(width: 15, height: 15)
                     }
-
+                    
                 }
-
+                
                 
             })
         }
         .onAppear {
             checkServer()
+        }
+    }
+    
+    private func setupApp() {
+        if mainViewModel.appNameAsType {
+            mainViewModel.appNameTextField = mainViewModel.appType.type.rawValue
+        }
+        if mainViewModel.autoFill {
+            let appName = mainViewModel.randomAppName()
+            if appName.isEmpty {
+                
+                if mainViewModel.appNameAsType {
+                    mainViewModel.appNameTextField = mainViewModel.appType.type.rawValue
+                }
+            } else {
+                mainViewModel.appNameTextField = appName
+            }
+            
+            mainViewModel.appPackageNameTextField = mainViewModel.randomPackage()
+            mainViewModel.applicationNameTextField = mainViewModel.randomApplicationName()
         }
     }
     
@@ -181,10 +202,10 @@ struct GenMainView: View {
             url: Constant.BASE_URL + "launch_client",
             completion: { answer in
                 serverState = ServerState(color: .green, message: answer ?? "server ready with unexpected warnings")
-        },
+            },
             failure: { error in
                 serverState = ServerState(color: .red, message: error ?? "unexpected error")
-        })
+            })
     }
     
     func getColorByPrefix(_ prefix: AppPrefix) -> Color {
@@ -236,7 +257,7 @@ struct NamesManager {
     
     private init() {}
     
-//    let fileName =
+    //    let fileName =
     
     func randomFileNamme() -> String {
         let letters: NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"

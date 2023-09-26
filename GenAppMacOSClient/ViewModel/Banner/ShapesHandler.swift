@@ -28,6 +28,7 @@ class ShapesHandler: ObservableObject {
         if genAppController.values.appType == .mbTorch || genAppController.values.appType == .egFlashlight  {
             self.useBottomNav = false
         }
+        self.shapes.reserveCapacity(500)
     }
     
     func addKey() -> String {
@@ -158,8 +159,24 @@ class ShapesHandler: ObservableObject {
             location = "/Users/admin/GeneratorProjects/resources/images/stopwatchlogo/logo\(Int.random(in: 0...17)).png"
         case .akAlarm, .mbAlarm, .veAlarmMaterial:
             location = "/Users/admin/GeneratorProjects/resources/images/alarmlogo/logo\(Int.random(in: 0...18)).png"
-        case .mbPassGen, .vePassGenerator, .dtPasswordGenerator:
+        case .mbPassGen, .vePassGenerator, .dtPasswordGenerator, .itTrySecret:
             location = "/Users/admin/GeneratorProjects/resources/images/passgenlogo/logo\(Int.random(in: 0...21)).png"
+        case .veQuizBooks:
+            location = "/Users/admin/GeneratorProjects/resources/images/quizbooklogo/logo\(Int.random(in: 0...11)).png"
+        case .veQuizVideoGames:
+            location = "/Users/admin/GeneratorProjects/resources/images/quizvidegameslogo/logo\(Int.random(in: 0...15)).png"
+        case .veRandomWordQuiz:
+            location = "/Users/admin/GeneratorProjects/resources/images/randomwordquizlogo/logo\(Int.random(in: 0...12)).png"
+        case .akFrogClicker:
+            switch Int.random(in: 0...2) {
+            case 0:
+                location = genAppController.values.mainData.gameSprites?.back ?? ""
+            case 1:
+                location = genAppController.values.mainData.gameSprites?.player ?? ""
+            default:
+                location = genAppController.values.mainData.gameSprites?.enemy ?? ""
+            }
+            
         default: return
         }
         let logo = ImageShapeModel(color: .clear, template: false, shape: .image, location: location, x: 56, y: 56, width: 400, height: 400)

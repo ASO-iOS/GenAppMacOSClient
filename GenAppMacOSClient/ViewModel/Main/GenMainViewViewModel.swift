@@ -19,6 +19,8 @@ final class GenMainViewViewModel: ObservableObject {
     
     @Published var autoFill = true
     
+    @Published var appNameAsType = false
+    
     
     @Published var appType: GenAppType = .init(type: .notSelected, prefix: .none, protocolId: nil, appId: "", colorsNeeded: GenAppColorsNeededValues(appBarColorNeeded: true, backColorPrimaryNeeded: true, backColorSecondaryNeeded: true, surfaceColorNeeded: true, onSurfaceColorNeeded: true, primaryColorNeeded: true, onPrimaryColorNeeded: true, errorColorNeeded: true, textColorPrimaryNeeded: true, textColorSecondaryNeeded: true, buttonColorPrimaryNeeded: true, buttonColorSecondaryNeeded: true, buttonTextColorPrimaryNeeded: true, buttonTextColorSecondaryNeeded: true, paddingPrimaryNeeded: true, paddingSecondaryNeeded: true, textSizePrimaryNeeded: true, textSizeSecondaryNeeded: true))
     
@@ -107,6 +109,16 @@ final class GenMainViewViewModel: ObservableObject {
                 player: Constant.MBSpaceFighterRes + "/player/\(Int.random(in: 1...33))/player.png",
                 enemy: Constant.MBSpaceFighterRes + "/enemy/\(Int.random(in: 1...36))/enemy.png"
             )
+        case .akDodger:
+            return GameSprites(back: "", player: Constant.DodgerRes + "/player/player\(Int.random(in: 0...6)).png", enemy: Constant.DodgerRes + "/enemy/enemy\(Int.random(in: 0...7)).png")
+        case .akFrogClicker:
+            let idx = Int.random(in: 0...15)
+            return GameSprites(
+                back: Constant.FrogClickerRes + "/_is_waiting/is_waiting\(idx).png",
+                player: Constant.FrogClickerRes + "/_clicked/clicked\(idx).png",
+                enemy: Constant.FrogClickerRes + "/_won/won\(idx).png",
+                fire: Constant.FrogClickerRes + "/_lost/lost\(idx).png"
+            )
         default: return nil
         }
     }
@@ -159,7 +171,7 @@ final class GenMainViewViewModel: ObservableObject {
             return ["Speed Reaction", "Quick Reflex", "Rapid Response", "Swift React", "Fast Reflexes", "Reaction Time Challenge", "Quick Reaction Test", "Speedy Reflexes", "Rapid Response Training", "Lightning Reaction", "Quick Reflex Challenge", "Swift Reaction Time", "Fast Response Test", "Reaction Speed Challenge", "Quick Reflex Training", " Rapid Reaction Time", "Speedy Response Test", "Lightning-fast Reaction", "Quick Reflex Practice", "Swift Response Challenge"].randomElement() ?? ""
         case .klWeatherApp:
             return ["Weather Forecast", "Weather Tracker", "Weather Updates", "Weather Watcher", "Weather Guru", "Weather Pro", "Weather Now", "Weather Alert", "Weather Insights", "Weather Insights", "Weather Explorer", "Weather Planner", "Weather Master", "Weather Wizard", "Weather Navigator", " Weather Radar", "Weather Detector", "Weather Advisor", "Weather Expert", "Weather Analyzer"].randomElement() ?? ""
-        case .akClicker:
+        case .akClicker, .akFrogClicker:
             return ["Clicker Master", "Clicker Mania", "Clicker Madness", "Clicker Frenzy", "Clicker Fever", "Clicker Rush", "Clicker Blitz", "Clicker Dash", "Clicker Blast", "Clicker Smash", "Clicker Attack", "Clicker Strike", "Clicker Power", "Clicker Force", "Clicker Storm", "Clicker Surge", "Clicker Turbo", "Clicker Burst", "Clicker Wave", "Clicker Rampage"].randomElement() ?? ""
 //        case .tictac
 //            ["X's and O's", "Noughts and Crosses", "Three in a Row", "Tick Tack Toe", "Cross and Circle", "XOXO Game", "TTT Challenge", "Tic Tac Board", "X vs. O", "Tic Tac Match", "Connect Three", "Line Up Game", "Grid Battle", "Symbol Showdown", "Strategy Square", "Play and Win", "Tactical Tiles", "Board Blitz", "Mark and Win", "Symbolic Showdown"].randomElement() ?? «"
@@ -272,7 +284,7 @@ final class GenMainViewViewModel: ObservableObject {
                 "Alarm Deluxe",
                 "Alarm Tock"
             ].randomElement() ?? ""
-        case .mbPassGen, .vePassGenerator, .dtPasswordGenerator:
+        case .mbPassGen, .vePassGenerator, .dtPasswordGenerator, .itTrySecret:
             return [
                 "PassGen",
                 "Pass Gen",
@@ -299,6 +311,59 @@ final class GenMainViewViewModel: ObservableObject {
                 "Password Producer",
                 "Pass Producer",
                 "Pass Gen App"
+            ].randomElement() ?? ""
+        case .dtMusicQuiz, .veQuizBooks, .veQuizVideoGames, .veRandomWordQuiz, .akQuiz, .akMythologyQuiz:
+            return [
+                "Trivia Titans",
+                "Quiz Champs",
+                "Trivia Whiz",
+                "Quiz Voyager",
+                "Brain Busters",
+                "Knowledge Knights",
+                "Quiz Quest",
+                "Brainiac Brigade",
+                "Quiz Legends",
+                "Mental Marvels",
+                "Trivia Heroes",
+                "Quiztopia",
+                "Quick Quizzez",
+                "Trivia Trappers",
+                "Quizaholics",
+                "Brain Blitz",
+                "Trivia Dash",
+                "Quiz Geniuses",
+                "Mind Marathon",
+                "Quiz Mania",
+                "Trivia Troopers",
+                "Quiz Trek",
+                "Brainiac Battle",
+                "Trivia Trailblazers",
+                "Quiz Zest",
+                "Mental Masterminds",
+                "Quiz Ninja",
+                "Trivia Quest",
+                "Quiz Academy",
+                "Brainbox Heroes",
+                "Trivia Titans",
+                "Quiz Quarters",
+                "Brainstorm Brawlers",
+                "Trivia Showdown",
+                "Quiz Blitz",
+                "Mind Mavens",
+                "Trivia Whizzes",
+                "Quiz Champions",
+                "Knowledge Kingdom",
+                "Quiz Wizards",
+                "Trivia Mystics",
+                "Smarty Quiz",
+                "Trivia Master",
+                "Brain Brains",
+                "Quiz Wizard",
+                "Mind Melters",
+                "Knowledge Guru",
+                "Quizzy McQuizface",
+                "Quiz Quill",
+                "Brainstormers"
             ].randomElement() ?? ""
         default: return ""
         }

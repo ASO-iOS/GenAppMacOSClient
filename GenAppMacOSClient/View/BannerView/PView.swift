@@ -15,6 +15,7 @@ struct PView: View {
     @State var overlayPresented = false
     @State var replacePresented = false
     @State var gradientChangerPresented = false
+    @State var currentObjectID: String? = nil
     var body: some View {
         VStack {
             HStack {
@@ -29,20 +30,35 @@ struct PView: View {
                             }).buttonStyle(.plain)
                         }
                         if handler.rectChangerPresented {
-                            List(handler.shapes.filter({ $0.value is RectShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
-                                if value is RectShapeModel {
-                                    PRectChangerView(rect: .init(get: {
-                                        if handler.shapes[key] is RectShapeModel {
-                                            return handler.shapes[key] as! RectShapeModel
-                                        } else {
-                                            return RectShapeModel(shape: .rect, color: .white, fill: false, x: 0, y: 0, width: 0, height: 0, rounded: false, cornerRadius: 0, lineWidth: 0)
+                            ScrollView(showsIndicators: false) {
+                                LazyVStack {
+                                    ForEach(handler.shapes.filter({ $0.value is RectShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
+                                        if value is RectShapeModel {
+                                            if currentObjectID != key {
+                                                Text(key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white).onTapGesture {
+                                                    currentObjectID = key
+                                                }
+                                            } else {
+                                                PRectChangerView(rect: .init(get: {
+                                                    if handler.shapes[key] is RectShapeModel {
+                                                        return handler.shapes[key] as! RectShapeModel
+                                                    } else {
+                                                        return RectShapeModel(shape: .rect, color: .white, fill: false, x: 0, y: 0, width: 0, height: 0, rounded: false, cornerRadius: 0, lineWidth: 0)
+                                                    }
+
+                                                }, set: {
+                                                    handler.shapes[key] = RectShapeModel(shape: $0.shape, color: $0.color, fill: $0.fill, x: $0.x, y: $0.y, width: $0.width, height: $0.height, rounded: $0.rounded, cornerRadius: $0.cornerRadius, lineWidth: $0.lineWidth)
+                                                }), handler: handler, key: key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white)
+                                            }
+
+                 
                                         }
-                                        
-                                    }, set: {
-                                        handler.shapes[key] = RectShapeModel(shape: $0.shape, color: $0.color, fill: $0.fill, x: $0.x, y: $0.y, width: $0.width, height: $0.height, rounded: $0.rounded, cornerRadius: $0.cornerRadius, lineWidth: $0.lineWidth)
-                                    }), handler: handler, key: key).listRowBackground(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white)
+                                    }
                                 }
                             }.frame(width: 200)
+
+                        } else {
+                            Spacer()
                         }
                     }
                 }
@@ -57,18 +73,28 @@ struct PView: View {
                             }).buttonStyle(.plain)
                         }
                         if handler.textChangerPresented {
-                            List(handler.shapes.filter({ $0.value is TextShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
-                                if value is TextShapeModel {
-                                    PTextChangerView(text: .init(get: {
-                                        if handler.shapes[key] is TextShapeModel {
-                                            return handler.shapes[key] as! TextShapeModel
+                            ScrollView(showsIndicators: false) {
+                                LazyVStack {
+                                    ForEach(handler.shapes.filter({ $0.value is TextShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
+                                        if currentObjectID != key {
+                                            Text(key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white).onTapGesture {
+                                                currentObjectID = key
+                                            }
                                         } else {
-                                            return TextShapeModel(shape: .text, color: .white, x: 0, y: 0, width: 0, height: 0, text: "", size: 0, font: .regular)
+                                            if value is TextShapeModel {
+                                                PTextChangerView(text: .init(get: {
+                                                    if handler.shapes[key] is TextShapeModel {
+                                                        return handler.shapes[key] as! TextShapeModel
+                                                    } else {
+                                                        return TextShapeModel(shape: .text, color: .white, x: 0, y: 0, width: 0, height: 0, text: "", size: 0, font: .regular)
+                                                    }
+                                                    
+                                                }, set: {
+                                                    handler.shapes[key] = TextShapeModel(shape: $0.shape, color: $0.color, x: $0.x, y: $0.y, width: $0.width, height: $0.height, text: $0.text, size: $0.size, font: $0.font)
+                                                }), handler: handler, key: key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white)
+                                            }
                                         }
-                                        
-                                    }, set: {
-                                        handler.shapes[key] = TextShapeModel(shape: $0.shape, color: $0.color, x: $0.x, y: $0.y, width: $0.width, height: $0.height, text: $0.text, size: $0.size, font: $0.font)
-                                    }), handler: handler, key: key).listRowBackground(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white)
+                                    }
                                 }
                             }.frame(width: 200)
                         } else {
@@ -87,17 +113,27 @@ struct PView: View {
                             }).buttonStyle(.plain)
                         }
                         if handler.imageChangerPresented {
-                            List(handler.shapes.filter({ $0.value is ImageShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
-                                if value is ImageShapeModel {
-                                    PImageChangerView(image: .init(get: {
-                                        if handler.shapes[key] is ImageShapeModel {
-                                            return handler.shapes[key] as! ImageShapeModel
+                            ScrollView(showsIndicators: false) {
+                                LazyVStack {
+                                    ForEach(handler.shapes.filter({ $0.value is ImageShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
+                                        if currentObjectID != key {
+                                            Text(key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white).onTapGesture {
+                                                currentObjectID = key
+                                            }
                                         } else {
-                                            return ImageShapeModel(color: .white, template: false, shape: .image, location: "", x: 0, y: 0, width: 0, height: 0)
+                                            if value is ImageShapeModel {
+                                                PImageChangerView(image: .init(get: {
+                                                    if handler.shapes[key] is ImageShapeModel {
+                                                        return handler.shapes[key] as! ImageShapeModel
+                                                    } else {
+                                                        return ImageShapeModel(color: .white, template: false, shape: .image, location: "", x: 0, y: 0, width: 0, height: 0)
+                                                    }
+                                                }, set: {
+                                                    handler.shapes[key] = ImageShapeModel(color: $0.color, template: $0.template, shape: $0.shape, location: $0.location, x: $0.x, y: $0.y, width: $0.width, height: $0.height)
+                                                }), handler: handler, key: key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white)
+                                            }
                                         }
-                                    }, set: {
-                                        handler.shapes[key] = ImageShapeModel(color: $0.color, template: $0.template, shape: $0.shape, location: $0.location, x: $0.x, y: $0.y, width: $0.width, height: $0.height)
-                                    }), handler: handler, key: key).listRowBackground(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white)
+                                    }
                                 }
                             }.frame(width: 200)
                         } else {
@@ -108,37 +144,6 @@ struct PView: View {
                 VStack {
                     Toggle("Background gradient", isOn: $handler.useGradient)
                     HStack {
-//                        guard let shape = handler.currentShape else { }
-//                        let t = handler.shapes[handler.currentShape?.key ?? ""]?.color
-//                        if handler.currentShape != nil {
-//                            if handler.shapes[handler.currentShape?.key ?? ""] is RectShapeModel {
-//                                let rect = handler.shapes[handler.currentShape?.key ?? ""] as! RectShapeModel
-//                                let key = handler.currentShape?.key ?? ""
-//                                PRectChangerView(rect: .init(get: {
-//                                    if handler.shapes[key] is RectShapeModel {
-//                                        return handler.shapes[key] as! RectShapeModel
-//                                    } else {
-//                                        return RectShapeModel(shape: .rect, color: .white, fill: false, x: 0, y: 0, width: 0, height: 0, rounded: false, cornerRadius: 0, lineWidth: 0)
-//                                    }
-//
-//                                }, set: {
-//                                    handler.shapes[key] = RectShapeModel(shape: $0.shape, color: $0.color, fill: $0.fill, x: $0.x, y: $0.y, width: $0.width, height: $0.height, rounded: $0.rounded, cornerRadius: $0.cornerRadius, lineWidth: $0.lineWidth)
-//                                }), handler: handler, key: key)
-//
-//                            }
-//
-////                            VStack {
-////                                ColorPicker("Rect color", selection: Binding.init(get: {
-////                                    handler.shapes[handler.currentShape?.key ?? ""]?.color ?? .white
-////                                }, set: {
-////                                    handler.shapes[handler.currentShape?.key ?? ""]?.color = $0
-////                                }) )
-//////                                    .onChange(of: (handler.currentShape?.color)!) { newValue in
-//////                                    print(newValue.toHex())
-//////                                }
-////                            }
-//                        }
-
                         ColorPicker("Screens color", selection: $handler.screenBackColor)
                         Divider()
                         if handler.useGradient {
@@ -176,25 +181,26 @@ struct PView: View {
                         }
 
                     }.frame(maxHeight: 100)
-                    Toggle("Templates", isOn: $handler.useTemplate)
-                    if handler.useTemplate {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack {
-                                ForEach(handler.templates.indices, id: \.self) { index in
-                                    Button(action: {
-                                        handler.shapes.removeAll()
-                                        handler.shapes = handler.templates[index].shapes
-                                        if handler.genAppController.values.appType == .mbFacts {
-                                            handler.facts()
-                                        }
-                                        handler.objectWillChange.send()
-                                    }, label: {
-                                        Text("Template\(index + 1)")
-                                    })
+//                    Toggle("Templates", isOn: $handler.useTemplate)
+                    HStack {
+                        ForEach(handler.templates.indices, id: \.self) { index in
+                            Button(action: {
+                                handler.shapes.removeAll()
+                                handler.shapes = handler.templates[index].shapes
+                                if handler.genAppController.values.appType == .mbFacts {
+                                    handler.facts()
                                 }
-                            }
+                                handler.objectWillChange.send()
+                            }, label: {
+                                Text("Template\(index + 1)")
+                            })
                         }
                     }
+//                    if handler.useTemplate {
+//                        ScrollView(.horizontal, showsIndicators: false) {
+//
+//                        }
+//                    }
                     PCanvas(handler: handler)
                 }
                 
@@ -542,4 +548,18 @@ case top
         }
     }
     
+}
+
+public struct LazyList<Data, ID, Content> where Data : RandomAccessCollection, Data.Element: Identifiable, ID : Hashable, Content: View {
+
+    public var data: Data
+    public var content: (Data.Element) -> Content
+    
+    var body: some View {
+        ScrollView {
+            LazyVStack(spacing: 0) {
+                ForEach(data, content: content)
+            }
+        }
+    }
 }

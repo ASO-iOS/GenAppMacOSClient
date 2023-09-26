@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845E67B92AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */; };
 		84D1B3B42AB08F1100F98DB0 /* GenAppMacOSClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B3B32AB08F1100F98DB0 /* GenAppMacOSClientApp.swift */; };
 		84D1B3B62AB08F1100F98DB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B3B52AB08F1100F98DB0 /* ContentView.swift */; };
 		84D1B3B82AB08F1300F98DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D1B3B72AB08F1300F98DB0 /* Assets.xcassets */; };
@@ -217,9 +218,13 @@
 		84D1B5A52AB0946000F98DB0 /* DTExerciseFinderTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B5972AB0945F00F98DB0 /* DTExerciseFinderTemplate.swift */; };
 		84D1B5A62AB0946000F98DB0 /* DTEmojiFinderTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B5982AB0945F00F98DB0 /* DTEmojiFinderTemplate.swift */; };
 		84D1B5A72AB0946000F98DB0 /* DTEasyNotesTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B5992AB0945F00F98DB0 /* DTEasyNotesTemplate.swift */; };
+		84E3893A2ABAF96000982A33 /* AKDodgerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E389392ABAF96000982A33 /* AKDodgerTemplate.swift */; };
+		84FEC65E2AB9B6930056810C /* AKQuizTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC65D2AB9B6930056810C /* AKQuizTemplate.swift */; };
+		84FEC6602AB9DC850056810C /* AKMythologyQuizTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC65F2AB9DC850056810C /* AKMythologyQuizTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFrogClickerTemplate.swift; sourceTree = "<group>"; };
 		84D1B3B02AB08F1100F98DB0 /* GenAppMacOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenAppMacOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D1B3B32AB08F1100F98DB0 /* GenAppMacOSClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenAppMacOSClientApp.swift; sourceTree = "<group>"; };
 		84D1B3B52AB08F1100F98DB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -428,6 +433,9 @@
 		84D1B5972AB0945F00F98DB0 /* DTExerciseFinderTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTExerciseFinderTemplate.swift; sourceTree = "<group>"; };
 		84D1B5982AB0945F00F98DB0 /* DTEmojiFinderTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTEmojiFinderTemplate.swift; sourceTree = "<group>"; };
 		84D1B5992AB0945F00F98DB0 /* DTEasyNotesTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTEasyNotesTemplate.swift; sourceTree = "<group>"; };
+		84E389392ABAF96000982A33 /* AKDodgerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKDodgerTemplate.swift; sourceTree = "<group>"; };
+		84FEC65D2AB9B6930056810C /* AKQuizTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKQuizTemplate.swift; sourceTree = "<group>"; };
+		84FEC65F2AB9DC850056810C /* AKMythologyQuizTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKMythologyQuizTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -521,9 +529,9 @@
 		84D1B3EE2AB0901000F98DB0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				84D1B3F32AB0901000F98DB0 /* Main */,
 				84D1B3EF2AB0901000F98DB0 /* ColorSelect */,
 				84D1B3F12AB0901000F98DB0 /* Finish */,
-				84D1B3F32AB0901000F98DB0 /* Main */,
 				84D1B3F52AB0901000F98DB0 /* Banner */,
 			);
 			path = ViewModel;
@@ -789,9 +797,9 @@
 		84D1B4472AB0901100F98DB0 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				84D1B4602AB0901100F98DB0 /* TemplateData.swift */,
 				84D1B4482AB0901100F98DB0 /* VS */,
 				84D1B44C2AB0901100F98DB0 /* KL */,
-				84D1B4602AB0901100F98DB0 /* TemplateData.swift */,
 				84D1B4612AB0901100F98DB0 /* AK */,
 				84D1B4742AB0901100F98DB0 /* DT */,
 				84D1B47A2AB0901100F98DB0 /* IT */,
@@ -859,6 +867,10 @@
 				84D1B4712AB0901100F98DB0 /* AKAlarmTemplate.swift */,
 				84D1B4722AB0901100F98DB0 /* AKToDoTemplate.swift */,
 				84D1B4732AB0901100F98DB0 /* AKSpaceAttackerTemplate.swift */,
+				84FEC65D2AB9B6930056810C /* AKQuizTemplate.swift */,
+				84FEC65F2AB9DC850056810C /* AKMythologyQuizTemplate.swift */,
+				84E389392ABAF96000982A33 /* AKDodgerTemplate.swift */,
+				845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */,
 			);
 			path = AK;
 			sourceTree = "<group>";
@@ -1149,6 +1161,7 @@
 				84D1B4E02AB0901100F98DB0 /* FileContent.swift in Sources */,
 				84D1B5882AB0901200F98DB0 /* Reader.swift in Sources */,
 				84D1B5642AB0901200F98DB0 /* MBAlarmTemplate.swift in Sources */,
+				84E3893A2ABAF96000982A33 /* AKDodgerTemplate.swift in Sources */,
 				84D1B54D2AB0901200F98DB0 /* ITNextPaperTemplate.swift in Sources */,
 				84D1B5532AB0901200F98DB0 /* VEChargeMeTemplate.swift in Sources */,
 				84D1B5A12AB0946000F98DB0 /* DTQrGenShareTemplate.swift in Sources */,
@@ -1271,6 +1284,7 @@
 				84D1B4D72AB0901100F98DB0 /* GenMainViewFinishViewModel.swift in Sources */,
 				84D1B5312AB0901200F98DB0 /* AKFruitsTemplate.swift in Sources */,
 				84D1B4F82AB0901100F98DB0 /* DateExtension.swift in Sources */,
+				84FEC65E2AB9B6930056810C /* AKQuizTemplate.swift in Sources */,
 				84D1B53F2AB0901200F98DB0 /* DTCoctailFinderTemplate.swift in Sources */,
 				84D1B55A2AB0901200F98DB0 /* VERandomWordQuizTemplate.swift in Sources */,
 				84D1B5332AB0901200F98DB0 /* AKClickerTemplate.swift in Sources */,
@@ -1291,6 +1305,7 @@
 				84D1B5002AB0901100F98DB0 /* TP_VS.swift in Sources */,
 				84D1B51F2AB0901200F98DB0 /* KLRecorderTemplate.swift in Sources */,
 				84D1B5662AB0901200F98DB0 /* MBPassGenTemplate.swift in Sources */,
+				84FEC6602AB9DC850056810C /* AKMythologyQuizTemplate.swift in Sources */,
 				84D1B52A2AB0901200F98DB0 /* KLReactionTestTemplate.swift in Sources */,
 				84D1B50A2AB0901100F98DB0 /* Service.swift in Sources */,
 				84D1B4E12AB0901100F98DB0 /* TextFieldIncreaseReduce.swift in Sources */,
@@ -1317,6 +1332,7 @@
 				84D1B5102AB0901200F98DB0 /* GenMainViewVersionsView.swift in Sources */,
 				84D1B5392AB0901200F98DB0 /* AKRGBConverterTemplate.swift in Sources */,
 				84D1B50E2AB0901200F98DB0 /* GenMainViewColorSelectView.swift in Sources */,
+				845E67B92AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift in Sources */,
 				84D1B5782AB0901200F98DB0 /* EGDiceRollerTemplate.swift in Sources */,
 				84D1B4E82AB0901100F98DB0 /* AppProtocollId.swift in Sources */,
 				84D1B3B42AB08F1100F98DB0 /* GenAppMacOSClientApp.swift in Sources */,

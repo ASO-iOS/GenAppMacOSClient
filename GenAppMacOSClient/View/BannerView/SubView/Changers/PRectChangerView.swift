@@ -39,9 +39,7 @@ struct PRectChangerView: View {
                         Image(systemName: "doc.on.doc")
                     })
                 }
-                ColorPicker("Rect color", selection: $rect.color).onChange(of: rect.color) { newValue in
-                    print(newValue.toHex())
-                }
+                ColorPicker("Rect color", selection: $rect.color)
                 Toggle("Rounded", isOn: $rect.rounded)
                 Toggle("Fill", isOn: $rect.fill)
                 if rect.rounded {

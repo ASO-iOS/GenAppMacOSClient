@@ -173,6 +173,46 @@ extension GenAppController {
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white
                 )
             ]
+        case .akQuiz:
+            return [
+                AKQuizTemplate.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
+                    buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .white,
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
+                    textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .white
+                )
+            ]
+        case .akMythologyQuiz:
+            return [
+                AKMythologyQuizTemplate.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
+                    buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .white,
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
+                    textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .white,
+                    appName: values.mainData.appName)
+            ]
+        case .akDodger:
+            return [
+                AKDodgerTemplate.template1(
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
+                    buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
+                    sprites: values.mainData.gameSprites ?? .empty,
+                    appName: values.mainData.appName
+                )
+            ]
+        case .akFrogClicker:
+            return [
+                AKFrogClickerTemplate.template1(
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
+                    textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .white,
+                    sprites: values.mainData.gameSprites ?? .empty
+                )
+            ]
         default: return []
         }
     }

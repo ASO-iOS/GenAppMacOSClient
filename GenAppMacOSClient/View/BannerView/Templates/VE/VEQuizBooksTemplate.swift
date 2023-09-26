@@ -41,7 +41,7 @@ struct VEQuizBooksTemplate {
         let text1690883161752 = TextShapeModel(shape: .text, color: textColorSecondary, x: 785, y: 135, width: 200, height: 100, text: "J. K. Rowling", size: 15, font: .regular)
         let text1690883227639 = TextShapeModel(shape: .text, color: textColorPrimary, x: 758, y: 96, width: 229, height: 100, text: "Harry Potter and the Philosopher's Stone", size: 16, font: .regular)
         
-        let image1690880777207 = ImageShapeModel(color: textColorPrimary, template: true, shape: .image, location: "\(Constant.homeDir)GeneratorProjects/resources/bannerResources/vequizbooks/book.png", x: 125, y: 167, width: 144, height: 104)
+        let image1690880777207 = ImageShapeModel(color: textColorPrimary, template: true, shape: .image, location: "\(Constant.homeDir)GeneratorProjects/resources/bannerResources/vequizbooks/book.png", x: 145, y: 153, width: 104, height: 104)
         let image1690881840562 = ImageShapeModel(color: textColorPrimary, template: true, shape: .image, location: "\(Constant.homeDir)GeneratorProjects/resources/bannerResources/vequizbooks/delete.png", x: 592, y: 16, width: 24, height: 24)
         let image1690881935456 = ImageShapeModel(color: textColorPrimary, template: true, shape: .image, location: "\(Constant.homeDir)GeneratorProjects/resources/bannerResources/vequizbooks/done.png", x: 592, y: 69, width: 24, height: 24)
         let image1690883065130 = ImageShapeModel(color: textColorPrimary, template: true, shape: .image, location: "\(Constant.homeDir)GeneratorProjects/resources/bannerResources/vequizbooks/add.png", x: 915, y: 434, width: 24, height: 24)

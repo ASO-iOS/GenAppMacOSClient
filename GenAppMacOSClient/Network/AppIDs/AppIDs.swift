@@ -80,9 +80,7 @@ struct AppIDs {
     static let IT_ONE_MIN_TIMER =    "it-0012"
     static let IT_QR_GENERATOR =     "it-0013"
     
-    
-    
-    static let VE_PREFIX =           "ve"
+    static let VE_PREFIX =                    "ve"
     static let VE_QUIZ_BOOKS =                "ve-0001"
     static let VE_TYPES_OF_AIRCRAFT =         "ve-0002"
     static let VE_EVERY_DAY_FACTS =           "ve-0003"
@@ -93,7 +91,7 @@ struct AppIDs {
     static let VE_CHARGE_ME =                 "ve-0008"
     static let VE_FACTS_ABOUT_DOGS =          "ve-0009"
     static let VE_LUCKY_SPAN =                "ve-0010"
-    static let VE_ALARM_MATERIAL =          "ve-0011"
+    static let VE_ALARM_MATERIAL =            "ve-0011"
     static let VE_CALENDAR_EVENTS =           "ve-0012"
     static let VE_ENGLISH_DICTIONARY_HELPER = "ve-0013"
     static let VE_RANDOM_DOGS =               "ve-0014"
@@ -101,8 +99,6 @@ struct AppIDs {
     static let VE_RECIPES_BOOK =              "ve-0016"
     static let VE_RANDOM_WORD_QUIZ =          "ve-0017"
     static let VE_SOUND_RECORDER =            "ve-0018"
-    
-    
     
     static let AK_PREFIX =               "ak"
     static let AK_RICK_AND_MORTY =       "ak-0001"
@@ -123,12 +119,16 @@ struct AppIDs {
     static let AK_CLICKER =              "ak-0016"
     static let AK_DARTS =                "ak-0017"
     static let AK_SPACE_ATTACKER =       "ak-0018"
+    static let AK_QUIZ =                 "ak-0019"
+    static let AK_MYTHOLOGY_QUIZ =       "ak-0020"
+    static let AK_DODGER =               "ak-0021"
+    static let AK_FROG_CLICKER =         "ak-0022"
     
     static let KL_PREFIX =              "kl"
-    static let KL_BMI_CALCULATOR =      "kl_0001"
-    static let KL_SPEED_TEST =          "kl_0002"
-    static let KL_CONVERTER =           "kl_0003"
-    static let KL_RECORDER =            "kl_0004"
+    static let KL_BMI_CALCULATOR =      "kl-0001"
+    static let KL_SPEED_TEST =          "kl-0002"
+    static let KL_CONVERTER =           "kl-0003"
+    static let KL_RECORDER =            "kl-0004"
     static let KL_CLICK_FASTER =        "kl-0005"
     static let KL_COLOR_SWATCHER =      "kl-0006"
     static let KL_DS_WEAPON =           "kl-0007"
@@ -137,7 +137,7 @@ struct AppIDs {
     static let KL_TEA_WIKI =            "kl-0010"
     static let KL_WEATHER_APP =         "kl-0011"
     static let KL_DOT_CROSS_GAME =      "kl-0012"
-    static let KL_FLASHCARD_MAKER =    "kl-0013"
+    static let KL_FLASHCARD_MAKER =     "kl-0013"
     static let KL_HIDDEN_PARIS =        "kl-0014"
     static let KL_BUBBLE_PICKER =       "kl-0015"
     static let KL_BODY_TYPE_CACLULATOR = "kl-0016"

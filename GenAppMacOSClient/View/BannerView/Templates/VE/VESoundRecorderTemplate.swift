@@ -8,7 +8,7 @@ import SwiftUI
 
 
 struct VESoundRecorderTemplate {
-    static func template1(textColorPrimary: Color, primaryColor: Color, backColorPrimary: Color, buttonColorPrimary: Color) -> TemplateData {
+    static func template1(textColorPrimary: Color, primaryColor: Color, backColorPrimary: Color, buttonColorPrimary: Color, appName: String) -> TemplateData {
         
 //        let rect1691563484025 = RectShapeModel(shape: .rect, color: .init(hex: "dce3ea") ?? .gray, fill: true, x: 387, y: 423, width: 250, height: 50, rounded: false, cornerRadius: 16, lineWidth: 2)
         
@@ -17,7 +17,7 @@ struct VESoundRecorderTemplate {
         let rect1691564044212 = RectShapeModel(shape: .rect, color: .init(hex: "dce3ea") ?? .gray, fill: true, x: 722, y: 49, width: 215, height: 60, rounded: true, cornerRadius: 16, lineWidth: 2)
         let rect1691564197261 = RectShapeModel(shape: .rect, color: .init(hex: "dce3ea") ?? .gray, fill: true, x: 722, y: 141, width: 215, height: 60, rounded: true, cornerRadius: 16, lineWidth: 2)
         
-        let text1691563411002 = TextShapeModel(shape: .text, color: textColorPrimary, x: 128, y: 250, width: 145, height: 100, text: "SoundRecorderPro", size: 16, font: .regular)
+        let text1691563411002 = TextShapeModel(shape: .text, color: textColorPrimary, x: 138, y: 250, width: 145, height: 100, text: appName, size: 16, font: .regular)
         let text1691563964658 = TextShapeModel(shape: .text, color: textColorPrimary, x: 759, y: 8, width: 100, height: 100, text: "Your records", size: 15, font: .regular)
         let text1691564123789 = TextShapeModel(shape: .text, color: textColorPrimary, x: 731, y: 61, width: 200, height: 100, text: "2023-0\(Int.random(in: 1...9))-2\(Int.random(in: 0...7))T1\(Int.random(in: 0...9)):\(Int.random(in: 0...5))\(Int.random(in: 0...9)):\(Int.random(in: 0...5))\(Int.random(in: 0...9)).235930.mp3", size: 14, font: .regular)
         let text1691564225416 = TextShapeModel(shape: .text, color: textColorPrimary, x: 731, y: 153, width: 200, height: 100, text: "2023-09-30T1\(Int.random(in: 0...9)):\(Int.random(in: 0...5))\(Int.random(in: 0...9)):\(Int.random(in: 0...5))\(Int.random(in: 0...9)).073053.mp3", size: 14, font: .regular)

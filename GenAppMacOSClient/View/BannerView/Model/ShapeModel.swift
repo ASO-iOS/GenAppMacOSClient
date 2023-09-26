@@ -7,7 +7,20 @@
 
 import SwiftUI
 
-class ShapeModel: ObservableObject {
+class ShapeModel: ObservableObject, Hashable {
+    
+    var identifier: String {
+        return UUID().uuidString
+    }
+    
+    static func == (lhs: ShapeModel, rhs: ShapeModel) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
+    }
+    
     @Published var shape: PathType
     @Published var color: Color
     var x: Int

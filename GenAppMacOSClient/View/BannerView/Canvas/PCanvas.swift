@@ -15,6 +15,9 @@ struct PCanvas: View {
 //    let randomBottom = Int.random(in: 0...1)
     var body: some View {
         Canvas { context, size in
+            ForEach(0..<10) { p in
+                
+            }
             context.fill(Path(CGRect(x: 69, y: 0, width: 250, height: 500)), with: .color(handler.screenBackColor))
             context.fill(Path(CGRect(x: 387, y: 0, width: 250, height: 500)), with: .color(handler.screenBackColor))
             context.fill(Path(CGRect(x: 705, y: 0, width: 250, height: 500)), with: .color(handler.screenBackColor))
@@ -24,7 +27,8 @@ struct PCanvas: View {
                 context.draw(Image(nsImage: NSImage(contentsOf: URL.init(filePath: handler.bottomNavType.location)) ?? NSImage()), in: CGRect(x: 387, y: handler.bottomNavType.y, width: 250, height: handler.bottomNavType.height))
                 context.draw(Image(nsImage: NSImage(contentsOf: URL.init(filePath: handler.bottomNavType.location)) ?? NSImage()), in: CGRect(x: 705, y: handler.bottomNavType.y, width: 250, height: handler.bottomNavType.height))
             }
-        }.frame(width: 1024, height: 500).background(content: {canvasBackground()})
+        }
+        .frame(width: 1024, height: 500).background(content: {canvasBackground()})
             .onTapGesture { tapLocation in
                 findTappedShape(at: tapLocation)
             }
@@ -68,12 +72,28 @@ struct PCanvas: View {
             }
             if shape is ImageShapeModel {
                 let image = shape as! ImageShapeModel
+                let graphics = GraphicsController()
+                let nsImage = NSImage(contentsOf: URL.init(filePath: image.location))
+                var resultImage: NSImage
+                let imageSize = CGSize(width: image.width, height: image.height)
+                let size = nsImage?.pixelSize
+//                if imageSize.height < size?.height ?? 100 && imageSize.width < size?.width ?? 100 {
+//
+//                    print("less")
+//                    resultImage = nsImage ?? NSImage()
+//                } else {
+//                    print("more")
+                    resultImage = graphics.mResz(image: nsImage ?? NSImage(), width: CGFloat(image.width), height: CGFloat(image.height))
+//                }
+               
+                
                 if image.template {
-                    let temp = Image(nsImage: NSImage(contentsOf: URL.init(filePath: image.location)) ?? NSImage())
+                    
+                    let temp = Image(nsImage: resultImage)
                     let newImage = colorImage(image: temp, color: image.color)
                     context.draw( newImage, in: CGRect(x: image.x, y:  image.y, width: image.width, height: image.height))
                 } else {
-                    let temp = Image(nsImage: NSImage(contentsOf: URL.init(filePath: image.location)) ?? NSImage())
+                    let temp = Image(nsImage: resultImage)
                     context.draw( temp, in: CGRect(x: image.x, y:  image.y, width: image.width, height: image.height))
                 }
                 
@@ -84,6 +104,7 @@ struct PCanvas: View {
     func colorImage(image: Image, color: Color) -> Image {
         let temp = image.renderingMode(.template).foregroundColor(color)
         let renderer = ImageRenderer(content: temp)
+//        renderer.scale = 0.5
         if let nsImage = renderer.nsImage {
             return Image(nsImage: nsImage)
         } else {
