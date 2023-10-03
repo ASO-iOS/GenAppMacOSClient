@@ -19,7 +19,7 @@ final class GenMainViewViewModel: ObservableObject {
     
     @Published var autoFill = true
     
-    @Published var appNameAsType = false
+    @Published var appNameAsType = true
     
     
     @Published var appType: GenAppType = .init(type: .notSelected, prefix: .none, protocolId: nil, appId: "", colorsNeeded: GenAppColorsNeededValues(appBarColorNeeded: true, backColorPrimaryNeeded: true, backColorSecondaryNeeded: true, surfaceColorNeeded: true, onSurfaceColorNeeded: true, primaryColorNeeded: true, onPrimaryColorNeeded: true, errorColorNeeded: true, textColorPrimaryNeeded: true, textColorSecondaryNeeded: true, buttonColorPrimaryNeeded: true, buttonColorSecondaryNeeded: true, buttonTextColorPrimaryNeeded: true, buttonTextColorSecondaryNeeded: true, paddingPrimaryNeeded: true, paddingSecondaryNeeded: true, textSizePrimaryNeeded: true, textSizeSecondaryNeeded: true))
@@ -51,11 +51,11 @@ final class GenMainViewViewModel: ObservableObject {
     
     func setupSprites(appType: AppPickType) -> GameSprites? {
         switch appType {
-        case .mbSpaceFighter:
+        case .mbSpaceFighter, .akSpaceAttacker:
             return GameSprites(
-                back: Constant.MBSpaceFighterRes + "/background/\(Int.random(in: 1...20))/background.png",
-                player: Constant.MBSpaceFighterRes + "/player/\(Int.random(in: 1...33))/player.png",
-                enemy: Constant.MBSpaceFighterRes + "/enemy/\(Int.random(in: 1...36))/enemy.png"
+                back: Constant.MBSpaceFighterRes + "/background/background\(Int.random(in: 0...19)).png",
+                player: Constant.MBSpaceFighterRes + "/player/player\(Int.random(in: 0...32)).png",
+                enemy: Constant.MBSpaceFighterRes + "/enemy/enemy\(Int.random(in: 0...35)).png"
             )
         case .mbCatcher:
             return GameSprites(
@@ -103,12 +103,6 @@ final class GenMainViewViewModel: ObservableObject {
                 player: Constant.homeDir + "GeneratorProjects/resources/bannerResources/egflashlight/light_on\(light).png",
                 enemy: Constant.homeDir + "GeneratorProjects/resources/bannerResources/egflashlight/light_off\(light).png"
             )
-        case .akSpaceAttacker:
-            return GameSprites(
-                back: Constant.MBSpaceFighterRes + "/background/\(Int.random(in: 1...20))/background.png",
-                player: Constant.MBSpaceFighterRes + "/player/\(Int.random(in: 1...33))/player.png",
-                enemy: Constant.MBSpaceFighterRes + "/enemy/\(Int.random(in: 1...36))/enemy.png"
-            )
         case .akDodger:
             return GameSprites(back: "", player: Constant.DodgerRes + "/player/player\(Int.random(in: 0...6)).png", enemy: Constant.DodgerRes + "/enemy/enemy\(Int.random(in: 0...7)).png")
         case .akFrogClicker:
@@ -118,6 +112,15 @@ final class GenMainViewViewModel: ObservableObject {
                 player: Constant.FrogClickerRes + "/_clicked/clicked\(idx).png",
                 enemy: Constant.FrogClickerRes + "/_won/won\(idx).png",
                 fire: Constant.FrogClickerRes + "/_lost/lost\(idx).png"
+            )
+        case .akSpaceAttacker2:
+            return GameSprites(
+                back: Constant.MBSpaceFighterRes + "/background/background\(Int.random(in: 0...19)).png",
+                player: Constant.MBSpaceFighterRes + "/player/player\(Int.random(in: 0...32)).png",
+                enemy: "",
+                fire: Constant.MBSpaceFighterRes + "/playerBullet/player_bullet\(Int.random(in: 0...6)).png",
+                enemyList: [Constant.MBSpaceFighterRes + "/enemy/enemy\(Int.random(in: 0...35)).png", Constant.MBSpaceFighterRes + "/enemy/enemy\(Int.random(in: 0...35)).png", Constant.MBSpaceFighterRes + "/enemy/enemy\(Int.random(in: 0...35)).png"],
+                heart: Constant.MBSpaceFighterRes + "/heart/heart\(Int.random(in: 0...3)).png"
             )
         default: return nil
         }
@@ -163,7 +166,7 @@ final class GenMainViewViewModel: ObservableObject {
     
     func randomAppName() -> String {
         switch appType.type {
-        case .mbLuckyNumber:
+        case .mbLuckyNumber, .egLuckyNumber, .veLuckySpan:
             return ["Lucky Number", "Lucky Number Puzzle", "Lucky Number Voyager", "Number Maze", "Lucky Saga", "Number Expert", "Number Game", "Blitz Numbers", "Guess Number", "Guess Lucky Number", "Amazing Numbers", "Magic Number", "Guess It", "Number Maze", "Numbers Puzzle", "Super Numbers", "Guess Num", "Numbers Arcade", "Num Puzzle", "Puzzle Number Game", "Guess Lucky Numbers", "Number Conquest", "NumPuzzle", "Puzzle Guess"].randomElement() ?? ""
         case .klSupernaturalQuotes:
             return ["Supernatural Wisdom", "Quotes from the Supernatural World", "Inspiring Moments from Supernatural", "Supernatural Quotations", "Immersed in Supernatural Quotes", "The Best of Supernatural Words", "Captivating Quotes from the Supernatural Series", "Supernatural Insights and Sayings", "Supernatural Inspirations", "Quotes that Define Supernatural", "Unforgettable Lines from Supernatural", "Supernatural Quotes Collection", "Supernatural Words of Wisdom", "Dive into the Supernatural Quotes", "Epic Quotes from Supernatural", " Supernatural Quotes Vaultr", "Unleash the Power of Supernatural Quotes", "Supernatural Moments in Words", "Supernatural Quotes Galore", "Supernatural Quotes Universe"].randomElement() ?? ""
@@ -171,10 +174,10 @@ final class GenMainViewViewModel: ObservableObject {
             return ["Speed Reaction", "Quick Reflex", "Rapid Response", "Swift React", "Fast Reflexes", "Reaction Time Challenge", "Quick Reaction Test", "Speedy Reflexes", "Rapid Response Training", "Lightning Reaction", "Quick Reflex Challenge", "Swift Reaction Time", "Fast Response Test", "Reaction Speed Challenge", "Quick Reflex Training", " Rapid Reaction Time", "Speedy Response Test", "Lightning-fast Reaction", "Quick Reflex Practice", "Swift Response Challenge"].randomElement() ?? ""
         case .klWeatherApp:
             return ["Weather Forecast", "Weather Tracker", "Weather Updates", "Weather Watcher", "Weather Guru", "Weather Pro", "Weather Now", "Weather Alert", "Weather Insights", "Weather Insights", "Weather Explorer", "Weather Planner", "Weather Master", "Weather Wizard", "Weather Navigator", " Weather Radar", "Weather Detector", "Weather Advisor", "Weather Expert", "Weather Analyzer"].randomElement() ?? ""
-        case .akClicker, .akFrogClicker:
+        case .akClicker, .akFrogClicker, .klClickFaster:
             return ["Clicker Master", "Clicker Mania", "Clicker Madness", "Clicker Frenzy", "Clicker Fever", "Clicker Rush", "Clicker Blitz", "Clicker Dash", "Clicker Blast", "Clicker Smash", "Clicker Attack", "Clicker Strike", "Clicker Power", "Clicker Force", "Clicker Storm", "Clicker Surge", "Clicker Turbo", "Clicker Burst", "Clicker Wave", "Clicker Rampage"].randomElement() ?? ""
-//        case .tictac
-//            ["X's and O's", "Noughts and Crosses", "Three in a Row", "Tick Tack Toe", "Cross and Circle", "XOXO Game", "TTT Challenge", "Tic Tac Board", "X vs. O", "Tic Tac Match", "Connect Three", "Line Up Game", "Grid Battle", "Symbol Showdown", "Strategy Square", "Play and Win", "Tactical Tiles", "Board Blitz", "Mark and Win", "Symbolic Showdown"].randomElement() ?? «"
+        case .klDotCrossGame:
+            return ["X's and O's", "Noughts and Crosses", "Three in a Row", "Tick Tack Toe", "Cross and Circle", "XOXO Game", "TTT Challenge", "Tic Tac Board", "X vs. O", "Tic Tac Match", "Connect Three", "Line Up Game", "Grid Battle", "Symbol Showdown", "Strategy Square", "Play and Win", "Tactical Tiles", "Board Blitz", "Mark and Win", "Symbolic Showdown"].randomElement() ?? ""
             
         case .klColorSwatcher:
             return ["Color Palette Pro", "Color Harmony Explorer", "Color Fusion Master", "Chromatic Creativity", "Hue Puzzle Quest", "Color Combo Challenge", "Swatch Sensation Pro", "Color Logic Adventure", "Chroma Mastermind Quest", "Color Cross Mania Pro", "Swatch Brain Puzzle Quest", "Chromatic Puzzle Adventure", "Color Swap Journey Pro", "Swatch Puzzle Quest Pro", "Color Logic Challenge Pro", " Chroma Brain Adventure", "Swatch Puzzle Mania Pro", "Color Logic Mania Pro", "Chromatic Cross Quest", "Swatch Logic Challenge Pro"].randomElement() ?? ""
@@ -186,8 +189,8 @@ final class GenMainViewViewModel: ObservableObject {
             return ["Speedy Text", "Swift Writer", "Rapid Typist", "Efficient Wordsmith", "Smart Scribbler", "Quick Penman", "Fast Texter", "Agile Words", "Rapid Notes", "Speedy Scribe", "Swift Scripter", "Efficient Expressions", "Quick Compose", "Fast Messaging", "Agile Author", "Rapid Writing", "Speedy Drafts", "Swift Texting", "Efficient Emailer", "Quick Documenter"].randomElement() ?? ""
         case .itQuickCalc:
             return ["Speedy Math", "Fast Calculator", "Rapid Math Solver", "Instant Calculation", "Swift Calculator", "Quick Math Solver", "Speed Calculator", "Rapid Math Assistant", "Instant Math Solver", "Swift Math Calculator", "Quick Calculation Tool", "Speedy Math Helper", "Fast Calculation App", "Rapid Math Aid", "Instant Math Assistant", "Swift Calculation Tool", "Quick Math Solver", "Speedy Calculation App", "Fast Math Aid", "Rapid Calculation Tool"].randomElement() ?? ""
-//        case .veChargeMe:
-//            return ["MoneyTrack", "FinanzeMate", "SpendSmart", "BudgetBuddy", "CashControl", "FinanceTracker", "WalletWizard", "MoneyManager", "SpendTracker", "BudgetMaster", "CashFlowPro", "FinanceGuru", "WalletSaver", "MoneyMinder", "SpendWise", "BudgetSense", "CashMonitor", "FinancePal", "WalletWhiz", "MoneySense"].randomElement() ?? ""
+        case .veChargeMe:
+            return ["MoneyTrack", "FinanzeMate", "SpendSmart", "BudgetBuddy", "CashControl", "FinanceTracker", "WalletWizard", "MoneyManager", "SpendTracker", "BudgetMaster", "CashFlowPro", "FinanceGuru", "WalletSaver", "MoneyMinder", "SpendWise", "BudgetSense", "CashMonitor", "FinancePal", "WalletWhiz", "MoneySense"].randomElement() ?? ""
         case .itNumberGenerator:
             return ["Random Number Generator", "Number Generatorz", "Number Generator Plus", "Number Genie", "Randomizer", "Number Master", "Random Number Maker", "Number Creator", "Number Magic", "Number Wizard", "Random Number Wizard", "Number Cruncher", "Number Guru", "Random Digit Generator", "Number Picker", "Number Shuffler", "Random Number Explorer", "Number Roulette", "Number Dice", "Random Number Factory"].randomElement() ?? ""
         case .egPuzzleDigits:

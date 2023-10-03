@@ -15,9 +15,6 @@ struct PCanvas: View {
 //    let randomBottom = Int.random(in: 0...1)
     var body: some View {
         Canvas { context, size in
-            ForEach(0..<10) { p in
-                
-            }
             context.fill(Path(CGRect(x: 69, y: 0, width: 250, height: 500)), with: .color(handler.screenBackColor))
             context.fill(Path(CGRect(x: 387, y: 0, width: 250, height: 500)), with: .color(handler.screenBackColor))
             context.fill(Path(CGRect(x: 705, y: 0, width: 250, height: 500)), with: .color(handler.screenBackColor))
@@ -28,7 +25,8 @@ struct PCanvas: View {
                 context.draw(Image(nsImage: NSImage(contentsOf: URL.init(filePath: handler.bottomNavType.location)) ?? NSImage()), in: CGRect(x: 705, y: handler.bottomNavType.y, width: 250, height: handler.bottomNavType.height))
             }
         }
-        .frame(width: 1024, height: 500).background(content: {canvasBackground()})
+        .frame(width: 1024, height: 500)
+        .background(content: {canvasBackground()})
             .onTapGesture { tapLocation in
                 findTappedShape(at: tapLocation)
             }
@@ -75,8 +73,8 @@ struct PCanvas: View {
                 let graphics = GraphicsController()
                 let nsImage = NSImage(contentsOf: URL.init(filePath: image.location))
                 var resultImage: NSImage
-                let imageSize = CGSize(width: image.width, height: image.height)
-                let size = nsImage?.pixelSize
+//                let imageSize = CGSize(width: image.width, height: image.height)
+//                let size = nsImage?.pixelSize
 //                if imageSize.height < size?.height ?? 100 && imageSize.width < size?.width ?? 100 {
 //
 //                    print("less")
@@ -114,9 +112,21 @@ struct PCanvas: View {
     
     @ViewBuilder func canvasBackground() -> some View{
         if handler.useGradient {
-            LinearGradient(gradient: Gradient(colors: handler.bannerColors), startPoint: handler.startPoint, endPoint: handler.endPoint)
+            switch handler.points.type {
+            case .linear:
+                LinearGradient(gradient: Gradient(colors: handler.bannerColors), startPoint: handler.points.points.startPoint, endPoint: handler.points.points.endPoint)
+            case .radial:
+                RadialGradient(gradient: Gradient(colors: handler.bannerColors), center: .center, startRadius: 0, endRadius: .infinity)
+            case .elliptical:
+                EllipticalGradient(gradient: Gradient(colors: handler.bannerColors))
+            case .solid:
+                handler.bannerColors[0]
+            }
         } else {
             handler.bannerColors[0]
         }
     }
+    
+    
+
 }

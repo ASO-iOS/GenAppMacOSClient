@@ -110,6 +110,8 @@ struct GameSprites {
     var player: String
     var enemy: String
     var fire: String? = ""
+    var enemyList: [String]? = []
+    var heart: String? = ""
     
     static var empty: GameSprites {
         return GameSprites(back: "", player: "", enemy: "")

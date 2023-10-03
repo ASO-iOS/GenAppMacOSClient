@@ -16,7 +16,8 @@ final class GenMainViewColorSelectViewModel: ObservableObject {
     }
     
     func newOrderColors() {
-        let combos: ColorCombinationGen = genAppController.values.mainData.appId == AppIDs.AK_SPACE_ATTACKER ? DarkThemeCombinations() : getColorCombinationTheme()
+        let combos: ColorCombinationGen = darkThemeAppIDs.contains(genAppController.values.mainData.appId ?? "") ? DarkThemeCombinations() : getColorCombinationTheme()
+//        let combos: ColorCombinationGen = genAppController.values.mainData.appId == AppIDs.AK_SPACE_ATTACKER ? DarkThemeCombinations() : getColorCombinationTheme()
         self.appBarColor = combos.getColors().backColorPrimary == "ffffff" ? .black : .init(hex: combos.getColors().backColorPrimary) ?? .white
         self.backColorPrimary = .init(hex: combos.getColors().backColorPrimary) ?? .white
         self.backColorSecondary = .init(hex: combos.getColors().backColorSecondary) ?? .white
@@ -33,6 +34,11 @@ final class GenMainViewColorSelectViewModel: ObservableObject {
         self.buttonTextColorSecondary = .init(hex: combos.getTextColors().buttonTextColorSecondary) ?? .white
         
     }
+    
+    let darkThemeAppIDs = [
+        AppIDs.AK_SPACE_ATTACKER,
+        AppIDs.AK_SPACE_ATTACKER_2
+    ]
     
     func getColorCombinationTheme() -> ColorCombinationGen {
         return Int.random(in: 0...1) == 0 ? LightThemeCombinations() : DarkThemeCombinations()

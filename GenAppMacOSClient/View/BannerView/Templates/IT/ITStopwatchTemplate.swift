@@ -13,7 +13,7 @@ struct ITStopwatchTemplate {
         let rect1690888573578 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 203, y: 410, width: 100, height: 40, rounded: true, cornerRadius: 29, lineWidth: 2)
         let rect1690889110414 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 840, y: 410, width: 100, height: 40, rounded: true, cornerRadius: 29, lineWidth: 2)
         let rect1690889136739 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 721, y: 410, width: 100, height: 40, rounded: true, cornerRadius: 29, lineWidth: 2)
-        let rect1690889864011 = RectShapeModel(shape: .rect, color: .init(hex: "00000073") ?? .black, fill: true, x: 706, y: 218, width: 250, height: 500, rounded: false, cornerRadius: 16, lineWidth: 2)
+        let rect1690889864011 = RectShapeModel(shape: .rect, color: .init(hex: "00000073") ?? .black, fill: true, x: 705, y: 218, width: 250, height: 500, rounded: false, cornerRadius: 16, lineWidth: 2)
         let rect1690891041004 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 521, y: 410, width: 100, height: 40, rounded: true, cornerRadius: 29, lineWidth: 2)
         let rect1690891121672 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 406, y: 410, width: 100, height: 40, rounded: true, cornerRadius: 29, lineWidth: 2)
         let text1690888724584 = TextShapeModel(shape: .text, color: buttonTextColorPrimary, x: 120, y: 423, width: 100, height: 100, text: "Stop", size: 12, font: .regular)

@@ -66,7 +66,9 @@ extension GenAppController {
                 VEQuizVideoGamesTemplate.template1(
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
-                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white)
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
+                    appName: values.mainData.appName
+                )
             ]
             
         case .veChargeMe:

@@ -14,7 +14,8 @@ class ShapesHandler: ObservableObject {
     init(genAppController: GenAppController) {
         self.genAppController = genAppController
         self.screenBackColor = .init(hex: (genAppController.values.ui?.backColorPrimary ?? genAppController.values.ui?.appBarColor)) ?? .white
-        self.bannerColors = [.init(hex: (genAppController.values.ui?.backColorPrimary ?? genAppController.values.ui?.appBarColor)) ?? .white, .white]
+        self.bannerColors = genAppController.randomBanner()
+//        [.init(hex: (genAppController.values.ui?.backColorPrimary ?? genAppController.values.ui?.appBarColor)) ?? .white, .white]
         self.templates = genAppController.getTemplates(genAppController.values.appType, pref: .toPrefix(genAppController.values.mainData.prefix ?? ""))
         if genAppController.values.appType == .mbSpaceFighter {
             self.shapeOverlay = .image_rect_text
@@ -29,11 +30,31 @@ class ShapesHandler: ObservableObject {
             self.useBottomNav = false
         }
         self.shapes.reserveCapacity(500)
+        self.points = BackGradient(type: Gradients.allCases.randomElement() ?? .linear, points: self.startEndPoint())
+//        self.bannerColors
     }
     
     func addKey() -> String {
         return "object\(Date().millisecondsSince1970)"
     }
+    
+    lazy var points = BackGradient(type: .linear, points: StartEndPoints(startPoint: .zero, endPoint: .zero))
+    
+    
+    
+    func startEndPoint() -> StartEndPoints {
+        switch Int.random(in: 0...6) {
+        case 0: return StartEndPoints(startPoint: .top, endPoint: .bottom)
+        case 1: return StartEndPoints(startPoint: .bottom, endPoint: .top)
+        case 2: return StartEndPoints(startPoint: .leading, endPoint: .trailing)
+        case 3: return StartEndPoints(startPoint: .topLeading, endPoint: .bottomTrailing)
+        case 4: return StartEndPoints(startPoint: .bottomLeading, endPoint: .topTrailing)
+        case 5: return StartEndPoints(startPoint: .topTrailing, endPoint: .bottomLeading)
+        default: return StartEndPoints(startPoint: .bottomTrailing, endPoint: .topLeading)
+        }
+    }
+    
+
     
     @Published var shapes: OrderedDictionary<String, ShapeModel> = [:]
     @Published var tempTemplate = TemplateData(shapes: [:])
@@ -149,7 +170,6 @@ class ShapesHandler: ObservableObject {
             }
         }
         print("return TemplateData(shapes: [\(result)])")
-        
     }
     
     func appendLogo() {
@@ -183,6 +203,8 @@ class ShapesHandler: ObservableObject {
         shapes.removeAll()
         shapes[addKey()] = logo
     }
+    
+
 }
 
 enum ShapeOverlay: String {
@@ -235,4 +257,21 @@ struct BottomNavData {
     let location: String
     let y: CGFloat
     let height: CGFloat
+}
+
+struct BackGradient {
+    let type: Gradients
+    let points: StartEndPoints
+}
+
+enum Gradients: CaseIterable {
+    case linear
+    case radial
+    case elliptical
+    case solid
+}
+
+struct StartEndPoints {
+    let startPoint: UnitPoint
+    let endPoint: UnitPoint
 }

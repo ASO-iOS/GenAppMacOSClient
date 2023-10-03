@@ -63,9 +63,11 @@ struct GenMainView: View {
             
             ScrollView {
                 LazyVGrid(columns: [
-                    GridItem(.adaptive(minimum: 150)),
-                    GridItem(.adaptive(minimum: 150)),
-                    GridItem(.adaptive(minimum: 150))
+                    GridItem(.adaptive(minimum: 300)),
+                    GridItem(.adaptive(minimum: 300)),
+                    GridItem(.adaptive(minimum: 300)),
+                    GridItem(.adaptive(minimum: 300)),
+                    GridItem(.adaptive(minimum: 300))
                 ], content: {
                     ForEach(searchResults, id: \.id) { item in
                         Button(action: {
@@ -83,7 +85,7 @@ struct GenMainView: View {
                                     Spacer()
                                 }
                             }
-                            .frame(width: 160, height: 75)
+//                            .frame(width: 160, height: 75)
                             .background(Color(hex: "645a59"))
                             .cornerRadius(10)
                         }).buttonStyle(.plain)

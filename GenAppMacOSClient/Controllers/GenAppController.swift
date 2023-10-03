@@ -50,6 +50,23 @@ class GenAppController: ObservableObject {
         return getTemplates(appType, pref: pref).count
     }
     
+    func randomBanner() -> [Color] {
+        let count = Int.random(in: 2...4)
+        var colors: [Color] = []
+        let alpha = ["6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "F"]
+        for _ in 0..<count {
+            switch Int.random(in: 0...1) {
+            case 0:
+                colors.append(.init(hex: (values.ui?.backColorPrimary ?? "FFFFFF") + "\(alpha.randomElement() ?? "F")\(alpha.randomElement() ?? "F")") ?? .white)
+//                colors.append(.init(hex: "\(alpha.randomElement() ?? "F")F" + (values.ui?.backColorPrimary ?? "FFFFFF")) ?? .white)
+            default:
+                colors.append(.init(hex: (values.ui?.appBarColor ?? "FFFFFF") + "\(alpha.randomElement() ?? "F")\(alpha.randomElement() ?? "F")") ?? .white)
+            }
+        }
+        return colors
+    }
+
+    
     func getTemplates(_ appType: AppPickType, pref: AppPrefix) -> [TemplateData] {
         switch pref {
         case .none:

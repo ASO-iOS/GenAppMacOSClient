@@ -9,6 +9,7 @@ import Foundation
 
 extension GenAppController {
     func templateAK(_ appType: AppPickType) -> [TemplateData] {
+        
         switch appType {
         case .akRickAndMory:
             return [
@@ -211,6 +212,15 @@ extension GenAppController {
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .white,
                     sprites: values.mainData.gameSprites ?? .empty
+                )
+            ]
+        case .akSpaceAttacker2:
+            return [
+                AKSpaceAttacker2Template.template1(
+                    sprites: values.mainData.gameSprites ?? .empty,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
+                    appName: values.mainData.appName
                 )
             ]
         default: return []

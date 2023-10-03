@@ -93,6 +93,7 @@ enum AppPickType: String, CaseIterable {
     case akMythologyQuiz = "AKMythologyQuiz"
     case akDodger = "AKDodger"
     case akFrogClicker = "AKFrogCLicker"
+    case akSpaceAttacker2 = "AKSpaceAttacker2"
     
     // MARK: - kl
     case klBMICalculator = "KLBMICalculator"

@@ -9,14 +9,14 @@ import SwiftUI
 
 
 struct VEQuizVideoGamesTemplate {
-    static func template1(surfaceColor: Color, textColorPrimary: Color, backColorPrimary: Color) -> TemplateData {
+    static func template1(surfaceColor: Color, textColorPrimary: Color, backColorPrimary: Color, appName: String) -> TemplateData {
         let rect1691572846935 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 721, y: 97, width: 219, height: 83, rounded: true, cornerRadius: 10, lineWidth: 2)
-        let text1691572549849 = TextShapeModel(shape: .text, color: textColorPrimary, x: 120, y: 258, width: 200, height: 100, text: "Quiz: VideoGames", size: 19, font: .regular)
+        let text1691572549849 = TextShapeModel(shape: .text, color: textColorPrimary, x: 120, y: 258, width: 200, height: 100, text: appName, size: 19, font: .regular)
         let text1691572654118 = TextShapeModel(shape: .text, color: textColorPrimary, x: 416, y: 74, width: 200, height: 100, text: "Choose quiz difficulty", size: 21, font: .regular)
         let text1691572715942 = TextShapeModel(shape: .text, color: textColorPrimary, x: 485, y: 288, width: 200, height: 100, text: "Easy", size: 26, font: .regular)
         let text1691572752784 = TextShapeModel(shape: .text, color: textColorPrimary, x: 465, y: 331, width: 200, height: 100, text: "Medium", size: 26, font: .regular)
         let text1691572777205 = TextShapeModel(shape: .text, color: textColorPrimary, x: 484, y: 372, width: 200, height: 100, text: "Hard", size: 26, font: .regular)
-        let text1691572946179 = TextShapeModel(shape: .text, color: textColorPrimary, x: 759, y: 115, width: 254, height: 100, text: "When was Garry's Mod", size: 16, font: .regular)
+        let text1691572946179 = TextShapeModel(shape: .text, color: textColorPrimary, x: 756, y: 115, width: 254, height: 100, text: "When was Garry's Mod", size: 16, font: .regular)
         let text1691572946180 = TextShapeModel(shape: .text, color: textColorPrimary, x: 759, y: 135, width: 254, height: 100, text: " released?", size: 16, font: .regular)
         let text1691573050332 = TextShapeModel(shape: .text, color: textColorPrimary, x: 759, y: 206, width: 254, height: 100, text: "December \(Int.random(in: 1...26)), 200\(Int.random(in: 0...9))", size: 16, font: .regular)
         let text1691573095055 = TextShapeModel(shape: .text, color: textColorPrimary, x: 760, y: 246, width: 254, height: 100, text: "November 29, 2006", size: 16, font: .regular)

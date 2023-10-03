@@ -261,8 +261,7 @@ extension GenMainViewViewModel {
                 ])
             ),
             GenAppType(type: .mbSerials, prefix: .mb, protocolId: nil, appId: AppIDs.MB_SERIALS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .backColorPrimaryNeeded, .textColorPrimaryNeeded])),
-            GenAppType(type: .bcNameGenerator, prefix: .bc, protocolId: nil, appId: AppIDs.BC_NAME_GENERATOR, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .backColorPrimaryNeeded, .textColorPrimaryNeeded, .textColorSecondaryNeeded, .buttonColorPrimaryNeeded, .buttonTextColorPrimaryNeeded, .surfaceColorNeeded])),
-//            GenAppType(type: .itQuickWriter, prefix: .it, protocolId: nil, appId: AppIDs.IT_QUICK_WRITER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .backColorPrimaryNeeded, .textColorPrimaryNeeded, .buttonColorPrimaryNeeded, .buttonTextColorPrimaryNeeded])),
+//            GenAppType(type: .bcNameGenerator, prefix: .bc, protocolId: nil, appId: AppIDs.BC_NAME_GENERATOR, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .backColorPrimaryNeeded, .textColorPrimaryNeeded, .textColorSecondaryNeeded, .buttonColorPrimaryNeeded, .buttonTextColorPrimaryNeeded, .surfaceColorNeeded])),
         
             
             GenAppType(type: .itStopwatch, prefix: .it, protocolId: nil, appId: AppIDs.IT_STOPWATCH, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .backColorPrimaryNeeded, .textColorPrimaryNeeded, .buttonTextColorPrimaryNeeded, .buttonColorPrimaryNeeded, .buttonColorSecondaryNeeded])),
@@ -634,7 +633,8 @@ extension GenMainViewViewModel {
             GenAppType(type: .akQuiz, prefix: .ak, protocolId: nil, appId: AppIDs.AK_QUIZ, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .backColorPrimaryNeeded, .buttonColorSecondaryNeeded, .buttonColorPrimaryNeeded, .textColorPrimaryNeeded, .textColorSecondaryNeeded])),
             GenAppType(type: .akMythologyQuiz, prefix: .ak, protocolId: nil, appId: AppIDs.AK_MYTHOLOGY_QUIZ, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .backColorPrimaryNeeded, .buttonColorPrimaryNeeded, .buttonColorSecondaryNeeded, .textColorPrimaryNeeded, .textColorSecondaryNeeded])),
             GenAppType(type: .akDodger, prefix: .ak, protocolId: nil, appId: AppIDs.AK_DODGER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .textColorPrimaryNeeded, .buttonTextColorPrimaryNeeded, .buttonColorPrimaryNeeded, .backColorPrimaryNeeded])),
-            GenAppType(type: .akFrogClicker, prefix: .ak, protocolId: nil, appId: AppIDs.AK_FROG_CLICKER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .textColorPrimaryNeeded, .textColorSecondaryNeeded, .buttonColorPrimaryNeeded, .backColorPrimaryNeeded]))
+            GenAppType(type: .akFrogClicker, prefix: .ak, protocolId: nil, appId: AppIDs.AK_FROG_CLICKER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .textColorPrimaryNeeded, .textColorSecondaryNeeded, .buttonColorPrimaryNeeded, .backColorPrimaryNeeded])),
+            GenAppType(type: .akSpaceAttacker2, prefix: .ak, protocolId: nil, appId: AppIDs.AK_SPACE_ATTACKER_2, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .textColorPrimaryNeeded, .buttonColorPrimaryNeeded, .backColorPrimaryNeeded]))
             
         ]
         

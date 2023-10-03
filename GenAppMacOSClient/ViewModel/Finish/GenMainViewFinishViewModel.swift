@@ -20,7 +20,7 @@ final class GenMainViewFinishViewModel: ObservableObject {
     
     @Published var logs: [String] = []
     
-    @Published var isTesting = false
+    @Published var isTesting = true
     
     @Published var deleteSrc = true
     
@@ -253,6 +253,14 @@ final class GenMainViewFinishViewModel: ObservableObject {
             fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.player ?? "", to: resLoc + "clicked.png")
             fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.enemy ?? "", to: resLoc + "won.png")
             fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.fire ?? "", to: resLoc + "lost.png")
+        case .akSpaceAttacker2:
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.back ?? "", to: resLoc + "background.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.player ?? "", to: resLoc + "player.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.fire ?? "", to: resLoc + "fire.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.heart ?? "", to: resLoc + "heart.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.enemyList?[0] ?? "", to: resLoc + "enemy_big_rock.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.enemyList?[1] ?? "", to: resLoc + "enemy_small_rock.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.enemyList?[2] ?? "", to: resLoc + "enemy_with_fire.png")
         default: break
         }
     }
