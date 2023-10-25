@@ -171,7 +171,8 @@ extension GenAppController {
                     sprites: values.mainData.gameSprites ?? .empty,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
                     buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .white,
-                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
+                    appName: values.mainData.appName
                 )
             ]
         case .akQuiz:

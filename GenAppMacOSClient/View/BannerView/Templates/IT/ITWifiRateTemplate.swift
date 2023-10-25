@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITWifiRateTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorPrimary: Color) -> TemplateData {
+    static let shared = ITWifiRateTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorPrimary: Color) -> TemplateData {
         
         
         let rect1691393783775 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 414, y: 331, width: 200, height: 40, rounded: true, cornerRadius: 40, lineWidth: 2)

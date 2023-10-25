@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITQrGeneratorTemplate {
-    static func template1(backColorPrimary: Color,buttonColorPrimary: Color, buttonTextColorPrimary: Color) -> TemplateData {
+    static let shared = ITQrGeneratorTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color,buttonColorPrimary: Color, buttonTextColorPrimary: Color) -> TemplateData {
         
         let rect1691758150545 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 475, y: 352, width: 70, height: 70, rounded: true, cornerRadius: 16, lineWidth: 2)
         let rect1691758235800 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 797, y: 352, width: 70, height: 70, rounded: true, cornerRadius: 16, lineWidth: 2)

@@ -15,7 +15,6 @@ struct PView: View {
     @State var overlayPresented = false
     @State var replacePresented = false
     @State var gradientChangerPresented = false
-    @State var currentObjectID: String? = nil
     var body: some View {
         VStack {
             HStack {
@@ -34,9 +33,9 @@ struct PView: View {
                                 LazyVStack {
                                     ForEach(handler.shapes.filter({ $0.value is RectShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
                                         if value is RectShapeModel {
-                                            if currentObjectID != key {
+                                            if handler.currentObjectID != key {
                                                 Text(key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white).onTapGesture {
-                                                    currentObjectID = key
+                                                    handler.currentObjectID = key
                                                 }
                                             } else {
                                                 PRectChangerView(rect: .init(get: {
@@ -76,9 +75,9 @@ struct PView: View {
                             ScrollView(showsIndicators: false) {
                                 LazyVStack {
                                     ForEach(handler.shapes.filter({ $0.value is TextShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
-                                        if currentObjectID != key {
+                                        if handler.currentObjectID != key {
                                             Text(key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white).onTapGesture {
-                                                currentObjectID = key
+                                                handler.currentObjectID = key
                                             }
                                         } else {
                                             if value is TextShapeModel {
@@ -116,9 +115,9 @@ struct PView: View {
                             ScrollView(showsIndicators: false) {
                                 LazyVStack {
                                     ForEach(handler.shapes.filter({ $0.value is ImageShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
-                                        if currentObjectID != key {
+                                        if handler.currentObjectID != key {
                                             Text(key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white).onTapGesture {
-                                                currentObjectID = key
+                                                handler.currentObjectID = key
                                             }
                                         } else {
                                             if value is ImageShapeModel {
@@ -189,6 +188,9 @@ struct PView: View {
                                 handler.shapes = handler.templates[index].shapes
                                 if handler.genAppController.values.appType == .mbFacts {
                                     handler.facts()
+                                }
+                                if handler.genAppController.values.appType == .itHeroQuest {
+                                    handler.comics()
                                 }
                                 handler.objectWillChange.send()
                             }, label: {

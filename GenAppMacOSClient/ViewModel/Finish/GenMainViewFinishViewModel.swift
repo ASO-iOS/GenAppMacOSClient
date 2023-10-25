@@ -137,6 +137,7 @@ final class GenMainViewFinishViewModel: ObservableObject {
                         
                     }
                 })
+                genAppController.appendCount(type: genAppController.values.appType)
                 appendLog("Process finished")
                 projectCreated = true
                 state = .success
@@ -261,6 +262,17 @@ final class GenMainViewFinishViewModel: ObservableObject {
             fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.enemyList?[0] ?? "", to: resLoc + "enemy_big_rock.png")
             fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.enemyList?[1] ?? "", to: resLoc + "enemy_small_rock.png")
             fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.enemyList?[2] ?? "", to: resLoc + "enemy_with_fire.png")
+        case .klDodger:
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.back ?? "", to: resLoc + "bg.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.player ?? "", to: resLoc + "player.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.enemy ?? "", to: resLoc + "acorn.png")
+        case .klStopwatch:
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.player ?? "", to: resLoc + "main.png")
+        case .itCatcher:
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.back ?? "", to: resLoc + "court.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.player ?? "", to: resLoc + "basketball.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.enemy ?? "", to: resLoc + "basket.png")
+            
         default: break
         }
     }

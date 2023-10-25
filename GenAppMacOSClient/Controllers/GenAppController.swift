@@ -14,6 +14,16 @@ class GenAppController: ObservableObject {
     @Published private(set) var bannerView: ImageRenderer<PCanvas>?
     @Published private(set) var iconView: ImageRenderer<IconCanvasView>?
     
+    @Published private(set) var appsCount: [AppPickType] = []
+    
+    func getCount(type: AppPickType) -> Int {
+        return appsCount.filter({ $0 == type }).count
+    }
+    
+    func appendCount(type: AppPickType) {
+        appsCount.append(type)
+    }
+    
     func setBannerView(renderer: ImageRenderer<PCanvas>) {
         bannerView = renderer
     }
@@ -30,7 +40,7 @@ class GenAppController: ObservableObject {
         values.ui = ui
     }
     
-    func appendColorsNeeded(_ colors: GenAppColorsNeededValues) {
+    func appendColorsNeeded(_ colors: GenAppColorsNeedValues) {
         values.colorsNeeded = colors
     }
     
@@ -92,3 +102,4 @@ class GenAppController: ObservableObject {
         }
     }
 }
+

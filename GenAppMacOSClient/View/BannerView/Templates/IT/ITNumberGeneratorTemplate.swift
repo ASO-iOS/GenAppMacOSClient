@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITNumberGeneratorTemplate {
-    static func template1(backColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorPrimary: Color) -> TemplateData {
+    static let shared = ITNumberGeneratorTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorPrimary: Color) -> TemplateData {
         
         //49454f
         

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITNextPaperTemmplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, surfaceColor: Color) -> TemplateData {
+    static let shared = ITNextPaperTemmplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, surfaceColor: Color) -> TemplateData {
         let rect1691763332713 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 396, y: -1, width: 232, height: 164, rounded: true, cornerRadius: 16, lineWidth: 2)
         let rect1691763596608 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 396, y: 176, width: 232, height: 160, rounded: true, cornerRadius: 16, lineWidth: 2)
         let rect1691763628717 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 396, y: 347, width: 232, height: 160, rounded: true, cornerRadius: 16, lineWidth: 2)

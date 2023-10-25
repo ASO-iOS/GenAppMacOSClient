@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITLearningCatsTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color,  buttonColorPrimary: Color) -> TemplateData {
+    static let shared = ITLearningCatsTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color,  buttonColorPrimary: Color) -> TemplateData {
         
         let rect1691677999365 = RectShapeModel(shape: .rect, color: .black, fill: false, x: 400, y: 105, width: 225, height: 150, rounded: true, cornerRadius: 10, lineWidth: 2)
         let rect1691678184436 = RectShapeModel(shape: .rect, color: .black, fill: false, x: 718, y: 105, width: 225, height: 200, rounded: true, cornerRadius: 10, lineWidth: 2)

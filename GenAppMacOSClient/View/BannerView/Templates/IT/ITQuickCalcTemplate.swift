@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITQuickCalcTemplate {
-    static func template1(backColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorPrimary: Color, buttonColorSecondary: Color, primaryColor: Color) -> TemplateData {
+    static let shared = ITQuickCalcTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorPrimary: Color, buttonColorSecondary: Color, primaryColor: Color) -> TemplateData {
         
         let int1 = Int.random(in: 1...9)
         let int2 = Int.random(in: 1...9)

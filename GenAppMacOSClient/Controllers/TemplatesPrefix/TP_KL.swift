@@ -188,9 +188,10 @@ extension GenAppController {
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
                     buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
                     buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .white,
-                    buttonTextColorSecondary: .init(hex: values.ui?.buttonTextColorSecondary) ?? .white,
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white,
-                    onSurfaceColor: .init(hex: values.ui?.onSurfaceColor) ?? .white)
+                    onSurfaceColor: .init(hex: values.ui?.onSurfaceColor) ?? .white,
+                    appName: values.mainData.appName
+                )
             ]
             
         case .klDodger:
@@ -199,7 +200,20 @@ extension GenAppController {
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
                     buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
-                    buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .white)
+                    buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .white,
+                    sprites: values.mainData.gameSprites ?? .empty,
+                    appName: values.mainData.appName
+                )
+            ]
+        case .klStopwatch:
+            return [
+                KLStopwatchTemplate.template1(
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
+                    buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .white,
+                    buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
+                    sprites: values.mainData.gameSprites ?? .empty
+                )
             ]
         default: return []
         }

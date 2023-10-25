@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITQuickWriterTemplate {
-    static func template1(buttonColorPrimary: Color, buttonTextColorPrimary: Color, textColorPrimary: Color, backColorPrimary: Color) -> TemplateData {
+    static let shared = ITQuickWriterTemplate()
+    private init() {}
+    func template1(buttonColorPrimary: Color, buttonTextColorPrimary: Color, textColorPrimary: Color, backColorPrimary: Color) -> TemplateData {
         
         let colors = ["e7dd73", "ffa5b4", "c8dbff", "ff4c5b", "a1cb7a"]
         let numbers = Int.random(in: 0...4)

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITOneMinTimerTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color,  buttonColorPrimary: Color, buttonTextColorPrimary: Color) -> TemplateData {
+    static let shared = ITOneMinTimerTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color,  buttonColorPrimary: Color, buttonTextColorPrimary: Color) -> TemplateData {
         
         let rect1691402193339 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 462, y: 339, width: 100, height: 50, rounded: true, cornerRadius: 30, lineWidth: 2)
         let rect1691402312645 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 781, y: 339, width: 100, height: 50, rounded: true, cornerRadius: 30, lineWidth: 2)

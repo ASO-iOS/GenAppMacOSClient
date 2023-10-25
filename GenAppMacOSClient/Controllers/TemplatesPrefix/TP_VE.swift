@@ -16,7 +16,9 @@ extension GenAppController {
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .white,
-                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white)
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
+                    appName: values.mainData.appName
+                )
             ]
             
         case .veTypesOfAircraft:

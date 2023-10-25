@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct AKSpaceAttackerTemplate {
-    static func temmplate1(sprites: GameSprites, buttonColorPrimary: Color, buttonColorSecondary: Color, textColorPrimary: Color) -> TemplateData {
+    static func temmplate1(sprites: GameSprites, buttonColorPrimary: Color, buttonColorSecondary: Color, textColorPrimary: Color, appName: String) -> TemplateData {
         let rect1692363603922 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 479, y: 180, width: 67, height: 29, rounded: true, cornerRadius: 16, lineWidth: 2)
         let rect1692363671296 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 474, y: 238, width: 80, height: 29, rounded: true, cornerRadius: 16, lineWidth: 2)
         let rect1692363711011 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 479, y: 298, width: 67, height: 29, rounded: true, cornerRadius: 16, lineWidth: 2)
-        let text1692363235304 = TextShapeModel(shape: .text, color: textColorPrimary, x: 140, y: 200, width: 200, height: 100, text: "Space Attacker", size: 16, font: .regular)
+        let text1692363235304 = TextShapeModel(shape: .text, color: textColorPrimary, x: 140, y: 200, width: 200, height: 100, text: appName, size: 16, font: .regular)
         let text1692363549725 = TextShapeModel(shape: .text, color: textColorPrimary, x: 454, y: 140, width: 200, height: 100, text: "Your max score: 0", size: 14, font: .regular)
         let text1692363783981 = TextShapeModel(shape: .text, color: textColorPrimary, x: 498, y: 187, width: 200, height: 100, text: "Easy", size: 13, font: .regular)
         let text1692363825841 = TextShapeModel(shape: .text, color: textColorPrimary, x: 489, y: 244, width: 200, height: 100, text: "Medium", size: 13, font: .regular)

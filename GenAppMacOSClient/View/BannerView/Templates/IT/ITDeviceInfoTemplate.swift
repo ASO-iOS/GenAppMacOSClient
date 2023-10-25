@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITDeviceInfoTemplate {
-    static func template1(buttonColorPrimary: Color, buttonTextColorPrimary: Color, textColorPrimary: Color) -> TemplateData {
+    static let shared = ITDeviceInfoTemplate()
+    private init() {}
+    func template1(buttonColorPrimary: Color, buttonTextColorPrimary: Color, textColorPrimary: Color) -> TemplateData {
         
         let data1 = getData()
         let data2 = getData()
@@ -73,7 +75,7 @@ struct ITDeviceInfoTemplate {
             "object1690894785420" : rect1690894785420, "object1690894867555" : rect1690894867555, "object1691062466393" : rect1691062466393, "object1690895283933" : text1690895283933, "object1690895499213" : rect1690895499213, "object1690895669904" : text1690895669904, "object1690895740811" : text1690895740811, "object1690896035229" : text1690896035229, "object1691062544804" : text1691062544804, "object1691062423395" : text1691062423395])
     }
     
-    private static func getData() -> DeviceInfoData {
+    private func getData() -> DeviceInfoData {
         let manufacturers = ["unknown", "Google", "Android"]
         let brands = ["Android", "Google"]
         let sdk = Int.random(in: 26...32)

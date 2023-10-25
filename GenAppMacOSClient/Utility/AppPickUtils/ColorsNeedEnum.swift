@@ -23,7 +23,7 @@ enum ColorsNeedEnum {
     case buttonTextColorPrimary
     case buttonTextColorSecondary
     case paddingPrimary
-    case paddingSecondaryNeeded
-    case textSizePrimaryNeeded
-    case textSizeSecondaryNeeded
+    case paddingSecondary
+    case textSizePrimary
+    case textSizeSecondary
 }

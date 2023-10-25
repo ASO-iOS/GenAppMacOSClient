@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITCinemaScopeTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, surfaceColor: Color, buttonColorPrimary: Color) -> TemplateData {
+    static let shared = ITCinemaScopeTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, surfaceColor: Color, buttonColorPrimary: Color) -> TemplateData {
  
         let rect1691748277181 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 402, y: 7, width: 220, height: 150, rounded: true, cornerRadius: 16, lineWidth: 2)
         let rect1691748400327 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 402, y: 167, width: 220, height: 150, rounded: true, cornerRadius: 16, lineWidth: 2)

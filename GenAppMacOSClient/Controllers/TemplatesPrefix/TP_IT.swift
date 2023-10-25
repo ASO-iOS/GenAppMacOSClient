@@ -11,13 +11,13 @@ extension GenAppController {
     func templateIT(_ appType: AppPickType) -> [TemplateData] {
         switch appType {
         case .itStopwatch:
-            return [ITStopwatchTemplate.template1(textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white, buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white, buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white, buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .white)]
+            return [ITStopwatchTemplate.shared.template1(textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white, buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white, buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white, buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .white)]
         case .itDeviceInfo:
-            return [ITDeviceInfoTemplate.template1(buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white, buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white, textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white)]
+            return [ITDeviceInfoTemplate.shared.template1(buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white, buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white, textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white)]
             
         case .itQuickWriter:
             return [
-                ITQuickWriterTemplate.template1(
+                ITQuickWriterTemplate.shared.template1(
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
                     buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
@@ -26,7 +26,7 @@ extension GenAppController {
             
         case .itQuickCalc:
             return [
-                ITQuickCalcTemplate.template1(
+                ITQuickCalcTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
@@ -36,7 +36,7 @@ extension GenAppController {
             
         case .itNumberGenerator:
             return [
-                ITNumberGeneratorTemplate.template1(
+                ITNumberGeneratorTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white)
@@ -44,14 +44,14 @@ extension GenAppController {
             
         case .itNextPaper:
             return [
-                ITNextPaperTemmplate.template1(
+                ITNextPaperTemmplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white)
             ]
         case .itCinemaScope:
             return [
-                ITCinemaScopeTemplate.template1(
+                ITCinemaScopeTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white,
@@ -60,7 +60,7 @@ extension GenAppController {
             
         case .itWifiRate:
             return [
-                ITWifiRateTemplate.template1(
+                ITWifiRateTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
@@ -69,7 +69,7 @@ extension GenAppController {
             
         case .itTrySecret:
             return [
-                ITTrySecretTemplate.template1(
+                ITTrySecretTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
@@ -79,7 +79,7 @@ extension GenAppController {
             
         case .itHeroQuest:
             return [
-                ITHeroesQuestTemplate.template1(
+                ITHeroesQuestTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white,
@@ -89,7 +89,7 @@ extension GenAppController {
             
         case .itLearningCats:
             return [
-                ITLearningCatsTemplate.template1(
+                ITLearningCatsTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white)
@@ -97,7 +97,7 @@ extension GenAppController {
             
         case .itOneMinTimer:
             return [
-                ITOneMinTimerTemplate.template1(
+                ITOneMinTimerTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
@@ -106,10 +106,26 @@ extension GenAppController {
             
         case .itQrGenerator:
             return [
-                ITQrGeneratorTemplate.template1(
+                ITQrGeneratorTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
                     buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white)
+            ]
+        case .itTicTacToe:
+            return [
+                ITTicTacToeTemplate.shared.template(
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
+                    buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white
+                )
+            ]
+        case .itSnake:
+            return [
+                ITSnakeTemplate.shared.template1(buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white, buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white, textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white, surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white)
+            ]
+        case .itCatcher:
+            return [
+                ITCatcherTemplate.shared.template1(buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor, buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .accentColor, textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor, sprites: values.mainData.gameSprites ?? .empty)
             ]
         default: return []
         }

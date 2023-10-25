@@ -9,13 +9,16 @@ import SwiftUI
 import OrderedCollections
 
 class ShapesHandler: ObservableObject {
+    
+    // main app controller
     var genAppController: GenAppController
     
     init(genAppController: GenAppController) {
         self.genAppController = genAppController
         self.screenBackColor = .init(hex: (genAppController.values.ui?.backColorPrimary ?? genAppController.values.ui?.appBarColor)) ?? .white
+        
+        // init banner from controller
         self.bannerColors = genAppController.randomBanner()
-//        [.init(hex: (genAppController.values.ui?.backColorPrimary ?? genAppController.values.ui?.appBarColor)) ?? .white, .white]
         self.templates = genAppController.getTemplates(genAppController.values.appType, pref: .toPrefix(genAppController.values.mainData.prefix ?? ""))
         if genAppController.values.appType == .mbSpaceFighter {
             self.shapeOverlay = .image_rect_text
@@ -31,7 +34,6 @@ class ShapesHandler: ObservableObject {
         }
         self.shapes.reserveCapacity(500)
         self.points = BackGradient(type: Gradients.allCases.randomElement() ?? .linear, points: self.startEndPoint())
-//        self.bannerColors
     }
     
     func addKey() -> String {
@@ -41,7 +43,7 @@ class ShapesHandler: ObservableObject {
     lazy var points = BackGradient(type: .linear, points: StartEndPoints(startPoint: .zero, endPoint: .zero))
     
     
-    
+    // method that randomly select canvas back type
     func startEndPoint() -> StartEndPoints {
         switch Int.random(in: 0...6) {
         case 0: return StartEndPoints(startPoint: .top, endPoint: .bottom)
@@ -59,7 +61,7 @@ class ShapesHandler: ObservableObject {
     @Published var shapes: OrderedDictionary<String, ShapeModel> = [:]
     @Published var tempTemplate = TemplateData(shapes: [:])
     @Published var useTemplate = false
-    @Published var templates: [TemplateData]
+    @Published var templates: [TemplateData] = []
     @Published var currentShape: String = ""
     @Published var bottomNavType = BottomNavType.randomNav()
     
@@ -84,6 +86,9 @@ class ShapesHandler: ObservableObject {
     @Published var newCopyImagePresented = false
     @Published var copyImage = ImageShapeModel.emptyModel()
     
+    
+    @Published var currentObjectID: String? = nil
+    
     @Published var startPoint: UnitPoint =  .top
     @Published var endPoint: UnitPoint = .bottom
     
@@ -91,12 +96,11 @@ class ShapesHandler: ObservableObject {
         currentShape = key
     }
     
-    
+    // real time api access for real facts
     func facts() {
         let service = Service()
         service.getFact() { answer, error in
             if self.shapes["object1690381591472"] is TextShapeModel {
-                print("yess")
                 (self.shapes["object1690381591472"] as! TextShapeModel).text = answer
             }
         }
@@ -113,6 +117,61 @@ class ShapesHandler: ObservableObject {
         objectWillChange.send()
     }
     
+    func comics() {
+        let service = Service()
+        service.getComics() { comics, error in
+            let question = self.mReplacing(text: comics?.results[0].question)
+                
+            let answer0 = self.mReplacing(text: comics?.results[0].correct_answer)
+            let answer1 = self.mReplacing(text: comics?.results[0].incorrect_answers[0])
+            let answer2 = self.mReplacing(text: comics?.results[0].incorrect_answers[1])
+            let answer3 = self.mReplacing(text: comics?.results[0].incorrect_answers[2])
+            
+            if self.shapes["object1691414408120"] is TextShapeModel {
+                (self.shapes["object1691414408120"] as! TextShapeModel).text = question
+            }
+            if self.shapes["object1691415452453"] is TextShapeModel {
+                (self.shapes["object1691415452453"] as! TextShapeModel).text = answer0
+            }
+            if self.shapes["object1691415516311"] is TextShapeModel {
+                (self.shapes["object1691415516311"] as! TextShapeModel).text = answer1
+            }
+            if self.shapes["object1691415584908"] is TextShapeModel {
+                (self.shapes["object1691415584908"] as! TextShapeModel).text = answer2
+            }
+            if self.shapes["object1691415646897"] is TextShapeModel {
+                (self.shapes["object1691415646897"] as! TextShapeModel).text = answer3
+            }
+            if self.shapes["object1691414501662"] is TextShapeModel {
+                (self.shapes["object1691414501662"] as! TextShapeModel).text = question
+            }
+            if self.shapes["object1691415671168"] is TextShapeModel {
+                (self.shapes["object1691415671168"] as! TextShapeModel).text = answer0
+            }
+            if self.shapes["object1691415697845"] is TextShapeModel {
+                (self.shapes["object1691415697845"] as! TextShapeModel).text = answer1
+            }
+            if self.shapes["object1691415712481"] is TextShapeModel {
+                (self.shapes["object1691415712481"] as! TextShapeModel).text = answer2
+            }
+            if self.shapes["object1691415726071"] is TextShapeModel {
+                (self.shapes["object1691415726071"] as! TextShapeModel).text = answer3
+            }
+        }
+        objectWillChange.send()
+    }
+    
+    func mReplacing(text: String?) -> String {
+        return text?
+            .replacingOccurrences(of: "&quot;", with: "\"")
+            .replacingOccurrences(of: "&eacute;", with: "e")
+            .replacingOccurrences(of: "&amp;", with: "&")
+            .replacingOccurrences(of: "&#039;", with: "' ") ?? ""
+    }
+    
+    
+    
+    // log method of canvas content
     func printTemplate() {
         var rectNames: [LogShapeData] = []
         var textNames: [LogShapeData] = []
@@ -175,7 +234,7 @@ class ShapesHandler: ObservableObject {
     func appendLogo() {
         var location = ""
         switch genAppController.values.appType {
-        case .egStopwatch, .itStopwatch, .mbStopwatch, .vsStopwatch:
+        case .egStopwatch, .itStopwatch, .mbStopwatch, .vsStopwatch, .klSpeedTest, .mbSpeedTest:
             location = "/Users/admin/GeneratorProjects/resources/images/stopwatchlogo/logo\(Int.random(in: 0...17)).png"
         case .akAlarm, .mbAlarm, .veAlarmMaterial:
             location = "/Users/admin/GeneratorProjects/resources/images/alarmlogo/logo\(Int.random(in: 0...18)).png"
@@ -185,8 +244,16 @@ class ShapesHandler: ObservableObject {
             location = "/Users/admin/GeneratorProjects/resources/images/quizbooklogo/logo\(Int.random(in: 0...11)).png"
         case .veQuizVideoGames:
             location = "/Users/admin/GeneratorProjects/resources/images/quizvidegameslogo/logo\(Int.random(in: 0...15)).png"
-        case .veRandomWordQuiz:
-            location = "/Users/admin/GeneratorProjects/resources/images/randomwordquizlogo/logo\(Int.random(in: 0...12)).png"
+        case .veRandomWordQuiz, .akQuiz, .akMythologyQuiz, .dtMusicQuiz, .itHeroQuest, .klSupernaturalQuotes:
+            switch Int.random(in: 0...2) {
+            case 0:
+                location = "/Users/admin/GeneratorProjects/resources/images/randomwordquizlogo/logo\(Int.random(in: 0...12)).png"
+            case 1:
+                location = "/Users/admin/GeneratorProjects/resources/images/quizbooklogo/logo\(Int.random(in: 0...11)).png"
+            default:
+                location = "/Users/admin/GeneratorProjects/resources/images/quizvidegameslogo/logo\(Int.random(in: 0...15)).png"
+            }
+            
         case .akFrogClicker:
             switch Int.random(in: 0...2) {
             case 0:
@@ -196,7 +263,12 @@ class ShapesHandler: ObservableObject {
             default:
                 location = genAppController.values.mainData.gameSprites?.enemy ?? ""
             }
-            
+        case .klStopwatch:
+            location = genAppController.values.mainData.gameSprites?.player ?? ""
+        case .mbSpaceFighter, .akSpaceAttacker, .akSpaceAttacker2:
+            location = genAppController.values.mainData.gameSprites?.player ?? ""
+        case .itCatcher, .mbCatcher:
+            location = genAppController.values.mainData.gameSprites?.player ?? ""
         default: return
         }
         let logo = ImageShapeModel(color: .clear, template: false, shape: .image, location: location, x: 56, y: 56, width: 400, height: 400)

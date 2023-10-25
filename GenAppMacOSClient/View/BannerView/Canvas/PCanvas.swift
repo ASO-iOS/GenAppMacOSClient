@@ -35,7 +35,8 @@ struct PCanvas: View {
     func findTappedShape(at location: CGPoint) {
         for (key, shape) in handler.shapes.reversed() {
             if CGRect(x: shape.x, y: shape.y, width: shape.width, height: shape.height).contains(location) {
-                handler.setCurrentShape(key: key)
+                handler.setCurrentShape(key: key) // set changer back color
+                handler.currentObjectID = key // open changer on click
                 break
                 }
             }
@@ -65,7 +66,6 @@ struct PCanvas: View {
             }
             if shape is TextShapeModel {
                 let text = shape as! TextShapeModel
-//                let pureText = Text(text.text).font(.m_font(size: CGFloat(text.size), text.font)).foregroundColor(text.color)
                 context.draw(Text(text.text).font(.m_font(size: CGFloat(text.size), text.font)).foregroundColor(text.color), in: CGRect(x: text.x, y: text.y, width: text.width, height: text.height))
             }
             if shape is ImageShapeModel {
@@ -73,16 +73,7 @@ struct PCanvas: View {
                 let graphics = GraphicsController()
                 let nsImage = NSImage(contentsOf: URL.init(filePath: image.location))
                 var resultImage: NSImage
-//                let imageSize = CGSize(width: image.width, height: image.height)
-//                let size = nsImage?.pixelSize
-//                if imageSize.height < size?.height ?? 100 && imageSize.width < size?.width ?? 100 {
-//
-//                    print("less")
-//                    resultImage = nsImage ?? NSImage()
-//                } else {
-//                    print("more")
-                    resultImage = graphics.mResz(image: nsImage ?? NSImage(), width: CGFloat(image.width), height: CGFloat(image.height))
-//                }
+                    resultImage = graphics.mResz(image: nsImage ?? NSImage(), width: CGFloat(500), height: CGFloat(500))
                
                 
                 if image.template {
@@ -100,9 +91,9 @@ struct PCanvas: View {
     }
     
     func colorImage(image: Image, color: Color) -> Image {
-        let temp = image.renderingMode(.template).foregroundColor(color)
+        let temp = image
+            .renderingMode(.template).foregroundStyle(color)
         let renderer = ImageRenderer(content: temp)
-//        renderer.scale = 0.5
         if let nsImage = renderer.nsImage {
             return Image(nsImage: nsImage)
         } else {
@@ -127,6 +118,42 @@ struct PCanvas: View {
         }
     }
     
-    
+//    @MainActor
+//    private func render(view: some View) -> NSImage?{
+//         
+//         let renderer = ImageRenderer(content: view)
+//        let r = renderer.
+//         return renderer.nsImage
+//     }
 
+}
+
+extension View {
+    func snapshot() -> NSImage? {
+        let controller = NSHostingController(rootView: self)
+        let targetSize = controller.view.intrinsicContentSize
+        let contentRect = NSRect(origin: .zero, size: targetSize)
+        
+        let window = NSWindow(
+            contentRect: contentRect,
+            styleMask: [.borderless],
+            backing: .buffered,
+            defer: false
+        )
+        window.contentView?.layout()
+        
+        guard
+            let bitmapRep = controller.view.bitmapImageRepForCachingDisplay(in: contentRect)
+        else { 
+            print("jopa")
+            return nil }
+        
+        DispatchQueue.main.async {
+            controller.view.cacheDisplay(in: contentRect, to: bitmapRep)
+        }
+        
+        let image = NSImage(size: bitmapRep.size)
+        image.addRepresentation(bitmapRep)
+        return image
+    }
 }

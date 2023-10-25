@@ -26,20 +26,35 @@ struct GenMainViewIconView: View {
                             }).buttonStyle(.plain)
                         }
                         if handler.rectChangerPresented {
-                            List(handler.shapes.filter({ $0.value is RectShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
-                                if value is RectShapeModel {
-                                    PRectChangerView(rect: .init(get: {
-                                        if handler.shapes[key] is RectShapeModel {
-                                            return handler.shapes[key] as! RectShapeModel
-                                        } else {
-                                            return RectShapeModel(shape: .rect, color: .white, fill: false, x: 0, y: 0, width: 0, height: 0, rounded: false, cornerRadius: 0, lineWidth: 0)
+                            ScrollView(showsIndicators: false) {
+                                LazyVStack {
+                                    ForEach(handler.shapes.filter({ $0.value is RectShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
+                                        if value is RectShapeModel {
+                                            if handler.currentObjectID != key {
+                                                Text(key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white).onTapGesture {
+                                                    handler.currentObjectID = key
+                                                }
+                                            } else {
+                                                PRectChangerView(rect: .init(get: {
+                                                    if handler.shapes[key] is RectShapeModel {
+                                                        return handler.shapes[key] as! RectShapeModel
+                                                    } else {
+                                                        return RectShapeModel(shape: .rect, color: .white, fill: false, x: 0, y: 0, width: 0, height: 0, rounded: false, cornerRadius: 0, lineWidth: 0)
+                                                    }
+
+                                                }, set: {
+                                                    handler.shapes[key] = RectShapeModel(shape: $0.shape, color: $0.color, fill: $0.fill, x: $0.x, y: $0.y, width: $0.width, height: $0.height, rounded: $0.rounded, cornerRadius: $0.cornerRadius, lineWidth: $0.lineWidth)
+                                                }), handler: handler, key: key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white)
+                                            }
+
+                 
                                         }
-                                        
-                                    }, set: {
-                                        handler.shapes[key] = RectShapeModel(shape: $0.shape, color: $0.color, fill: $0.fill, x: $0.x, y: $0.y, width: $0.width, height: $0.height, rounded: $0.rounded, cornerRadius: $0.cornerRadius, lineWidth: $0.lineWidth)
-                                    }), handler: handler, key: key)
+                                    }
                                 }
                             }.frame(width: 200)
+
+                        } else {
+                            Spacer()
                         }
                     }
                 }
@@ -54,18 +69,28 @@ struct GenMainViewIconView: View {
                             }).buttonStyle(.plain)
                         }
                         if handler.textChangerPresented {
-                            List(handler.shapes.filter({ $0.value is TextShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
-                                if value is TextShapeModel {
-                                    PTextChangerView(text: .init(get: {
-                                        if handler.shapes[key] is TextShapeModel {
-                                            return handler.shapes[key] as! TextShapeModel
+                            ScrollView(showsIndicators: false) {
+                                LazyVStack {
+                                    ForEach(handler.shapes.filter({ $0.value is TextShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
+                                        if handler.currentObjectID != key {
+                                            Text(key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white).onTapGesture {
+                                                handler.currentObjectID = key
+                                            }
                                         } else {
-                                            return TextShapeModel(shape: .text, color: .white, x: 0, y: 0, width: 0, height: 0, text: "", size: 0, font: .regular)
+                                            if value is TextShapeModel {
+                                                PTextChangerView(text: .init(get: {
+                                                    if handler.shapes[key] is TextShapeModel {
+                                                        return handler.shapes[key] as! TextShapeModel
+                                                    } else {
+                                                        return TextShapeModel(shape: .text, color: .white, x: 0, y: 0, width: 0, height: 0, text: "", size: 0, font: .regular)
+                                                    }
+                                                    
+                                                }, set: {
+                                                    handler.shapes[key] = TextShapeModel(shape: $0.shape, color: $0.color, x: $0.x, y: $0.y, width: $0.width, height: $0.height, text: $0.text, size: $0.size, font: $0.font)
+                                                }), handler: handler, key: key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white)
+                                            }
                                         }
-                                        
-                                    }, set: {
-                                        handler.shapes[key] = TextShapeModel(shape: $0.shape, color: $0.color, x: $0.x, y: $0.y, width: $0.width, height: $0.height, text: $0.text, size: $0.size, font: $0.font)
-                                    }), handler: handler, key: key)
+                                    }
                                 }
                             }.frame(width: 200)
                         } else {
@@ -84,17 +109,27 @@ struct GenMainViewIconView: View {
                             }).buttonStyle(.plain)
                         }
                         if handler.imageChangerPresented {
-                            List(handler.shapes.filter({ $0.value is ImageShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
-                                if value is ImageShapeModel {
-                                    PImageChangerView(image: .init(get: {
-                                        if handler.shapes[key] is ImageShapeModel {
-                                            return handler.shapes[key] as! ImageShapeModel
+                            ScrollView(showsIndicators: false) {
+                                LazyVStack {
+                                    ForEach(handler.shapes.filter({ $0.value is ImageShapeModel}).sorted(by: { $0.key < $1.key}), id: \.key) { key, value in
+                                        if handler.currentObjectID != key {
+                                            Text(key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white).onTapGesture {
+                                                handler.currentObjectID = key
+                                            }
                                         } else {
-                                            return ImageShapeModel(color: .white, template: false, shape: .image, location: "", x: 0, y: 0, width: 0, height: 0)
+                                            if value is ImageShapeModel {
+                                                PImageChangerView(image: .init(get: {
+                                                    if handler.shapes[key] is ImageShapeModel {
+                                                        return handler.shapes[key] as! ImageShapeModel
+                                                    } else {
+                                                        return ImageShapeModel(color: .white, template: false, shape: .image, location: "", x: 0, y: 0, width: 0, height: 0)
+                                                    }
+                                                }, set: {
+                                                    handler.shapes[key] = ImageShapeModel(color: $0.color, template: $0.template, shape: $0.shape, location: $0.location, x: $0.x, y: $0.y, width: $0.width, height: $0.height)
+                                                }), handler: handler, key: key).background(handler.currentShape == key ? .indigo : Color.init(hex: "222323") ?? .white)
+                                            }
                                         }
-                                    }, set: {
-                                        handler.shapes[key] = ImageShapeModel(color: $0.color, template: $0.template, shape: $0.shape, location: $0.location, x: $0.x, y: $0.y, width: $0.width, height: $0.height)
-                                    }), handler: handler, key: key)
+                                    }
                                 }
                             }.frame(width: 200)
                         } else {
@@ -187,8 +222,7 @@ struct GenMainViewIconView: View {
                     Text("Overlay")
                 })
                 Button(action: {
-                    let nameLogo = TextShapeModel(shape: .text, color: .black, x: 70, y: 170, width: 512, height: 100, text: handler.genAppController.values.mainData.appName, size: 99, font: .bold)
-                    handler.shapes[handler.addKey()] = nameLogo
+                    createAppNameLogo()
                 }, label: {
                     Text("Name logo")
                 })
@@ -254,6 +288,15 @@ struct GenMainViewIconView: View {
                 Text("\(handler.genAppController.values.mainData.appName) (\(handler.genAppController.values.appType.rawValue))")
             })
         }
+    }
+    
+    private func createAppNameLogo() {
+        handler.shapes.removeAll()
+        let x = Int.random(in: 12...42)
+        let width = 512 - x
+        let font = MFont.allCases.randomElement() ?? .bold
+        let nameLogo = TextShapeModel(shape: .text, color: .black, x: x, y: 170, width: width, height: 342, text: handler.genAppController.values.mainData.appName, size: 99, font: font)
+        handler.shapes[handler.addKey()] = nameLogo
     }
 }
 

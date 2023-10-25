@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITStopwatchTemplate {
-    static func template1(textColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorPrimary: Color, buttonColorSecondary: Color) -> TemplateData {
+    static let shared = ITStopwatchTemplate()
+    private init() {}
+    func template1(textColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorPrimary: Color, buttonColorSecondary: Color) -> TemplateData {
         let rect1690888376115 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 84, y: 410, width: 100, height: 40, rounded: true, cornerRadius: 29, lineWidth: 2)
         let rect1690888573578 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 203, y: 410, width: 100, height: 40, rounded: true, cornerRadius: 29, lineWidth: 2)
         let rect1690889110414 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 840, y: 410, width: 100, height: 40, rounded: true, cornerRadius: 29, lineWidth: 2)

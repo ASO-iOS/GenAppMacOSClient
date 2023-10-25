@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84044B602AE697610099DE30 /* ITCatcherTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84044B5F2AE697610099DE30 /* ITCatcherTemplate.swift */; };
+		84044B642AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */; };
+		8407BD132AD3F53E003DC25B /* AppNamesExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407BD122AD3F53E003DC25B /* AppNamesExt.swift */; };
+		8419A76D2AE2983D00DEB819 /* ITSnakeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */; };
+		841B656A2ADE98FD000C6077 /* ITTicTacToeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B65692ADE98FD000C6077 /* ITTicTacToeTemplate.swift */; };
+		841B656C2ADEB02E000C6077 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B656B2ADEB02E000C6077 /* DictionaryExtension.swift */; };
+		841EDE0B2AD58D030030227D /* KLStopwatchTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841EDE0A2AD58D030030227D /* KLStopwatchTemplate.swift */; };
 		845E67B92AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */; };
 		84D1B3B42AB08F1100F98DB0 /* GenAppMacOSClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B3B32AB08F1100F98DB0 /* GenAppMacOSClientApp.swift */; };
 		84D1B3B62AB08F1100F98DB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B3B52AB08F1100F98DB0 /* ContentView.swift */; };
@@ -37,7 +44,7 @@
 		84D1B4E22AB0901100F98DB0 /* FolderSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B4022AB0901000F98DB0 /* FolderSelector.swift */; };
 		84D1B4E32AB0901100F98DB0 /* ChangerFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B4032AB0901000F98DB0 /* ChangerFieldView.swift */; };
 		84D1B4E42AB0901100F98DB0 /* PathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B4042AB0901000F98DB0 /* PathType.swift */; };
-		84D1B4E52AB0901100F98DB0 /* ColorsNeededEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B4062AB0901000F98DB0 /* ColorsNeededEnum.swift */; };
+		84D1B4E52AB0901100F98DB0 /* ColorsNeedEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B4062AB0901000F98DB0 /* ColorsNeedEnum.swift */; };
 		84D1B4E62AB0901100F98DB0 /* GenAppType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B4072AB0901000F98DB0 /* GenAppType.swift */; };
 		84D1B4E72AB0901100F98DB0 /* AppPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B4082AB0901000F98DB0 /* AppPrefix.swift */; };
 		84D1B4E82AB0901100F98DB0 /* AppProtocollId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B4092AB0901000F98DB0 /* AppProtocollId.swift */; };
@@ -225,6 +232,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84044B5F2AE697610099DE30 /* ITCatcherTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCatcherTemplate.swift; sourceTree = "<group>"; };
+		84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGTicTacToeTemplate.swift; sourceTree = "<group>"; };
+		8407BD122AD3F53E003DC25B /* AppNamesExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNamesExt.swift; sourceTree = "<group>"; };
+		8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITSnakeTemplate.swift; sourceTree = "<group>"; };
+		841B65692ADE98FD000C6077 /* ITTicTacToeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITTicTacToeTemplate.swift; sourceTree = "<group>"; };
+		841B656B2ADEB02E000C6077 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		841EDE0A2AD58D030030227D /* KLStopwatchTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLStopwatchTemplate.swift; sourceTree = "<group>"; };
 		845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFrogClickerTemplate.swift; sourceTree = "<group>"; };
 		84D1B3B02AB08F1100F98DB0 /* GenAppMacOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenAppMacOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D1B3B32AB08F1100F98DB0 /* GenAppMacOSClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenAppMacOSClientApp.swift; sourceTree = "<group>"; };
@@ -253,7 +267,7 @@
 		84D1B4022AB0901000F98DB0 /* FolderSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderSelector.swift; sourceTree = "<group>"; };
 		84D1B4032AB0901000F98DB0 /* ChangerFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangerFieldView.swift; sourceTree = "<group>"; };
 		84D1B4042AB0901000F98DB0 /* PathType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathType.swift; sourceTree = "<group>"; };
-		84D1B4062AB0901000F98DB0 /* ColorsNeededEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsNeededEnum.swift; sourceTree = "<group>"; };
+		84D1B4062AB0901000F98DB0 /* ColorsNeedEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsNeedEnum.swift; sourceTree = "<group>"; };
 		84D1B4072AB0901000F98DB0 /* GenAppType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenAppType.swift; sourceTree = "<group>"; };
 		84D1B4082AB0901000F98DB0 /* AppPrefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPrefix.swift; sourceTree = "<group>"; };
 		84D1B4092AB0901000F98DB0 /* AppProtocollId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProtocollId.swift; sourceTree = "<group>"; };
@@ -559,6 +573,7 @@
 			isa = PBXGroup;
 			children = (
 				84D1B3F42AB0901000F98DB0 /* GenMainViewViewModel.swift */,
+				8407BD122AD3F53E003DC25B /* AppNamesExt.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -613,7 +628,7 @@
 		84D1B4052AB0901000F98DB0 /* AppPickUtils */ = {
 			isa = PBXGroup;
 			children = (
-				84D1B4062AB0901000F98DB0 /* ColorsNeededEnum.swift */,
+				84D1B4062AB0901000F98DB0 /* ColorsNeedEnum.swift */,
 				84D1B4072AB0901000F98DB0 /* GenAppType.swift */,
 				84D1B4082AB0901000F98DB0 /* AppPrefix.swift */,
 				84D1B4092AB0901000F98DB0 /* AppProtocollId.swift */,
@@ -667,6 +682,7 @@
 				84D1B41C2AB0901000F98DB0 /* BoolExtension.swift */,
 				84D1B41D2AB0901000F98DB0 /* StringExtension.swift */,
 				84D1B41E2AB0901000F98DB0 /* DateExtension.swift */,
+				841B656B2ADEB02E000C6077 /* DictionaryExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -844,6 +860,7 @@
 				84D1B45D2AB0901100F98DB0 /* KLSupernaturalQuotesTemplate.swift */,
 				84D1B45E2AB0901100F98DB0 /* KLClickFasterTemplate.swift */,
 				84D1B45F2AB0901100F98DB0 /* KLReactionTestTemplate.swift */,
+				841EDE0A2AD58D030030227D /* KLStopwatchTemplate.swift */,
 			);
 			path = KL;
 			sourceTree = "<group>";
@@ -920,6 +937,9 @@
 				84D1B4852AB0901100F98DB0 /* ITNextPaperTemplate.swift */,
 				84D1B4862AB0901100F98DB0 /* ITCinemaScopeTemplate.swift */,
 				84D1B4872AB0901100F98DB0 /* ITQrGeneratorTemplate.swift */,
+				841B65692ADE98FD000C6077 /* ITTicTacToeTemplate.swift */,
+				8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */,
+				84044B5F2AE697610099DE30 /* ITCatcherTemplate.swift */,
 			);
 			path = IT;
 			sourceTree = "<group>";
@@ -992,6 +1012,7 @@
 				84D1B4BB2AB0901100F98DB0 /* EGCocktailCraftTemplate.swift */,
 				84D1B4BC2AB0901100F98DB0 /* EGLoveCaclulatorTemplate.swift */,
 				84D1B4BD2AB0901100F98DB0 /* EGPhoneCheckerTemplate.swift */,
+				84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */,
 			);
 			path = EG;
 			sourceTree = "<group>";
@@ -1204,6 +1225,7 @@
 				84D1B5422AB0901200F98DB0 /* DTPopularMoviesTemplate.swift in Sources */,
 				84D1B4EA2AB0901100F98DB0 /* AppPickType.swift in Sources */,
 				84D1B4FC2AB0901100F98DB0 /* TP_VE.swift in Sources */,
+				84044B602AE697610099DE30 /* ITCatcherTemplate.swift in Sources */,
 				84D1B4D22AB0901100F98DB0 /* NavTransition.swift in Sources */,
 				84D1B5702AB0901200F98DB0 /* MBLuckyNumberTemplate.swift in Sources */,
 				84D1B5192AB0901200F98DB0 /* KLConverterTemplate.swift in Sources */,
@@ -1237,7 +1259,7 @@
 				84D1B51C2AB0901200F98DB0 /* KLFlashcardMaketTemplate.swift in Sources */,
 				84D1B4F42AB0901100F98DB0 /* ColorExtension.swift in Sources */,
 				84D1B5832AB0901200F98DB0 /* PCreateView.swift in Sources */,
-				84D1B4E52AB0901100F98DB0 /* ColorsNeededEnum.swift in Sources */,
+				84D1B4E52AB0901100F98DB0 /* ColorsNeedEnum.swift in Sources */,
 				84D1B54F2AB0901200F98DB0 /* ITQrGeneratorTemplate.swift in Sources */,
 				84D1B53D2AB0901200F98DB0 /* AKSpaceAttackerTemplate.swift in Sources */,
 				84D1B57D2AB0901200F98DB0 /* EGLearnSlangTemplate.swift in Sources */,
@@ -1246,6 +1268,7 @@
 				84D1B4FD2AB0901100F98DB0 /* TP_IT.swift in Sources */,
 				84D1B52E2AB0901200F98DB0 /* AKNewYearCountdownTemplate.swift in Sources */,
 				84D1B5772AB0901200F98DB0 /* EGWaterTrackerTemplate.swift in Sources */,
+				841B656C2ADEB02E000C6077 /* DictionaryExtension.swift in Sources */,
 				84D1B5322AB0901200F98DB0 /* AKRandomCoffeeTemplate.swift in Sources */,
 				84D1B5342AB0901200F98DB0 /* AKShashlikCalculatorTemplate.swift in Sources */,
 				84D1B5142AB0901200F98DB0 /* ShapeModel.swift in Sources */,
@@ -1258,12 +1281,14 @@
 				84D1B4D62AB0901100F98DB0 /* GenMainViewColorSelectViewModel.swift in Sources */,
 				84D1B5352AB0901200F98DB0 /* AKUvProtectTemplate.swift in Sources */,
 				84D1B5372AB0901200F98DB0 /* AKDartsTemplate.swift in Sources */,
+				841EDE0B2AD58D030030227D /* KLStopwatchTemplate.swift in Sources */,
 				84D1B5A62AB0946000F98DB0 /* DTEmojiFinderTemplate.swift in Sources */,
 				84D1B53A2AB0901200F98DB0 /* AKCartoonLocationsTemplate.swift in Sources */,
 				84D1B5462AB0901200F98DB0 /* ITLearningCatsTemplate.swift in Sources */,
 				84D1B5452AB0901200F98DB0 /* ITTrySecretTemplate.swift in Sources */,
 				84D1B4F22AB0901100F98DB0 /* LogModel.swift in Sources */,
 				84D1B5482AB0901200F98DB0 /* ITStopwatchTemplate.swift in Sources */,
+				8407BD132AD3F53E003DC25B /* AppNamesExt.swift in Sources */,
 				84D1B5522AB0901200F98DB0 /* VERecipesBookTemplate.swift in Sources */,
 				84D1B5A32AB0946000F98DB0 /* DTTextSimilarityTemplate.swift in Sources */,
 				84D1B59D2AB0946000F98DB0 /* DTNutritionFinderTemplate.swift in Sources */,
@@ -1284,6 +1309,7 @@
 				84D1B4FE2AB0901100F98DB0 /* TP_EG.swift in Sources */,
 				84D1B5112AB0901200F98DB0 /* GenMainViewVersionsViewModel.swift in Sources */,
 				84D1B50B2AB0901100F98DB0 /* DomainMapper.swift in Sources */,
+				8419A76D2AE2983D00DEB819 /* ITSnakeTemplate.swift in Sources */,
 				84D1B57A2AB0901200F98DB0 /* EGStopwatchTemplate.swift in Sources */,
 				84D1B4D72AB0901100F98DB0 /* GenMainViewFinishViewModel.swift in Sources */,
 				84D1B5312AB0901200F98DB0 /* AKFruitsTemplate.swift in Sources */,
@@ -1305,6 +1331,7 @@
 				84D1B5402AB0901200F98DB0 /* DTPasswordGeneratorTemplate.swift in Sources */,
 				84D1B5382AB0901200F98DB0 /* AKPokerChancesTemplate.swift in Sources */,
 				84D1B53B2AB0901200F98DB0 /* AKAlarmTemplate.swift in Sources */,
+				841B656A2ADE98FD000C6077 /* ITTicTacToeTemplate.swift in Sources */,
 				84D1B54C2AB0901200F98DB0 /* ITQuickCalcTemplate.swift in Sources */,
 				84D1B5002AB0901100F98DB0 /* TP_VS.swift in Sources */,
 				84D1B51F2AB0901200F98DB0 /* KLRecorderTemplate.swift in Sources */,
@@ -1344,6 +1371,7 @@
 				84D1B5492AB0901200F98DB0 /* ITQuickWriterTemplate.swift in Sources */,
 				84D1B4EE2AB0901100F98DB0 /* ColorSetsNewGen.swift in Sources */,
 				84D1B4E92AB0901100F98DB0 /* AppObjectList.swift in Sources */,
+				84044B642AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift in Sources */,
 				84D1B4DC2AB0901100F98DB0 /* UnzipHandler.swift in Sources */,
 				84D1B55E2AB0901200F98DB0 /* VECalendarEventsTemplate.swift in Sources */,
 				84D1B5472AB0901200F98DB0 /* ITNumberGeneratorTemplate.swift in Sources */,

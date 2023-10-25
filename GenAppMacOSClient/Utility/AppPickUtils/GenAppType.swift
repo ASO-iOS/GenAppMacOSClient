@@ -13,48 +13,48 @@ struct GenAppType: Identifiable {
     let prefix: AppPrefix
     let protocolId: AppProtocollId?
     let appId: String
-    let colorsNeeded: GenAppColorsNeededValues
+    let colorsNeeded: GenAppColorsNeedValues
     
-    static func getColorsNeeded(_ array: [ColorsNeededEnum]) -> GenAppColorsNeededValues {
-        var colors = GenAppColorsNeededValues(appBarColorNeeded: false, backColorPrimaryNeeded: false, backColorSecondaryNeeded: false, surfaceColorNeeded: false, onSurfaceColorNeeded: false, primaryColorNeeded: false, onPrimaryColorNeeded: false, errorColorNeeded: false, textColorPrimaryNeeded: false, textColorSecondaryNeeded: false, buttonColorPrimaryNeeded: false, buttonColorSecondaryNeeded: false, buttonTextColorPrimaryNeeded: false, buttonTextColorSecondaryNeeded: false, paddingPrimaryNeeded: false, paddingSecondaryNeeded: false, textSizePrimaryNeeded: false, textSizeSecondaryNeeded: false)
+    static func getColorsNeeded(_ array: [ColorsNeedEnum]) -> GenAppColorsNeedValues {
+        var colors = GenAppColorsNeedValues(appBarColor: false, backColorPrimary: false, backColorSecondary: false, surfaceColor: false, onSurfaceColor: false, primaryColor: false, onPrimaryColor: false, errorColor: false, textColorPrimary: false, textColorSecondary: false, buttonColorPrimary: false, buttonColorSecondary: false, buttonTextColorPrimary: false, buttonTextColorSecondary: false, paddingPrimary: false, paddingSecondary: false, textSizePrimary: false, textSizeSecondary: false)
         array.forEach { colorNeeded in
             switch colorNeeded {
-            case .appBarColorNeeded:
-                colors.appBarColorNeeded = true
-            case .backColorPrimaryNeeded:
-                colors.backColorPrimaryNeeded = true
-            case .backColorSecondaryNeeded:
-                colors.backColorSecondaryNeeded = true
-            case .surfaceColorNeeded:
-                colors.surfaceColorNeeded = true
-            case .onSurfaceColorNeeded:
-                colors.onSurfaceColorNeeded = true
-            case .primaryColorNeeded:
-                colors.primaryColorNeeded = true
-            case .onPrimaryColorNeeded:
-                colors.onPrimaryColorNeeded = true
-            case .errorColorNeeded:
-                colors.errorColorNeeded = true
-            case .textColorPrimaryNeeded:
-                colors.textColorPrimaryNeeded = true
-            case .textColorSecondaryNeeded:
-                colors.textColorSecondaryNeeded = true
-            case .buttonColorPrimaryNeeded:
-                colors.buttonColorPrimaryNeeded = true
-            case .buttonColorSecondaryNeeded:
-                colors.buttonColorSecondaryNeeded = true
-            case .buttonTextColorPrimaryNeeded:
-                colors.buttonTextColorPrimaryNeeded = true
-            case .buttonTextColorSecondaryNeeded:
-                colors.buttonTextColorSecondaryNeeded = true
-            case .paddingPrimaryNeeded:
-                colors.paddingPrimaryNeeded = true
-            case .paddingSecondaryNeeded:
-                colors.paddingSecondaryNeeded = true
-            case .textSizePrimaryNeeded:
-                colors.textSizePrimaryNeeded = true
-            case .textSizeSecondaryNeeded:
-                colors.textSizeSecondaryNeeded = true
+            case .appBarColor:
+                colors.appBarColor = true
+            case .backColorPrimary:
+                colors.backColorPrimary = true
+            case .backColorSecondary:
+                colors.backColorSecondary = true
+            case .surfaceColor:
+                colors.surfaceColor = true
+            case .onSurfaceColor:
+                colors.onSurfaceColor = true
+            case .primaryColor:
+                colors.primaryColor = true
+            case .onPrimaryColor:
+                colors.onPrimaryColor = true
+            case .errorColor:
+                colors.errorColor = true
+            case .textColorPrimary:
+                colors.textColorPrimary = true
+            case .textColorSecondary:
+                colors.textColorSecondary = true
+            case .buttonColorPrimary:
+                colors.buttonColorPrimary = true
+            case .buttonColorSecondary:
+                colors.buttonColorSecondary = true
+            case .buttonTextColorPrimary:
+                colors.buttonTextColorPrimary = true
+            case .buttonTextColorSecondary:
+                colors.buttonTextColorSecondary = true
+            case .paddingPrimary:
+                colors.paddingPrimary = true
+            case .paddingSecondary:
+                colors.paddingSecondary = true
+            case .textSizePrimary:
+                colors.textSizePrimary = true
+            case .textSizeSecondary:
+                colors.textSizeSecondary = true
             }
         }
         return colors

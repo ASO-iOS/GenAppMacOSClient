@@ -12,8 +12,24 @@ struct IconCanvasView: View {
     var body: some View {
         Canvas { context, size in
             drawShapes(context)
-        }.frame(width: 512, height: 512).background(content: {canvasBackground()})
+        }
+        .frame(width: 512, height: 512)
+        .background(content: {canvasBackground()})
+        .onTapGesture { tapLocation in
+            findTappedShape(at: tapLocation)
+        }
     }
+    
+    func findTappedShape(at location: CGPoint) {
+        for (key, shape) in handler.shapes.reversed() {
+            if CGRect(x: shape.x, y: shape.y, width: shape.width, height: shape.height).contains(location) {
+                handler.setCurrentShape(key: key) // set changer back color
+                handler.currentObjectID = key // open changer on click
+                break
+                }
+            }
+    }
+    
     func drawShapes(_ context: GraphicsContext) {
         handler.shapes.keys.forEach { key in
             guard let shape = handler.shapes[key] else { return }
@@ -64,7 +80,16 @@ struct IconCanvasView: View {
     
     @ViewBuilder func canvasBackground() -> some View{
         if handler.useGradient {
-            LinearGradient(gradient: Gradient(colors: handler.bannerColors), startPoint: .top, endPoint: .bottom)
+            switch handler.points.type {
+            case .linear:
+                LinearGradient(gradient: Gradient(colors: handler.bannerColors), startPoint: handler.points.points.startPoint, endPoint: handler.points.points.endPoint)
+            case .radial:
+                RadialGradient(gradient: Gradient(colors: handler.bannerColors), center: .center, startRadius: 0, endRadius: .infinity)
+            case .elliptical:
+                EllipticalGradient(gradient: Gradient(colors: handler.bannerColors))
+            case .solid:
+                handler.bannerColors[0]
+            }
         } else {
             handler.bannerColors[0]
         }

@@ -78,7 +78,8 @@ struct GenMainView: View {
                                 HStack {
                                     VStack(alignment: .leading) {
                                         Text(item.type.rawValue).font(.headline)
-                                        Text("Templates: \(mainViewModel.genAppController.checkTemplates(appType: item.type, pref: item.prefix))").font(.subheadline)
+//                                        Text("Templates: \(mainViewModel.genAppController.checkTemplates(appType: item.type, pref: item.prefix))").font(.subheadline)
+                                        Text("Count: \(mainViewModel.genAppController.getCount(type: item.type))")
                                     }
                                     .padding(.all, 4)
                                     .foregroundColor(.white)

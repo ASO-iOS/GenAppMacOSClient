@@ -10,7 +10,7 @@ import Foundation
 struct GenAppValues {
     var mainData: GenAppMainDataValues
     var ui: GenAppUIValues?
-    var colorsNeeded: GenAppColorsNeededValues
+    var colorsNeeded: GenAppColorsNeedValues
     var appType: AppPickType
     
     static func getCoreProject() -> GenAppValues {
@@ -25,7 +25,7 @@ struct GenAppValues {
                 appId: nil,
                 gameSprites: nil
             ),
-            ui: nil, colorsNeeded: GenAppColorsNeededValues(appBarColorNeeded: true, backColorPrimaryNeeded: true, backColorSecondaryNeeded: true, surfaceColorNeeded: true, onSurfaceColorNeeded: true, primaryColorNeeded: true, onPrimaryColorNeeded: true, errorColorNeeded: true, textColorPrimaryNeeded: true, textColorSecondaryNeeded: true, buttonColorPrimaryNeeded: true, buttonColorSecondaryNeeded: true, buttonTextColorPrimaryNeeded: true, buttonTextColorSecondaryNeeded: true, paddingPrimaryNeeded: true, paddingSecondaryNeeded: true, textSizePrimaryNeeded: true, textSizeSecondaryNeeded: true), appType: .notSelected)
+            ui: nil, colorsNeeded: GenAppColorsNeedValues(appBarColor: true, backColorPrimary: true, backColorSecondary: true, surfaceColor: true, onSurfaceColor: true, primaryColor: true, onPrimaryColor: true, errorColor: true, textColorPrimary: true, textColorSecondary: true, buttonColorPrimary: true, buttonColorSecondary: true, buttonTextColorPrimary: true, buttonTextColorSecondary: true, paddingPrimary: true, paddingSecondary: true, textSizePrimary: true, textSizeSecondary: true), appType: .notSelected)
     }
 }
 
@@ -83,25 +83,25 @@ struct GenAppUIValues {
     var textSizeSecondary: Int?
 }
 
-struct GenAppColorsNeededValues {
-    var appBarColorNeeded: Bool
-    var backColorPrimaryNeeded: Bool
-    var backColorSecondaryNeeded: Bool
-    var surfaceColorNeeded: Bool
-    var onSurfaceColorNeeded: Bool
-    var primaryColorNeeded: Bool
-    var onPrimaryColorNeeded: Bool
-    var errorColorNeeded: Bool
-    var textColorPrimaryNeeded: Bool
-    var textColorSecondaryNeeded: Bool
-    var buttonColorPrimaryNeeded: Bool
-    var buttonColorSecondaryNeeded: Bool
-    var buttonTextColorPrimaryNeeded: Bool
-    var buttonTextColorSecondaryNeeded: Bool
-    var paddingPrimaryNeeded: Bool
-    var paddingSecondaryNeeded: Bool
-    var textSizePrimaryNeeded: Bool
-    var textSizeSecondaryNeeded: Bool
+struct GenAppColorsNeedValues {
+    var appBarColor: Bool
+    var backColorPrimary: Bool
+    var backColorSecondary: Bool
+    var surfaceColor: Bool
+    var onSurfaceColor: Bool
+    var primaryColor: Bool
+    var onPrimaryColor: Bool
+    var errorColor: Bool
+    var textColorPrimary: Bool
+    var textColorSecondary: Bool
+    var buttonColorPrimary: Bool
+    var buttonColorSecondary: Bool
+    var buttonTextColorPrimary: Bool
+    var buttonTextColorSecondary: Bool
+    var paddingPrimary: Bool
+    var paddingSecondary: Bool
+    var textSizePrimary: Bool
+    var textSizeSecondary: Bool
 }
 
 

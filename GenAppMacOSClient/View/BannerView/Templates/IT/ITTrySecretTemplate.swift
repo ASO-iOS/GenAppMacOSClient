@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ITTrySecretTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorPrimary: Color, surfaceColor: Color) -> TemplateData {
+    static let shared = ITTrySecretTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorPrimary: Color, surfaceColor: Color) -> TemplateData {
         
         func randomPassword() -> String {
             let charactersSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&()0123456789"

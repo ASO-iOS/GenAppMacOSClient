@@ -52,6 +52,9 @@ enum AppPickType: String, CaseIterable {
     case itLearningCats = "ITLearningCats"
     case itOneMinTimer = "ITOneMinTimer"
     case itQrGenerator =  "ITQrGenerator"
+    case itTicTacToe = "ITTicTacToe"
+    case itSnake = "ITSnake"
+    case itCatcher = "ITCatcher"
     
     // MARK: - eg
     case egStopwatch = "EGStopwatch"
@@ -69,6 +72,7 @@ enum AppPickType: String, CaseIterable {
     case egGetLyricsGen = "EGGetLyricsGen"
     case egCocktailCraft = "EGCocktailCraft"
     case egPuzzleDigits = "EGPuzzleDigits"
+    case egTicTacToe = "EGTicTacToe"
     
     // MARK: - ak
     case akRickAndMory = "AKRickAndMory"
@@ -115,6 +119,7 @@ enum AppPickType: String, CaseIterable {
     case klMoodTracker = "KLMoodTracker"
     case klWordFinder = "KLWordFinder"
     case klDodger = "KLDodger"
+    case klStopwatch = "KLStopwatch"
     
     // MARK: - ve
     case veQuizBooks = "VEQuizBooks"

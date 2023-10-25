@@ -41,7 +41,6 @@ class Service {
 //        var components =
         let url = URL(string: "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en")
         guard let requestUrl = url else {
-            print("oops")
             return
         }
         var request = URLRequest(url: requestUrl)
@@ -55,6 +54,24 @@ class Service {
             completion(responseJSOM?.text ?? "", error)
 //            print(responseJSOM)
 //            if let re
+        }
+        task.resume()
+    }
+    
+    func getComics(completion: @escaping (ComicsDto?, Error?) -> Void) {
+        let url = URL(string: "https://opentdb.com/api.php?amount=1&category=29&type=multiple")
+        guard let requestUrl = url else {
+            return
+        }
+        
+        var request = URLRequest(url: requestUrl)
+        request.httpMethod = RequestType.get.value
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let data = data, error == nil else {
+                return
+            }
+            let responseJSON = try? JSONDecoder().decode(ComicsDto.self, from: data)
+            completion(responseJSON, error)
         }
         task.resume()
     }
@@ -75,5 +92,33 @@ struct FactDto: Codable {
         case source_url = "source_url"
         case language = "language"
         case permalink = "permalink"
+    }
+}
+
+struct ComicsDto: Codable {
+    let response_code: Int
+    let results: [ComicsResultsDto]
+    
+    enum CodingKeys: String, CodingKey {
+        case response_code = "response_code"
+        case results = "results"
+    }
+}
+
+struct ComicsResultsDto: Codable {
+    let category: String
+    let type: String
+    let difficulty: String
+    let question: String
+    let correct_answer: String
+    let incorrect_answers: [String]
+    
+    enum CodingKeys: String, CodingKey {
+        case category = "category"
+        case type = "type"
+        case difficulty = "difficulty"
+        case question = "question"
+        case correct_answer = "correct_answer"
+        case incorrect_answers = "incorrect_answers"
     }
 }

@@ -9,8 +9,8 @@ import SwiftUI
 
 class ShapeModel: ObservableObject, Hashable {
     
-    var identifier: String {
-        return UUID().uuidString
+    var identifier: Int {
+        return UUID().uuidString.hashValue
     }
     
     static func == (lhs: ShapeModel, rhs: ShapeModel) -> Bool {
