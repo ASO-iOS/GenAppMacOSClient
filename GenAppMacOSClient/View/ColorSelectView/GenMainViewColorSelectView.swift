@@ -15,26 +15,26 @@ struct GenMainViewColorSelectView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Section {
-                UIColorPickerView(colorText: $uiViewModel.appBarColorText, color: $uiViewModel.appBarColor, colorPurpose: "App bar color", needed: uiViewModel.genAppController.values.colorsNeeded.appBarColorNeeded)
-                UIColorPickerView(colorText: $uiViewModel.backColorPrimaryText, color: $uiViewModel.backColorPrimary, colorPurpose: "Back Color Primary", needed: uiViewModel.genAppController.values.colorsNeeded.backColorPrimaryNeeded)
-                UIColorPickerView(colorText: $uiViewModel.backColorSecondaryText, color: $uiViewModel.backColorSecondary, colorPurpose: "Back Color secondary", needed: uiViewModel.genAppController.values.colorsNeeded.backColorSecondaryNeeded)
-                UIColorPickerView(colorText: $uiViewModel.surfaceColorText, color: $uiViewModel.surfaceColor, colorPurpose: "surface Color", needed: uiViewModel.genAppController.values.colorsNeeded.surfaceColorNeeded)
-                UIColorPickerView(colorText: $uiViewModel.onSurfaceColorText, color: $uiViewModel.onSurfaceColor, colorPurpose: "on surface Color", needed: uiViewModel.genAppController.values.colorsNeeded.onSurfaceColorNeeded)
-                UIColorPickerView(colorText: $uiViewModel.primaryColorText, color: $uiViewModel.primaryColor, colorPurpose: "primary Color", needed: uiViewModel.genAppController.values.colorsNeeded.primaryColorNeeded)
-                UIColorPickerView(colorText: $uiViewModel.onPrimaryColorText, color: $uiViewModel.onPrimaryColor, colorPurpose: "on primary Color", needed: uiViewModel.genAppController.values.colorsNeeded.onPrimaryColorNeeded)
-                UIColorPickerView(colorText: $uiViewModel.errorColorText, color: $uiViewModel.errorColor, colorPurpose: "error Color", needed: uiViewModel.genAppController.values.colorsNeeded.errorColorNeeded)
-                UIColorPickerView(colorText: $uiViewModel.textColorPrimaryText, color: $uiViewModel.textColorPrimary, colorPurpose: "text Color Primary", needed: uiViewModel.genAppController.values.colorsNeeded.textColorPrimaryNeeded)
-                UIColorPickerView(colorText: $uiViewModel.textColorSecondaryText, color: $uiViewModel.textColorSecondary, colorPurpose: "text Color secondary", needed: uiViewModel.genAppController.values.colorsNeeded.textColorSecondaryNeeded)
+                UIColorPickerView(colorText: $uiViewModel.appBarColorText, color: $uiViewModel.appBarColor, colorPurpose: "App bar color", needed: uiViewModel.genAppController.values.colorsNeeded.appBarColor)
+                UIColorPickerView(colorText: $uiViewModel.backColorPrimaryText, color: $uiViewModel.backColorPrimary, colorPurpose: "Back Color Primary", needed: uiViewModel.genAppController.values.colorsNeeded.backColorPrimary)
+                UIColorPickerView(colorText: $uiViewModel.backColorSecondaryText, color: $uiViewModel.backColorSecondary, colorPurpose: "Back Color secondary", needed: uiViewModel.genAppController.values.colorsNeeded.backColorSecondary)
+                UIColorPickerView(colorText: $uiViewModel.surfaceColorText, color: $uiViewModel.surfaceColor, colorPurpose: "surface Color", needed: uiViewModel.genAppController.values.colorsNeeded.surfaceColor)
+                UIColorPickerView(colorText: $uiViewModel.onSurfaceColorText, color: $uiViewModel.onSurfaceColor, colorPurpose: "on surface Color", needed: uiViewModel.genAppController.values.colorsNeeded.onSurfaceColor)
+                UIColorPickerView(colorText: $uiViewModel.primaryColorText, color: $uiViewModel.primaryColor, colorPurpose: "primary Color", needed: uiViewModel.genAppController.values.colorsNeeded.primaryColor)
+                UIColorPickerView(colorText: $uiViewModel.onPrimaryColorText, color: $uiViewModel.onPrimaryColor, colorPurpose: "on primary Color", needed: uiViewModel.genAppController.values.colorsNeeded.onPrimaryColor)
+                UIColorPickerView(colorText: $uiViewModel.errorColorText, color: $uiViewModel.errorColor, colorPurpose: "error Color", needed: uiViewModel.genAppController.values.colorsNeeded.errorColor)
+                UIColorPickerView(colorText: $uiViewModel.textColorPrimaryText, color: $uiViewModel.textColorPrimary, colorPurpose: "text Color Primary", needed: uiViewModel.genAppController.values.colorsNeeded.textColorPrimary)
+                UIColorPickerView(colorText: $uiViewModel.textColorSecondaryText, color: $uiViewModel.textColorSecondary, colorPurpose: "text Color secondary", needed: uiViewModel.genAppController.values.colorsNeeded.textColorSecondary)
             }
             Section {
-                UIColorPickerView(colorText: $uiViewModel.buttonColorPrimaryText, color: $uiViewModel.buttonColorPrimary, colorPurpose: "button Color Primary", needed: uiViewModel.genAppController.values.colorsNeeded.buttonColorPrimaryNeeded)
-                UIColorPickerView(colorText: $uiViewModel.buttonColorSecondaryText, color: $uiViewModel.buttonColorSecondary, colorPurpose: "button Color secondary", needed: uiViewModel.genAppController.values.colorsNeeded.buttonColorSecondaryNeeded)
-                UIColorPickerView(colorText: $uiViewModel.buttonTextColorPrimaryText, color: $uiViewModel.buttonTextColorPrimary, colorPurpose: "button text Color Primary", needed: uiViewModel.genAppController.values.colorsNeeded.buttonTextColorPrimaryNeeded)
-                UIColorPickerView(colorText: $uiViewModel.buttonTextColorSecondaryText, color: $uiViewModel.buttonTextColorSecondary, colorPurpose: "button text Color secondary", needed: uiViewModel.genAppController.values.colorsNeeded.buttonTextColorSecondaryNeeded)
-                UITextFieldView(value: $uiViewModel.paddingPrimary, title: "Padding Primary", needed: uiViewModel.genAppController.values.colorsNeeded.paddingPrimaryNeeded)
-                UITextFieldView(value: $uiViewModel.paddingSecondary, title: "Padding secondary", needed: uiViewModel.genAppController.values.colorsNeeded.paddingSecondaryNeeded)
-                UITextFieldView(value: $uiViewModel.textSizePrimary, title: "text size primary", needed: uiViewModel.genAppController.values.colorsNeeded.textSizePrimaryNeeded)
-                UITextFieldView(value: $uiViewModel.textSizeSecondary, title: "text size secondary", needed: uiViewModel.genAppController.values.colorsNeeded.textSizeSecondaryNeeded)
+                UIColorPickerView(colorText: $uiViewModel.buttonColorPrimaryText, color: $uiViewModel.buttonColorPrimary, colorPurpose: "button Color Primary", needed: uiViewModel.genAppController.values.colorsNeeded.buttonColorPrimary)
+                UIColorPickerView(colorText: $uiViewModel.buttonColorSecondaryText, color: $uiViewModel.buttonColorSecondary, colorPurpose: "button Color secondary", needed: uiViewModel.genAppController.values.colorsNeeded.buttonColorSecondary)
+                UIColorPickerView(colorText: $uiViewModel.buttonTextColorPrimaryText, color: $uiViewModel.buttonTextColorPrimary, colorPurpose: "button text Color Primary", needed: uiViewModel.genAppController.values.colorsNeeded.buttonTextColorPrimary)
+                UIColorPickerView(colorText: $uiViewModel.buttonTextColorSecondaryText, color: $uiViewModel.buttonTextColorSecondary, colorPurpose: "button text Color secondary", needed: uiViewModel.genAppController.values.colorsNeeded.buttonTextColorSecondary)
+                UITextFieldView(value: $uiViewModel.paddingPrimary, title: "Padding Primary", needed: uiViewModel.genAppController.values.colorsNeeded.paddingPrimary)
+                UITextFieldView(value: $uiViewModel.paddingSecondary, title: "Padding secondary", needed: uiViewModel.genAppController.values.colorsNeeded.paddingSecondary)
+                UITextFieldView(value: $uiViewModel.textSizePrimary, title: "text size primary", needed: uiViewModel.genAppController.values.colorsNeeded.textSizePrimary)
+                UITextFieldView(value: $uiViewModel.textSizeSecondary, title: "text size secondary", needed: uiViewModel.genAppController.values.colorsNeeded.textSizeSecondary)
             }
             HStack {
                 Button {

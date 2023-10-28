@@ -272,6 +272,11 @@ final class GenMainViewFinishViewModel: ObservableObject {
             fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.back ?? "", to: resLoc + "court.png")
             fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.player ?? "", to: resLoc + "basketball.png")
             fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.enemy ?? "", to: resLoc + "basket.png")
+        case .egFlappyBird:
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.back ?? "", to: resLoc + "back.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.player ?? "", to: resLoc + "bird.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.pipeUp ?? "", to: resLoc + "pipe_up.png")
+            fileHandler.copyPaste(from: genAppController.values.mainData.gameSprites?.pipeDown ?? "", to: resLoc + "pipe_down.png")
             
         default: break
         }

@@ -269,6 +269,8 @@ class ShapesHandler: ObservableObject {
             location = genAppController.values.mainData.gameSprites?.player ?? ""
         case .itCatcher, .mbCatcher:
             location = genAppController.values.mainData.gameSprites?.player ?? ""
+        case .egFlappyBird:
+            location = genAppController.values.mainData.gameSprites?.player ?? ""
         default: return
         }
         let logo = ImageShapeModel(color: .clear, template: false, shape: .image, location: location, x: 56, y: 56, width: 400, height: 400)

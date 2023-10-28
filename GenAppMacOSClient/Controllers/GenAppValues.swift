@@ -112,6 +112,8 @@ struct GameSprites {
     var fire: String? = ""
     var enemyList: [String]? = []
     var heart: String? = ""
+    var pipeUp = ""
+    var pipeDown = ""
     
     static var empty: GameSprites {
         return GameSprites(back: "", player: "", enemy: "")

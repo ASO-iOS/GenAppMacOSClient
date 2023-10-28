@@ -59,9 +59,9 @@ extension GenMainViewViewModel {
                     .backColorPrimary,
                     .textColorPrimary,
                     .paddingPrimary,
-                    .paddingSecondaryNeeded,
-                    .textSizePrimaryNeeded,
-                    .textSizeSecondaryNeeded
+                    .paddingSecondary,
+                    .textSizePrimary,
+                    .textSizeSecondary
                 ])
             ),
             GenAppType(
@@ -76,7 +76,7 @@ extension GenMainViewViewModel {
                     .buttonColorPrimary,
                     .buttonColorSecondary,
                     .paddingPrimary,
-                    .textSizePrimaryNeeded
+                    .textSizePrimary
                 ])
             ),
             GenAppType(
@@ -91,7 +91,7 @@ extension GenMainViewViewModel {
                     .buttonColorPrimary,
                     .buttonTextColorPrimary,
                     .paddingPrimary,
-                    .textSizePrimaryNeeded
+                    .textSizePrimary
                 ])
             ),
             GenAppType(
@@ -105,7 +105,7 @@ extension GenMainViewViewModel {
                     .textColorPrimary,
                     .buttonColorPrimary,
                     .paddingPrimary,
-                    .textSizePrimaryNeeded
+                    .textSizePrimary
                 ])
             ),
             GenAppType(
@@ -261,7 +261,7 @@ extension GenMainViewViewModel {
                 ])
             ),
             GenAppType(type: .mbSerials, prefix: .mb, protocolId: nil, appId: AppIDs.MB_SERIALS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .textColorPrimary])),
-//            GenAppType(type: .bcNameGenerator, prefix: .bc, protocolId: nil, appId: AppIDs.BC_NAME_GENERATOR, colorsNeeded: GenAppType.getColorsNeeded([.appBarColorNeeded, .backColorPrimaryNeeded, .textColorPrimaryNeeded, .textColorSecondaryNeeded, .buttonColorPrimaryNeeded, .buttonTextColorPrimaryNeeded, .surfaceColorNeeded])),
+//            GenAppType(type: .bcNameGenerator, prefix: .bc, protocolId: nil, appId: AppIDs.BC_NAME_GENERATOR, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .textColorPrimary, .textColorSecondary, .buttonColorPrimary, .buttontextColorPrimary, .surfaceColor])),
         
             
             GenAppType(type: .itStopwatch, prefix: .it, protocolId: nil, appId: AppIDs.IT_STOPWATCH, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .textColorPrimary, .buttonTextColorPrimary, .buttonColorPrimary, .buttonColorSecondary])),
@@ -639,7 +639,8 @@ extension GenMainViewViewModel {
             GenAppType(type: .itTicTacToe, prefix: .it, protocolId: nil, appId: AppIDs.IT_TIC_TAC_TOE, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary, .textColorPrimary])),
             GenAppType(type: .itSnake, prefix: .it, protocolId: nil, appId: AppIDs.IT_SNAKE, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary, .textColorPrimary, .surfaceColor])),
             GenAppType(type: .itCatcher, prefix: .it, protocolId: nil, appId: AppIDs.IT_CATCHER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary, .textColorPrimary])),
-            GenAppType(type: .egTicTacToe, prefix: .eg, protocolId: nil, appId: AppIDs.EG_TIC_TAC_TOE, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorSecondary, .textColorPrimary, .buttonTextColorPrimary, .errorColor, .surfaceColor]))
+            GenAppType(type: .egTicTacToe, prefix: .eg, protocolId: nil, appId: AppIDs.EG_TIC_TAC_TOE, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorSecondary, .textColorPrimary, .buttonTextColorPrimary, .errorColor, .surfaceColor])),
+            GenAppType(type: .egFlappyBird, prefix: .eg, protocolId: nil, appId: AppIDs.EG_FLAPPY_BIRD, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .textColorPrimary]))
         ]
     }
 }

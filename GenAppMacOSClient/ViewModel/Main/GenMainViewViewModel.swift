@@ -78,9 +78,9 @@ final class GenMainViewViewModel: ObservableObject {
             )
         case .veNightBird:
             return GameSprites(
-                back: Constant.BirdGameRes + "/background/background\(Int.random(in: 1...8)).png",
-                player: Constant.BirdGameRes + "/bird/bird\(Int.random(in: 1...17)).png",
-                enemy: Constant.BirdGameRes + "/pipe/pipe\(Int.random(in: 1...7)).png"
+                back: Constant.BirdGameRes + "/background/background\(Int.random(in: 1...9)).png",
+                player: Constant.BirdGameRes + "/bird/bird\(Int.random(in: 1...18)).png",
+                enemy: Constant.BirdGameRes + "/pipe/pipe\(Int.random(in: 1...8)).png"
             )
         case .veRecipesBook:
             return GameSprites(
@@ -144,6 +144,16 @@ final class GenMainViewViewModel: ObservableObject {
                 back: Constant.MBCatcherRes + "/background/background\(Int.random(in: 1...22)).png",
                 player: Constant.MBCatcherRes + "/cart/cart\(Int.random(in: 1...20)).png",
                 enemy: Constant.MBCatcherRes + "/object/object\(Int.random(in: 1...27)).png"
+            )
+        case .egFlappyBird:
+            let pipeIdx = Int.random(in: 1...8)
+            let birdIdx = Int.random(in: 1...18)
+            return GameSprites(
+                back: Constant.BirdGameRes + "/background/background\(Int.random(in: 1...9)).png",
+                player: Constant.BirdGameRes + "/bird/bird\(birdIdx).png",
+                enemy: Constant.BirdGameRes + "/bird_die/bird_die\(birdIdx).png",
+                pipeUp: Constant.BirdGameRes + "/pipe/pipe\(pipeIdx).png",
+                pipeDown: Constant.BirdGameRes + "/pipe_down/pipe\(pipeIdx).png"
             )
         default: return nil
         }

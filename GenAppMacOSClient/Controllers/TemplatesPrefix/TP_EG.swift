@@ -154,6 +154,23 @@ extension GenAppController {
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     primaryColor: .init(hex: values.ui?.primaryColor) ?? .white)
             ]
+        case .egTicTacToe:
+            return [
+                EGTicTacToeTemplate.shared.template1(
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .white,
+                    textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .white,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
+                    buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
+                    surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white,
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
+                    errorColor: .init(hex: values.ui?.errorColor) ?? .white,
+                    appName: values.mainData.appName
+                )
+            ]
+        case .egFlappyBird:
+            return [
+                EGFlappyBirdTemplate.shared.template1(textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor, sprites: values.mainData.gameSprites ?? .empty)
+            ]
         default: return []
         }
     }
