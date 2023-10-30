@@ -253,7 +253,6 @@ class ShapesHandler: ObservableObject {
             default:
                 location = "/Users/admin/GeneratorProjects/resources/images/quizvidegameslogo/logo\(Int.random(in: 0...15)).png"
             }
-            
         case .akFrogClicker:
             switch Int.random(in: 0...2) {
             case 0:
@@ -263,13 +262,7 @@ class ShapesHandler: ObservableObject {
             default:
                 location = genAppController.values.mainData.gameSprites?.enemy ?? ""
             }
-        case .klStopwatch:
-            location = genAppController.values.mainData.gameSprites?.player ?? ""
-        case .mbSpaceFighter, .akSpaceAttacker, .akSpaceAttacker2:
-            location = genAppController.values.mainData.gameSprites?.player ?? ""
-        case .itCatcher, .mbCatcher:
-            location = genAppController.values.mainData.gameSprites?.player ?? ""
-        case .egFlappyBird:
+        case .mbSpaceFighter, .akSpaceAttacker, .akSpaceAttacker2, .itCatcher, .mbCatcher, .egFlappyBird, .egJumper, .klStopwatch:
             location = genAppController.values.mainData.gameSprites?.player ?? ""
         default: return
         }

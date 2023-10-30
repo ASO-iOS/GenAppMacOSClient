@@ -171,6 +171,17 @@ extension GenAppController {
             return [
                 EGFlappyBirdTemplate.shared.template1(textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor, sprites: values.mainData.gameSprites ?? .empty)
             ]
+        case .egJumper:
+            return [
+                EGJumperTemplate.shared.template1(
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
+                    buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .accentColor,
+                    surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .accentColor,
+                    sprites: values.mainData.gameSprites ?? .empty,
+                    appName: values.mainData.appName
+                )
+            ]
         default: return []
         }
     }

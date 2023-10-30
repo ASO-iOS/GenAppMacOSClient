@@ -74,6 +74,7 @@ enum AppPickType: String, CaseIterable {
     case egPuzzleDigits = "EGPuzzleDigits"
     case egTicTacToe = "EGTicTacToe"
     case egFlappyBird = "EGFlappiBird"
+    case egJumper = "EGJumper"
     
     // MARK: - ak
     case akRickAndMory = "AKRickAndMory"

@@ -550,6 +550,8 @@ extension GenMainViewViewModel {
             return ["SkyFly", "AeroSpeed", "AirWings", "FlightZone", "FlyHigh", "SkyQuest", "CloudSurfer", "Airborne", "WingedJourney", "SkySail", "AeroGlide", "AirAdventures", "FlyFree", "SkyRider", "CloudChaser", "AirEscape", "WingedExcursions", "SkywardBound", "AeroThrills", "AirVoyage"].randomElement() ?? ""
         case .itSnake:
             return ["Snake Adventure", "Slithering Funr", "Serpent Challenge", "Reptile Rush", "Cobra Quest", "Viper Dash", "Python Pursuit", "Adder Attack", "Rattlesnake Run", "Anaconda Adventure", "Boa Bonanza", "Slinky Serpent", "Scaley Sprint", "Sidewinder Showdown", "Garter Snake Galore", "Copperhead Caper", "Mamba Mayhem", "King Cobra Chaos", "Garden Snake Madness", "Constrictor Carnival"].randomElement() ?? ""
+        case .egJumper:
+            return ["LeapMaster", "SkyBound", "SoarHigh", "AirJump", "ElevateX", "FlyOver", "JumpExtreme", "AltitudeRush", "GravityBuster", "AirborneThrills", "LeapFrenzy", "SkySurge", "AdrenalineLeap", "AscendX", "FlightFever", "JumpMania", "SoarAdventures", "AirFlip", "BounceXtreme", "SkyRocket"].randomElement() ?? ""
         default: return ""
         }
     }

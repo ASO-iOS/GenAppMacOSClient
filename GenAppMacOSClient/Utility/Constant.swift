@@ -25,6 +25,7 @@ struct Constant {
     static let BirdGameRes = "\(FileManager.default.homeDirectoryForCurrentUser.absoluteString.replacing("file://", with: ""))GeneratorProjects/resources/BirdGameRes"
     static let DodgerRes = "\(FileManager.default.homeDirectoryForCurrentUser.absoluteString.replacing("file://", with: ""))GeneratorProjects/resources/DodgerRes"
     static let VERecipesBookRes = "\(FileManager.default.homeDirectoryForCurrentUser.absoluteString.replacing("file://", with: ""))GeneratorProjects/resources/images/verecipesbook"
+    static let EGJumperRes = "\(FileManager.default.homeDirectoryForCurrentUser.absoluteString.replacing("file://", with: ""))GeneratorProjects/resources/EGJumperRes"
     
     static func getHomeDir() -> String {
         return FileManager.default.homeDirectoryForCurrentUser.absoluteString.replacing("file://", with: "")

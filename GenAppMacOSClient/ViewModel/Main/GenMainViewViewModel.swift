@@ -155,6 +155,22 @@ final class GenMainViewViewModel: ObservableObject {
                 pipeUp: Constant.BirdGameRes + "/pipe/pipe\(pipeIdx).png",
                 pipeDown: Constant.BirdGameRes + "/pipe_down/pipe\(pipeIdx).png"
             )
+        case .egJumper:
+            let p = [
+                "/Users/admin/GeneratorProjects/resources/FrogClickerRes/_won/won\(Int.random(in: 0...17)).png",
+                "/Users/admin/GeneratorProjects/resources/DodgerRes/player/player\(Int.random(in: 0...7)).png",
+                "/Users/admin/GeneratorProjects/resources/MBCatcherRes/object/object\(Int.random(in: 1...27)).png"
+            ]
+            let b = [
+                "/Users/admin/GeneratorProjects/resources/BirdGameRes/background/background\(Int.random(in: 1...8)).pngbanner.png",
+                "/Users/admin/GeneratorProjects/resources/MBSpaceFighterRes/background/background\(Int.random(in: 0...19)).png",
+                "/Users/admin/GeneratorProjects/resources/MBCatcherRes/background/background\(Int.random(in: 1...22)).png"
+            ]
+            return GameSprites(
+                back: b.randomElement() ?? b[0],
+                player: p.randomElement() ?? p[0],
+                enemy: Constant.EGJumperRes + "/platform/platform\(Int.random(in: 0...22)).png"
+            )
         default: return nil
         }
     }

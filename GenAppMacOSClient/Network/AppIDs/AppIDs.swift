@@ -168,6 +168,7 @@ struct AppIDs {
     static let EG_PUZZLE_DIGITS =    "eg-0015"
     static let EG_TIC_TAC_TOE =      "eg-0016"
     static let EG_FLAPPY_BIRD =      "eg-0017"
+    static let EG_JUMPER =           "eg-0018"
     
     static let DT_PREFIX =            "dt"
     static let DT_NUMBER_FACTS =      "dt-0001"
