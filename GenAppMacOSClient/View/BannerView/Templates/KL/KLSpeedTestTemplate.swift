@@ -7,7 +7,9 @@
 import SwiftUI
 
 struct KLSpeedTestTemplate {
-    static func template1(backColorPrimary: Color, backColorSecondary: Color, surfaceColor: Color, textColorPrimary: Color, textColorSecondary: Color, appName: String) -> TemplateData {
+    static let shared = KLSpeedTestTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, backColorSecondary: Color, surfaceColor: Color, textColorPrimary: Color, textColorSecondary: Color, appName: String) -> TemplateData {
         let randDown1 = Int.random(in: 6...180)
         let randDown2 = Int.random(in: 6...180)
         let randDown3 = Int.random(in: 6...180)

@@ -7,7 +7,9 @@
 import SwiftUI
 
 struct KLConverterTemplate {
-    static func template1(backColorPrimary: Color, buttonColorPrimary: Color, surfaceColor: Color, textColorPrimary: Color, textColorSecondary: Color) -> TemplateData {
+    static let shared = KLConverterTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, buttonColorPrimary: Color, surfaceColor: Color, textColorPrimary: Color, textColorSecondary: Color) -> TemplateData {
         var randomTemp = Int.random(in: 2...40)
         var farTemp = Double(randomTemp) * 1.8 + 32
         let rect1691071345191 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 94, y: 85, width: 200, height: 40, rounded: true, cornerRadius: 4, lineWidth: 2)

@@ -10,12 +10,15 @@
 		84044B602AE697610099DE30 /* ITCatcherTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84044B5F2AE697610099DE30 /* ITCatcherTemplate.swift */; };
 		84044B642AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */; };
 		8407BD132AD3F53E003DC25B /* AppNamesExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407BD122AD3F53E003DC25B /* AppNamesExt.swift */; };
+		8410379E2AF5174400798249 /* KDNameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379D2AF5174400798249 /* KDNameGenerator.swift */; };
 		8419A76D2AE2983D00DEB819 /* ITSnakeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */; };
 		841B656A2ADE98FD000C6077 /* ITTicTacToeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B65692ADE98FD000C6077 /* ITTicTacToeTemplate.swift */; };
 		841B656C2ADEB02E000C6077 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B656B2ADEB02E000C6077 /* DictionaryExtension.swift */; };
 		841EDE0B2AD58D030030227D /* KLStopwatchTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841EDE0A2AD58D030030227D /* KLStopwatchTemplate.swift */; };
 		845E67B92AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */; };
 		848FC4DA2AEC6965007C3B10 /* EGFlappyBirdTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */; };
+		84BF5D752AF1086800A7141D /* KDGalleryTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */; };
+		84BF5D772AF110EF00A7141D /* TP_KD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D762AF110EF00A7141D /* TP_KD.swift */; };
 		84D1B3B42AB08F1100F98DB0 /* GenAppMacOSClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B3B32AB08F1100F98DB0 /* GenAppMacOSClientApp.swift */; };
 		84D1B3B62AB08F1100F98DB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B3B52AB08F1100F98DB0 /* ContentView.swift */; };
 		84D1B3B82AB08F1300F98DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D1B3B72AB08F1300F98DB0 /* Assets.xcassets */; };
@@ -229,6 +232,7 @@
 		84E1779E2AF01A1900507A86 /* EGJumperTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1779D2AF01A1900507A86 /* EGJumperTemplate.swift */; };
 		84E3893A2ABAF96000982A33 /* AKDodgerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E389392ABAF96000982A33 /* AKDodgerTemplate.swift */; };
 		84E765432ACA9F6E000DD022 /* AKSpaceAttacker2Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E765422ACA9F6E000DD022 /* AKSpaceAttacker2Template.swift */; };
+		84F78C752AF3CAE10048BA11 /* PackageNameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F78C742AF3CAE10048BA11 /* PackageNameCreator.swift */; };
 		84FEC65E2AB9B6930056810C /* AKQuizTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC65D2AB9B6930056810C /* AKQuizTemplate.swift */; };
 		84FEC6602AB9DC850056810C /* AKMythologyQuizTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC65F2AB9DC850056810C /* AKMythologyQuizTemplate.swift */; };
 /* End PBXBuildFile section */
@@ -237,12 +241,15 @@
 		84044B5F2AE697610099DE30 /* ITCatcherTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCatcherTemplate.swift; sourceTree = "<group>"; };
 		84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGTicTacToeTemplate.swift; sourceTree = "<group>"; };
 		8407BD122AD3F53E003DC25B /* AppNamesExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNamesExt.swift; sourceTree = "<group>"; };
+		8410379D2AF5174400798249 /* KDNameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNameGenerator.swift; sourceTree = "<group>"; };
 		8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITSnakeTemplate.swift; sourceTree = "<group>"; };
 		841B65692ADE98FD000C6077 /* ITTicTacToeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITTicTacToeTemplate.swift; sourceTree = "<group>"; };
 		841B656B2ADEB02E000C6077 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		841EDE0A2AD58D030030227D /* KLStopwatchTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLStopwatchTemplate.swift; sourceTree = "<group>"; };
 		845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFrogClickerTemplate.swift; sourceTree = "<group>"; };
 		848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGFlappyBirdTemplate.swift; sourceTree = "<group>"; };
+		84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDGalleryTemplate.swift; sourceTree = "<group>"; };
+		84BF5D762AF110EF00A7141D /* TP_KD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TP_KD.swift; sourceTree = "<group>"; };
 		84D1B3B02AB08F1100F98DB0 /* GenAppMacOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenAppMacOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D1B3B32AB08F1100F98DB0 /* GenAppMacOSClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenAppMacOSClientApp.swift; sourceTree = "<group>"; };
 		84D1B3B52AB08F1100F98DB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -454,6 +461,7 @@
 		84E1779D2AF01A1900507A86 /* EGJumperTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGJumperTemplate.swift; sourceTree = "<group>"; };
 		84E389392ABAF96000982A33 /* AKDodgerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKDodgerTemplate.swift; sourceTree = "<group>"; };
 		84E765422ACA9F6E000DD022 /* AKSpaceAttacker2Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKSpaceAttacker2Template.swift; sourceTree = "<group>"; };
+		84F78C742AF3CAE10048BA11 /* PackageNameCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageNameCreator.swift; sourceTree = "<group>"; };
 		84FEC65D2AB9B6930056810C /* AKQuizTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKQuizTemplate.swift; sourceTree = "<group>"; };
 		84FEC65F2AB9DC850056810C /* AKMythologyQuizTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKMythologyQuizTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -473,6 +481,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84BF5D732AF1085500A7141D /* KD */ = {
+			isa = PBXGroup;
+			children = (
+				84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */,
+				8410379D2AF5174400798249 /* KDNameGenerator.swift */,
+			);
+			path = KD;
+			sourceTree = "<group>";
+		};
 		84D1B3A72AB08F1100F98DB0 = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +595,7 @@
 			children = (
 				84D1B3F42AB0901000F98DB0 /* GenMainViewViewModel.swift */,
 				8407BD122AD3F53E003DC25B /* AppNamesExt.swift */,
+				84F78C742AF3CAE10048BA11 /* PackageNameCreator.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -713,6 +731,7 @@
 				84D1B4272AB0901000F98DB0 /* TP_MB.swift */,
 				84D1B4282AB0901000F98DB0 /* TP_VS.swift */,
 				84D1B4292AB0901000F98DB0 /* TP_DT.swift */,
+				84BF5D762AF110EF00A7141D /* TP_KD.swift */,
 			);
 			path = TemplatesPrefix;
 			sourceTree = "<group>";
@@ -820,6 +839,7 @@
 			isa = PBXGroup;
 			children = (
 				84D1B4602AB0901100F98DB0 /* TemplateData.swift */,
+				84BF5D732AF1085500A7141D /* KD */,
 				84D1B4482AB0901100F98DB0 /* VS */,
 				84D1B44C2AB0901100F98DB0 /* KL */,
 				84D1B4612AB0901100F98DB0 /* AK */,
@@ -1176,6 +1196,7 @@
 				84D1B4D92AB0901100F98DB0 /* ShapesHandler.swift in Sources */,
 				84D1B59A2AB0946000F98DB0 /* DTRiddleRealmTemplate.swift in Sources */,
 				84D1B51B2AB0901200F98DB0 /* KLHiddenParisTemplate.swift in Sources */,
+				8410379E2AF5174400798249 /* KDNameGenerator.swift in Sources */,
 				84D1B54E2AB0901200F98DB0 /* ITCinemaScopeTemplate.swift in Sources */,
 				84D1B5552AB0901200F98DB0 /* VEFactsTemplate.swift in Sources */,
 				84D1B59E2AB0946000F98DB0 /* DTGastronomyGuruTemplate.swift in Sources */,
@@ -1225,7 +1246,9 @@
 				84D1B55D2AB0901200F98DB0 /* VEVigenereChipherTemplate.swift in Sources */,
 				84D1B5412AB0901200F98DB0 /* DTMusicQuizTemplate.swift in Sources */,
 				84D1B4ED2AB0901100F98DB0 /* LibVersions.swift in Sources */,
+				84BF5D772AF110EF00A7141D /* TP_KD.swift in Sources */,
 				84D1B57F2AB0901200F98DB0 /* EGCurrencyRateTemplate.swift in Sources */,
+				84F78C752AF3CAE10048BA11 /* PackageNameCreator.swift in Sources */,
 				84D1B5082AB0901100F98DB0 /* RequestDtoMainData.swift in Sources */,
 				84D1B5742AB0901200F98DB0 /* EGExpensetrackerTemplate.swift in Sources */,
 				84D1B5422AB0901200F98DB0 /* DTPopularMoviesTemplate.swift in Sources */,
@@ -1343,6 +1366,7 @@
 				84D1B54C2AB0901200F98DB0 /* ITQuickCalcTemplate.swift in Sources */,
 				84D1B5002AB0901100F98DB0 /* TP_VS.swift in Sources */,
 				84D1B51F2AB0901200F98DB0 /* KLRecorderTemplate.swift in Sources */,
+				84BF5D752AF1086800A7141D /* KDGalleryTemplate.swift in Sources */,
 				84D1B5662AB0901200F98DB0 /* MBPassGenTemplate.swift in Sources */,
 				84FEC6602AB9DC850056810C /* AKMythologyQuizTemplate.swift in Sources */,
 				84D1B52A2AB0901200F98DB0 /* KLReactionTestTemplate.swift in Sources */,

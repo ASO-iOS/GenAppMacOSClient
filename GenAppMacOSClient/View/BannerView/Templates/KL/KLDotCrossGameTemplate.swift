@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLDotCrossGameTemplate {
-    static func template1(backColorPrimary: Color, primaryColor: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorSecondary: Color, textColorPrimary: Color, appName: String, surfaceColor: Color) -> TemplateData {
+    static let shared = KLDotCrossGameTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, primaryColor: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorSecondary: Color, textColorPrimary: Color, appName: String, surfaceColor: Color) -> TemplateData {
         let rect1691150481377 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 121, y: 243, width: 150, height: 40, rounded: true, cornerRadius: 50, lineWidth: 2)
         let rect1691157329828 = RectShapeModel(shape: .rect, color: primaryColor, fill: true, x: 425, y: 279, width: 16, height: 16, rounded: true, cornerRadius: 50, lineWidth: 2)
         let rect1691498155204 = RectShapeModel(shape: .rect, color: primaryColor, fill: true, x: 808, y: 325, width: 16, height: 16, rounded: true, cornerRadius: 50, lineWidth: 2)

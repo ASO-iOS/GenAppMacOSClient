@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLReactionTestTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, backColorSecondary: Color, surfaceColor: Color) -> TemplateData {
+    static let shared = KLReactionTestTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, backColorSecondary: Color, surfaceColor: Color) -> TemplateData {
         let rect1691149586408 = RectShapeModel(shape: .rect, color: backColorPrimary, fill: true, x: 69, y: 0, width: 250, height: 500, rounded: false, cornerRadius: 16, lineWidth: 2)
         let rect1691149649634 = RectShapeModel(shape: .rect, color: backColorSecondary, fill: true, x: 387, y: 0, width: 250, height: 500, rounded: false, cornerRadius: 16, lineWidth: 2)
         let rect1691149649636 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 705, y: 0, width: 250, height: 500, rounded: false, cornerRadius: 16, lineWidth: 2)

@@ -108,7 +108,7 @@ struct GenMainView: View {
         HStack {
             TextField("Package Name", text: $mainViewModel.appPackageNameTextField)
             Button(action: {
-                mainViewModel.appPackageNameTextField = mainViewModel.randomPackage()
+                mainViewModel.appPackageNameTextField = mainViewModel.realRandomPackage()
             }, label: {
                 Image(systemName: "arrow.triangle.2.circlepath.circle")
             })
@@ -194,7 +194,7 @@ struct GenMainView: View {
                 mainViewModel.appNameTextField = appName
             }
             
-            mainViewModel.appPackageNameTextField = mainViewModel.randomPackage()
+            mainViewModel.appPackageNameTextField = mainViewModel.realRandomPackage()
             mainViewModel.applicationNameTextField = mainViewModel.randomApplicationName()
         }
     }
@@ -209,31 +209,6 @@ struct GenMainView: View {
             failure: { error in
                 serverState = ServerState(color: .red, message: error ?? "unexpected error")
             })
-    }
-    
-    func getColorByPrefix(_ prefix: AppPrefix) -> Color {
-        switch prefix {
-        case .none:
-            return .gray
-        case .vs:
-            return .green
-        case .mb:
-            return .yellow
-        case .bc:
-            return .orange
-        case .it:
-            return .purple
-        case .ve:
-            return .red
-        case .ak:
-            return .blue
-        case .kl:
-            return .cyan
-        case .eg:
-            return .indigo
-        case .dt:
-            return .mint
-        }
     }
     
     var searchResults: [GenAppType] {

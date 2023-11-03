@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLStopwatchTemplate {
-    static func template1(textColorPrimary: Color, buttonColorPrimary: Color, buttonColorSecondary: Color, buttonTextColorPrimary: Color, sprites: GameSprites) -> TemplateData {
+    static let shared = KLStopwatchTemplate()
+    private init() {}
+    func template1(textColorPrimary: Color, buttonColorPrimary: Color, buttonColorSecondary: Color, buttonTextColorPrimary: Color, sprites: GameSprites) -> TemplateData {
         let ts0 = time()
         let ts1 = time()
         let rect1692374043332 = RectShapeModel(shape: .rect, color: buttonColorSecondary, fill: true, x: 100, y: 100, width: 50, height: 50, rounded: true, cornerRadius: 50, lineWidth: 2)
@@ -79,7 +81,7 @@ struct KLStopwatchTemplate {
         ])
     }
     
-    private static func time() -> Time {
+    private func time() -> Time {
         let t0 = Int.random(in: 10...30)
         let t1 = t0 + Int.random(in: 1...10)
         let t2 = t1 + Int.random(in: 1...10)

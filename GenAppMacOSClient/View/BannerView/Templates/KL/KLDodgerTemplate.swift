@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct KLDodgerTemplate {
+    static let shared = KLDodgerTemplate()
+    private init() {}
     
-    static func template1(textColorPrimary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorSecondary: Color, sprites: GameSprites, appName: String) -> TemplateData {
+    func template1(textColorPrimary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorSecondary: Color, sprites: GameSprites, appName: String) -> TemplateData {
         let rect1692352360672 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 127, y: 250, width: 140, height: 40, rounded: true, cornerRadius: 50, lineWidth: 2)
         let rect1692352411750 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 127, y: 300, width: 140, height: 40, rounded: true, cornerRadius: 50, lineWidth: 2)
         let rect1692352420608 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 127, y: 350, width: 140, height: 40, rounded: true, cornerRadius: 50, lineWidth: 2)

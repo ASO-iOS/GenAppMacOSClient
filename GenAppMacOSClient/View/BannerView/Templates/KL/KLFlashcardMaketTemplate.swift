@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLFlashcardMaketTemplate {
-    static func template1(backColorPrimary: Color, surfaceColor: Color, primaryColor: Color, buttonTextColorPrimary: Color, textColorPrimary: Color) -> TemplateData {
+    static let shared = KLFlashcardMaketTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, surfaceColor: Color, primaryColor: Color, buttonTextColorPrimary: Color, textColorPrimary: Color) -> TemplateData {
         let lessons = ["Algebra", "Biology", "Chemistry", "History"]
         let lessons2 = ["Musik", "Physics", "Geography", "Drawing"]
         

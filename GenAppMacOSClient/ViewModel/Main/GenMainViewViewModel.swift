@@ -200,6 +200,362 @@ final class GenMainViewViewModel: ObservableObject {
         return first + "." + second + "." + third
     }
     
+    func realRandomPackage() -> String {
+        return "com." + realRandomPackagePart() + "." + realRandomPackagePart()
+    }
+    
+    
+    func realRandomPackagePart() -> String {
+        let lettersLower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+        let lettersUpper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+        let appName = appNameTextField
+        
+        let femaleNames = [
+            "Mary",
+            "Patricia",
+            "Jennifer",
+            "Linda",
+            "Elizabeth",
+            "Barbara",
+            "Susan",
+            "Jessica",
+            "Sarah",
+            "Karen",
+            "Lisa",
+            "Nancy",
+            "Betty",
+            "Sandra",
+            "Margaret",
+            "Ashley",
+            "Kimberly",
+            "Emily",
+            "Donna",
+            "Michelle",
+            "Carol",
+            "Amanda",
+            "Melissa",
+            "Deborah",
+            "Stephanie",
+            "Dorothy",
+            "Rebecca",
+            "Sharon",
+            "Laura",
+            "Cynthia",
+            "Amy",
+            "Kathleen",
+            "Angela",
+            "Shirley",
+            "Brenda",
+            "Emma",
+            "Anna",
+            "Pamela",
+            "Nicole",
+            "Samantha",
+            "Katherine",
+            "Christine",
+            "Helen",
+            "Debra",
+            "Rachel",
+            "Carolyn",
+            "Janet",
+            "Maria",
+            "Catherine",
+            "Heather",
+            "Diane",
+            "Olivia",
+            "Julie",
+            "Joyce",
+            "Victoria",
+            "Ruth",
+            "Virginia",
+            "Lauren",
+            "Kelly",
+            "Christina",
+            "Joan",
+            "Evelyn",
+            "Judith",
+            "Andrea",
+            "Hannah",
+            "Megan",
+            "Cheryl",
+            "Jacqueline",
+            "Martha",
+            "Madison",
+            "Teresa",
+            "Gloria",
+            "Sara",
+            "Janice",
+            "Ann",
+            "Kathryn",
+            "Abigail",
+            "Sophia",
+            "Frances",
+            "Jean",
+            "Alice",
+            "Judy",
+            "Isabella",
+            "Julia",
+            "Grace",
+            "Amber",
+            "Denise",
+            "Danielle",
+            "Marilyn",
+            "Beverly",
+            "Charlotte",
+            "Natalie",
+            "Theresa",
+            "Diana",
+            "Brittany",
+            "Doris",
+            "Kayla",
+            "Alexis",
+            "Lori",
+            "Marie"
+        ]
+        let maleNames = [
+            "James",
+            "Robert",
+            "John",
+            "Michael",
+            "David",
+            "William",
+            "Richard",
+            "Joseph",
+            "Thomas",
+            "Christopher",
+            "Charles",
+            "Daniel",
+            "Matthew",
+            "Anthony",
+            "Mark",
+            "Donald",
+            "Steven",
+            "Andrew",
+            "Paul",
+            "Joshua",
+            "Kenneth",
+            "Kevin",
+            "Brian",
+            "George",
+            "Timothy",
+            "Ronald",
+            "Jason",
+            "Edward",
+            "Jeffrey",
+            "Ryan",
+            "Jacob",
+            "Gary",
+            "Nicholas",
+            "Eric",
+            "Jonathan",
+            "Stephen",
+            "Larry",
+            "Justin",
+            "Scott",
+            "Brandon",
+            "Benjamin",
+            "Samuel",
+            "Gregory",
+            "Alexander",
+            "Patrick",
+            "Frank",
+            "Raymond",
+            "Jack",
+            "Dennis",
+            "Jerry",
+            "Tyler",
+            "Aaron",
+            "Jose",
+            "Adam",
+            "Nathan",
+            "Henry",
+            "Zachary",
+            "Douglas",
+            "Peter",
+            "Kyle",
+            "Noah",
+            "Ethan",
+            "Jeremy",
+            "Walter",
+            "Christian",
+            "Keith",
+            "Roger",
+            "Terry",
+            "Austin",
+            "Sean",
+            "Gerald",
+            "Carl",
+            "Harold",
+            "Dylan",
+            "Arthur",
+            "Lawrence",
+            "Jordan",
+            "Jesse",
+            "Bryan",
+            "Billy",
+            "Bruce",
+            "Gabriel",
+            "Joe",
+            "Logan",
+            "Alan",
+            "Juan",
+            "Albert",
+            "Willie",
+            "Elijah",
+            "Wayne",
+            "Randy",
+            "Vincent",
+            "Mason",
+            "Roy",
+            "Ralph",
+            "Bobby",
+            "Russell",
+            "Bradley",
+            "Philip",
+            "Eugene"
+        ]
+        let randomWords = [
+            "object",
+            "app",
+            "application",
+            "my",
+            "sup",
+            "apps",
+            "play",
+            "game",
+            "super",
+            "extra",
+            "wonder",
+            "objects",
+            "variable",
+            "wow"
+        ]
+        
+        var result: [String] = []
+        
+        let condition = PackageNameConditions(length: Int.random(in: 4...12), useUpperCase: Bool.random(), useRandomLetters: Bool.random(), useNames: .allCases.randomElement() ?? .none, useAppName: .allCases.randomElement() ?? .none, useRandomWord: Bool.random())
+        var pName = ""
+        var aName = ""
+        var wName = ""
+        var lName: [String] = []
+        switch condition.useNames {
+        case .male:
+            switch Int.random(in: 0...3) {
+            case 0:
+                pName = maleNames.randomElement() ?? maleNames[0]
+            default:
+                pName = maleNames.randomElement()?.lowercased() ?? maleNames[0]
+            }
+            
+        case .female:
+            switch Int.random(in: 0...3) {
+            case 0:
+                pName = femaleNames.randomElement() ?? femaleNames[0]
+            default:
+                pName = femaleNames.randomElement()?.lowercased() ?? femaleNames[0]
+            }
+        case .none:
+            pName = ""
+        }
+        switch condition.useAppName {
+        case .full:
+            aName = fullAppName(appName)
+        case .lower:
+            aName = fullAppName(appName).lowercased()
+        case .reverse:
+            aName = reverseString(appName)
+        case .separated:
+            aName = separated(appName)
+        case .none:
+            aName = ""
+        case .separatedLower:
+            aName = separated(appName, lower: true)
+        }
+        if condition.useRandomLetters {
+            for _ in 0..<condition.length {
+                if condition.useUpperCase {
+                    switch Int.random(in: 0...2) {
+                    case 0, 1:
+                        lName.append(lettersLower.randomElement() ?? lettersLower[0])
+                    default:
+                        lName.append(lettersUpper.randomElement() ?? lettersUpper[0])
+                    }
+                } else {
+                    lName.append(lettersLower.randomElement() ?? lettersLower[0])
+                }
+            }
+        }
+        if condition.useRandomWord {
+            wName += randomWords.randomElement() ?? randomWords[0]
+        }
+        if pName.isNotEmpty() {
+            result.append(pName)
+        }
+        if aName.isNotEmpty() {
+            result.append(aName)
+        }
+        if wName.isNotEmpty() {
+            result.append(wName)
+        }
+        if !lName.isEmpty {
+            result += lName
+        }
+        if result.isEmpty {
+            let len = Int.random(in: 1...12)
+            var r = ""
+            for _ in 0..<len {
+                r += lettersLower.randomElement() ?? lettersLower[0]
+            }
+            return r
+        } else {
+            var r = ""
+            let newList = result.shuffled()
+            newList.forEach { s in
+                r += s
+            }
+            return r
+        }
+    }
+    
+    private func reverseString(_ s: String) -> String {
+        let reversed = s.reversed()
+        var result = ""
+        reversed.forEach { s in
+            if s != " " && s != "-" && s != "." {
+                result += "\(s)"
+            }
+        }
+        return result
+    }
+    
+    private func fullAppName(_ s: String) -> String {
+        let split = s.split(separator: " ")
+        var result = ""
+        split.forEach { s in
+            if s != "-" && s != "." {
+                result += s
+            }
+        }
+        return result
+    }
+    
+    private func separated(_ s: String, lower: Bool = false) -> String {
+        let split = s.split(separator: " ")
+        var result = ""
+        split.forEach { s in
+            if s != "-" && s != "." {
+                if lower {
+                    result += s.lowercased()
+                } else {
+                    result += s
+                }
+            } else {
+                print("fck")
+            }
+        }
+        return result
+    }
+    
     func boolChanceRandom(_ percent: Int) -> Bool {
         if Int.random(in: 1...100) <= percent {
             return true
@@ -215,3 +571,4 @@ final class GenMainViewViewModel: ObservableObject {
     
     
 }
+

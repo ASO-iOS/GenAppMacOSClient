@@ -7,7 +7,9 @@
 import SwiftUI
 
 struct KLWeatherAppTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, surfaceColor: Color) -> TemplateData {
+    static let shared = KLWeatherAppTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, surfaceColor: Color) -> TemplateData {
         let rect1691405170047 = RectShapeModel(shape: .rect, color: surfaceColor, fill: false, x: 94, y: 95, width: 200, height: 60, rounded: true, cornerRadius: 8, lineWidth: 2)
         let rect1691405260995 = RectShapeModel(shape: .rect, color: surfaceColor, fill: false, x: 94, y: 165, width: 200, height: 60, rounded: true, cornerRadius: 8, lineWidth: 2)
         let rect1691405301168 = RectShapeModel(shape: .rect, color: surfaceColor, fill: false, x: 94, y: 235, width: 200, height: 60, rounded: true, cornerRadius: 8, lineWidth: 2)

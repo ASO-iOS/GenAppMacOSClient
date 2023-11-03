@@ -641,7 +641,9 @@ extension GenMainViewViewModel {
             GenAppType(type: .itCatcher, prefix: .it, protocolId: nil, appId: AppIDs.IT_CATCHER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary, .textColorPrimary])),
             GenAppType(type: .egTicTacToe, prefix: .eg, protocolId: nil, appId: AppIDs.EG_TIC_TAC_TOE, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorSecondary, .textColorPrimary, .buttonTextColorPrimary, .errorColor, .surfaceColor])),
             GenAppType(type: .egFlappyBird, prefix: .eg, protocolId: nil, appId: AppIDs.EG_FLAPPY_BIRD, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .textColorPrimary])),
-            GenAppType(type: .egJumper, prefix: .eg, protocolId: nil, appId: AppIDs.EG_JUMPER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .primaryColor, .textColorPrimary, .buttonTextColorPrimary, .surfaceColor]))
+            GenAppType(type: .egJumper, prefix: .eg, protocolId: nil, appId: AppIDs.EG_JUMPER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .primaryColor, .textColorPrimary, .buttonTextColorPrimary, .surfaceColor])),
+            GenAppType(type: .kdGallery, prefix: .kd, protocolId: nil, appId: AppIDs.KD_GALLERY, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorSecondary, .buttonColorPrimary])),
+            GenAppType(type: .kdNameGenerator, prefix: .kd, protocolId: nil, appId: AppIDs.KD_NAME_GENERATOR, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .buttonColorPrimary, .buttonTextColorPrimary, .onSurfaceColor, .textColorPrimary]))
         ]
     }
 }

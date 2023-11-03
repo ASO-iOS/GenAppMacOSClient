@@ -163,4 +163,8 @@ enum AppPickType: String, CaseIterable {
     case dtPopularMovies = "DTPopularMovies"
     case dtMusicQuiz = "DTMusicQuiz"
     case dtLanguageIdentifire  = "DTLanguageIdentifire"
+    
+    // MARK: - kd
+    case kdGallery = "KDGallery"
+    case kdNameGenerator = "KDNameGenerator"
 }

@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct KLWordFinderTmplate {
+    static let shared = KLWordFinderTmplate()
+    private init() {}
     
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, textColorSecondary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorSecondary: Color, surfaceColor: Color, onSurfaceColor: Color, appName: String) -> TemplateData {
+    func template1(backColorPrimary: Color, textColorPrimary: Color, textColorSecondary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, buttonColorSecondary: Color, surfaceColor: Color, onSurfaceColor: Color, appName: String) -> TemplateData {
         
         let rect1692192995991 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 117, y: 230, width: 160, height: 40, rounded: true, cornerRadius: 50, lineWidth: 2)
         let rect1692193057828 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 117, y: 280, width: 160, height: 40, rounded: true, cornerRadius: 50, lineWidth: 2)

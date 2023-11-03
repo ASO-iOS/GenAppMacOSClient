@@ -7,7 +7,9 @@
 import SwiftUI
 
 struct KLSupernaturalQuotesTemplate {
-    static func template1(surfaceColor: Color, backColorPrimary: Color, textColorPrimary: Color, textColorSecondary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, appName: String) -> TemplateData {
+    static let shared = KLSupernaturalQuotesTemplate()
+    private init() {}
+    func template1(surfaceColor: Color, backColorPrimary: Color, textColorPrimary: Color, textColorSecondary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, appName: String) -> TemplateData {
         
         let split = appName.split(separator: " ")
         var name0 = ""

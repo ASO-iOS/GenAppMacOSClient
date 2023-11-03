@@ -11,15 +11,15 @@ extension GenAppController {
     func templateVS(_ appType: AppPickType) -> [TemplateData] {
         switch appType {
         case .vsStopwatch:
-            return [VSStopwatchBannerTemplate.template1(
+            return [VSStopwatchBannerTemplate.shared.template1(
                 textColor: .init(hex: values.ui?.textColorPrimary) ?? .white,
                 buttonColor: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
                 buttonTextColor: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white
             )]
         case .vsTorch:
-            return [VSTorchTemplate.template1(buttonColor: .init(hex: values.ui?.buttonColorPrimary) ?? .white)]
+            return [VSTorchTemplate.shared.template1(buttonColor: .init(hex: values.ui?.buttonColorPrimary) ?? .white)]
         case .vsPhoneInfo:
-            return [VSPhoneInfoTemplate.template1(
+            return [VSPhoneInfoTemplate.shared.template1(
                 textColor: .init(hex: values.ui?.textColorPrimary) ?? .white,
                 buttonColor: .init(hex: values.ui?.buttonColorPrimary) ?? .blue,
                 buttonTextColor: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,

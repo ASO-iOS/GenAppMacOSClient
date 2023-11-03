@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLBodyTypeCaclulatorTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, surfaceColor: Color) -> TemplateData {
+    static let shared = KLBodyTypeCaclulatorTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, surfaceColor: Color) -> TemplateData {
         let rect1691771720150 = RectShapeModel(shape: .rect, color: .init(hex: "9ba057") ?? .green, fill: true, x: 387, y: 0, width: 250, height: 500, rounded: false, cornerRadius: 16, lineWidth: 2)
         let rect1691771748502 = RectShapeModel(shape: .rect, color: .init(hex: "e5a38b") ?? .indigo, fill: true, x: 705, y: 0, width: 250, height: 500, rounded: false, cornerRadius: 16, lineWidth: 2)
         let rect1691771789103 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 84, y: 150, width: 220, height: 420, rounded: true, cornerRadius: 16, lineWidth: 2)

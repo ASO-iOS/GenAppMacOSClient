@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLHiddenParisTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, appName: String) -> TemplateData {
+    static let shared = KLHiddenParisTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, appName: String) -> TemplateData {
         let colors1 = ["9e483f", "000000"]
         let colors2 = ["8eccd6", "c9be61"]
         let rect1691768405996 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 121, y: 227, width: 150, height: 35, rounded: true, cornerRadius: 50, lineWidth: 2)

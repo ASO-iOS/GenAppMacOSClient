@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLRecorderTemplate {
-    static func template1(backColorPrimary: Color, backColorSecondary: Color, buttonColorPrimary: Color, buttonColorSecondary: Color, textColorPrimary: Color, textColorSecondary: Color, surfaceColor: Color) -> TemplateData {
+    static let shared = KLRecorderTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, backColorSecondary: Color, buttonColorPrimary: Color, buttonColorSecondary: Color, textColorPrimary: Color, textColorSecondary: Color, surfaceColor: Color) -> TemplateData {
         
         let rect1691066585427 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 170, y: 396, width: 50, height: 50, rounded: true, cornerRadius: 50, lineWidth: 2)
         let rect1691066721894 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 490, y: 396, width: 50, height: 50, rounded: true, cornerRadius: 50, lineWidth: 2)

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLTeaWikiTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, surfaceColor: Color) -> TemplateData {
+    static let shared = KLTeaWikiTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, surfaceColor: Color) -> TemplateData {
         let rect1691409209063 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 79, y: 18, width: 110, height: 110, rounded: true, cornerRadius: 8, lineWidth: 2)
         let rect1691409295492 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 199, y: 18, width: 110, height: 110, rounded: true, cornerRadius: 8, lineWidth: 2)
         let rect1691409336850 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 79, y: 138, width: 110, height: 110, rounded: true, cornerRadius: 8, lineWidth: 2)

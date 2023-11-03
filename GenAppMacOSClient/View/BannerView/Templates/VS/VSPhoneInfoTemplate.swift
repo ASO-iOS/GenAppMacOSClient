@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct VSPhoneInfoTemplate {
-    static func template1(textColor: Color, buttonColor: Color, buttonTextColor: Color, surfaceColor: Color, backColorSecondary: Color, appName: String) -> TemplateData {
+    static let shared = VSPhoneInfoTemplate()
+    private init() {}
+    func template1(textColor: Color, buttonColor: Color, buttonTextColor: Color, surfaceColor: Color, backColorSecondary: Color, appName: String) -> TemplateData {
 
         let rect1 = RectShapeModel(shape: .rect, color: backColorSecondary, fill: true, x: 69, y: 0, width: 250, height: 90, rounded: false, cornerRadius: 16, lineWidth: 2)
 

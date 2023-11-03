@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLBubblePickerTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, textColorSecondary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color) -> TemplateData {
+    static let shared = KLBubblePickerTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, textColorSecondary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color) -> TemplateData {
         let colors = ["087bd0", "a9fcfa", "f62142", "7b5aca", "de86a0", "2b8217", "2892c6", "fe0595", "17497b", "9c1750", "fa3b22", "69a186"]
         let rect1692019349115 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 116, y: 230, width: 160, height: 40, rounded: true, cornerRadius: 50, lineWidth: 2)
         let rect1692019449005 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 116, y: 280, width: 160, height: 40, rounded: true, cornerRadius: 50, lineWidth: 2)

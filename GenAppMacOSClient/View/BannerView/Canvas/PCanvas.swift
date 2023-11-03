@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct PCanvas: View {
     @ObservedObject var handler: ShapesHandler
     @State var gestureStarted = false

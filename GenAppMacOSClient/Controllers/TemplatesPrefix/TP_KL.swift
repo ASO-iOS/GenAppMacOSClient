@@ -12,7 +12,7 @@ extension GenAppController {
         switch appType {
         case .klBMICalculator:
             return [
-                KLBMICalculatorTemplate.template1(
+                KLBMICalculatorTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
@@ -23,7 +23,7 @@ extension GenAppController {
             ]
         case .klSpeedTest:
             return [
-                KLSpeedTestTemplate.template1(
+                KLSpeedTestTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .white,
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white,
@@ -33,7 +33,7 @@ extension GenAppController {
             ]
         case .klConverter:
             return [
-                KLConverterTemplate.template1(
+                KLConverterTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white,
@@ -43,7 +43,7 @@ extension GenAppController {
             ]
         case .klRecorder:
             return [
-                KLRecorderTemplate.template1(
+                KLRecorderTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
@@ -55,7 +55,7 @@ extension GenAppController {
             ]
         case .klClickFaster:
             return [
-                KLClickFasterTemplate.template1(
+                KLClickFasterTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
@@ -65,7 +65,7 @@ extension GenAppController {
             ]
         case .klColorSwatcher:
             return [
-                KLColorSwatcherTemplate.template1(
+                KLColorSwatcherTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
@@ -77,7 +77,7 @@ extension GenAppController {
             ]
         case .klDsWeapon:
             return [
-                KLDsWeaponTemplate.template1(
+                KLDsWeaponTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white,
@@ -87,7 +87,7 @@ extension GenAppController {
             ]
         case .klReactionTest:
             return [
-                KLReactionTestTemplate.template1(
+                KLReactionTestTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .white,
@@ -96,7 +96,7 @@ extension GenAppController {
             ]
         case .klSupernaturalQuotes:
             return [
-                KLSupernaturalQuotesTemplate.template1(
+                KLSupernaturalQuotesTemplate.shared.template1(
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white,
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
@@ -106,21 +106,21 @@ extension GenAppController {
             ]
         case .klTeaWiki:
             return[
-                KLTeaWikiTemplate.template1(
+                KLTeaWikiTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white)
             ]
         case .klWeatherApp:
             return[
-                KLWeatherAppTemplate.template1(
+                KLWeatherAppTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white)
             ]
         case .klDotCrossGame:
             return[
-                KLDotCrossGameTemplate.template1(
+                KLDotCrossGameTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     primaryColor: .init(hex: values.ui?.primaryColor) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
@@ -132,7 +132,7 @@ extension GenAppController {
             ]
         case .klFlashcardMaker:
             return [
-                KLFlashcardMaketTemplate.template1(
+                KLFlashcardMaketTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .white,
                     primaryColor: .init(hex: values.ui?.primaryColor) ?? .white,
@@ -141,7 +141,7 @@ extension GenAppController {
             ]
         case .klHiddenParis:
             return [
-                KLHiddenParisTemplate.template1(
+                KLHiddenParisTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
@@ -150,7 +150,7 @@ extension GenAppController {
             ]
         case .klBubblePicker:
             return [
-                KLBubblePickerTemplate.template1(
+                KLBubblePickerTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .white,
@@ -159,7 +159,7 @@ extension GenAppController {
             ]
         case .klBodyTypeCaclulator:
             return [
-                KLBodyTypeCaclulatorTemplate.template1(
+                KLBodyTypeCaclulatorTemplate.shared.template1(
                     backColorPrimary:  .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary:  .init(hex: values.ui?.textColorPrimary) ?? .white,
                     buttonColorPrimary:  .init(hex: values.ui?.buttonColorPrimary) ?? .white,
@@ -169,7 +169,7 @@ extension GenAppController {
             
         case .klMoodTracker:
             return [
-                KLMoodTrackerTemplate.template1(
+                KLMoodTrackerTemplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
@@ -181,7 +181,7 @@ extension GenAppController {
             
         case .klWordFinder:
             return [
-                KLWordFinderTmplate.template1(
+                KLWordFinderTmplate.shared.template1(
                     backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .white,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .white,
@@ -196,7 +196,7 @@ extension GenAppController {
             
         case .klDodger:
             return [
-                KLDodgerTemplate.template1(
+                KLDodgerTemplate.shared.template1(
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
                     buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .white,
@@ -207,7 +207,7 @@ extension GenAppController {
             ]
         case .klStopwatch:
             return [
-                KLStopwatchTemplate.template1(
+                KLStopwatchTemplate.shared.template1(
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .white,
                     buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .white,
                     buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .white,

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct VSTorchTemplate {
-    static func template1(buttonColor: Color) -> TemplateData {
+    static let shared = VSTorchTemplate()
+    private init() {}
+    func template1(buttonColor: Color) -> TemplateData {
         let image1 = ImageShapeModel(color: buttonColor, template: false, shape: .image, location: "\(Constant.homeDir)GeneratorProjects/resources/bannerResources/vstorch/vstorch_off.png", x: 132, y: 50, width: 127, height: 127)
 
         let image2 = ImageShapeModel(color: buttonColor, template: false, shape: .image, location: "\(Constant.homeDir)GeneratorProjects/resources/bannerResources/vstorch/vstorch_off_1.png", x: 180, y: 250, width: 27, height: 81)

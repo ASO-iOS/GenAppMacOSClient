@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct VSStopwatchBannerTemplate {
+    static let shared = VSStopwatchBannerTemplate()
+    init() {}
     
-    static func template1(textColor: Color, buttonColor: Color, buttonTextColor: Color) -> TemplateData {
+    func template1(textColor: Color, buttonColor: Color, buttonTextColor: Color) -> TemplateData {
         let rect1 = RectShapeModel(shape: .rect, color: buttonColor, fill: true, x: 84, y: 430, width: 103, height: 35, rounded: true, cornerRadius: 16, lineWidth: 2)
         
         let rect2 = RectShapeModel(shape: .rect, color: buttonColor, fill: true, x: 198, y: 430, width: 103, height: 35, rounded: true, cornerRadius: 16, lineWidth: 2)

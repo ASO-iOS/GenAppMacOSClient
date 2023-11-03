@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLColorSwatcherTemplate {
-    static func template1(backColorPrimary: Color, buttonColorPrimary: Color, textColorPrimary: Color, buttonColorSecondary: Color, buttonTextColorPrimary: Color, buttonTextColorSecondary: Color, surfaceColor: Color) -> TemplateData {
+    static let shared = KLColorSwatcherTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, buttonColorPrimary: Color, textColorPrimary: Color, buttonColorSecondary: Color, buttonTextColorPrimary: Color, buttonTextColorSecondary: Color, surfaceColor: Color) -> TemplateData {
         
         let rect1691400813836 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 100, y: 100, width: 100, height: 100, rounded: true, cornerRadius: 50, lineWidth: 2)
         let rect1691400835887 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 145, y: 133, width: 100, height: 100, rounded: true, cornerRadius: 50, lineWidth: 2)

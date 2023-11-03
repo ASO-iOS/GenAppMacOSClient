@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLMoodTrackerTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, surfaceColor: Color, primaryColor: Color, onPrimaryColor: Color) -> TemplateData {
+    static let shared = KLMoodTrackerTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, buttonColorPrimary: Color, buttonTextColorPrimary: Color, surfaceColor: Color, primaryColor: Color, onPrimaryColor: Color) -> TemplateData {
         
         let randomFace = Int.random(in: 1...4)
         

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLBMICalculatorTemplate {
-    static func template1(backColorPrimary: Color, backColorSecondary: Color, buttonColorPrimary: Color, surfaceColor: Color, textColorPrimary: Color, textColorSecondary: Color, buttonTextColorPrimary: Color) -> TemplateData {
+    static let shared = KLBMICalculatorTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, backColorSecondary: Color, buttonColorPrimary: Color, surfaceColor: Color, textColorPrimary: Color, textColorSecondary: Color, buttonTextColorPrimary: Color) -> TemplateData {
         let rect1691059299269 = RectShapeModel(shape: .rect, color: .init(hex: "b95d80") ?? .yellow, fill: true, x: 69, y: 0, width: 250, height: 150, rounded: true, cornerRadius: 0, lineWidth: 2)
         let rect1691059530336 = RectShapeModel(shape: .rect, color: buttonColorPrimary, fill: true, x: 94, y: 420, width: 200, height: 40, rounded: true, cornerRadius: 8, lineWidth: 2)
         let rect1691059646761 = RectShapeModel(shape: .rect, color: .init(hex: "8bc34a") ?? .green, fill: true, x: 387, y: 0, width: 250, height: 150, rounded: true, cornerRadius: 0, lineWidth: 2)

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct KLDsWeaponTemplate {
-    static func template1(backColorPrimary: Color, textColorPrimary: Color, surfaceColor: Color, textColorSecondary: Color, appName: String) -> TemplateData {
+    static let shared = KLDsWeaponTemplate()
+    private init() {}
+    func template1(backColorPrimary: Color, textColorPrimary: Color, surfaceColor: Color, textColorSecondary: Color, appName: String) -> TemplateData {
         let rect1691419338363 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 69, y: 38, width: 250, height: 80, rounded: false, cornerRadius: 16, lineWidth: 2)
         let rect1691419377703 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 69, y: 126, width: 250, height: 80, rounded: false, cornerRadius: 16, lineWidth: 2)
         let rect1691419477735 = RectShapeModel(shape: .rect, color: surfaceColor, fill: true, x: 69, y: 214, width: 250, height: 80, rounded: false, cornerRadius: 16, lineWidth: 2)
