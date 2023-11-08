@@ -75,6 +75,10 @@ class Service {
         }
         task.resume()
     }
+    
+    func getNews(completion: @escaping (ComicsDto?, Error?) -> Void) {
+        let url = URL(string: "https://api.vk.com/method/")
+    }
 }
 
 struct FactDto: Codable {

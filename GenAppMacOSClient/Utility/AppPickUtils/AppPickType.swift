@@ -167,4 +167,5 @@ enum AppPickType: String, CaseIterable {
     // MARK: - kd
     case kdGallery = "KDGallery"
     case kdNameGenerator = "KDNameGenerator"
+    case kdNews = "KDNews"
 }

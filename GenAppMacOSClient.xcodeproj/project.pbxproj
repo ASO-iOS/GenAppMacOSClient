@@ -11,6 +11,7 @@
 		84044B642AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */; };
 		8407BD132AD3F53E003DC25B /* AppNamesExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407BD122AD3F53E003DC25B /* AppNamesExt.swift */; };
 		8410379E2AF5174400798249 /* KDNameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379D2AF5174400798249 /* KDNameGenerator.swift */; };
+		841037A02AF547E400798249 /* KDNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379F2AF547E400798249 /* KDNews.swift */; };
 		8419A76D2AE2983D00DEB819 /* ITSnakeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */; };
 		841B656A2ADE98FD000C6077 /* ITTicTacToeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B65692ADE98FD000C6077 /* ITTicTacToeTemplate.swift */; };
 		841B656C2ADEB02E000C6077 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B656B2ADEB02E000C6077 /* DictionaryExtension.swift */; };
@@ -242,6 +243,7 @@
 		84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGTicTacToeTemplate.swift; sourceTree = "<group>"; };
 		8407BD122AD3F53E003DC25B /* AppNamesExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNamesExt.swift; sourceTree = "<group>"; };
 		8410379D2AF5174400798249 /* KDNameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNameGenerator.swift; sourceTree = "<group>"; };
+		8410379F2AF547E400798249 /* KDNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNews.swift; sourceTree = "<group>"; };
 		8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITSnakeTemplate.swift; sourceTree = "<group>"; };
 		841B65692ADE98FD000C6077 /* ITTicTacToeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITTicTacToeTemplate.swift; sourceTree = "<group>"; };
 		841B656B2ADEB02E000C6077 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 			children = (
 				84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */,
 				8410379D2AF5174400798249 /* KDNameGenerator.swift */,
+				8410379F2AF547E400798249 /* KDNews.swift */,
 			);
 			path = KD;
 			sourceTree = "<group>";
@@ -1266,6 +1269,7 @@
 				84D1B5572AB0901200F98DB0 /* VEQuizVideoGamesTemplate.swift in Sources */,
 				84D1B4DE2AB0901100F98DB0 /* ProcessingState.swift in Sources */,
 				84D1B5582AB0901200F98DB0 /* VENightBirdTemplate.swift in Sources */,
+				841037A02AF547E400798249 /* KDNews.swift in Sources */,
 				84D1B5162AB0901200F98DB0 /* VSTorchTemplate.swift in Sources */,
 				84D1B4F32AB0901100F98DB0 /* ViewExtension.swift in Sources */,
 				84D1B5122AB0901200F98DB0 /* PView.swift in Sources */,

@@ -191,7 +191,8 @@ struct AppIDs {
     static let DT_MUSIC_QUIZ =         "dt-0018"
     static let DT_LANGUAGE_IDENTIFIRE = "dt-0019"
     
-    static let KD_PREFIX =                    "kd"
-    static let KD_GALLERY =                   "kd-0001"
-    static let KD_NAME_GENERATOR =            "kd-0002"
+    static let KD_PREFIX =              "kd"
+    static let KD_GALLERY =             "kd-0001"
+    static let KD_NAME_GENERATOR =      "kd-0002"
+    static let KD_NEWS =                "kd-0003"
 }

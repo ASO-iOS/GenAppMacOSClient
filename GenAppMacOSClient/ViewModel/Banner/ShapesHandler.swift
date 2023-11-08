@@ -161,6 +161,11 @@ class ShapesHandler: ObservableObject {
         objectWillChange.send()
     }
     
+    func kdNews() {
+        let service = Service()
+        
+    }
+    
     func mReplacing(text: String?) -> String {
         return text?
             .replacingOccurrences(of: "&quot;", with: "\"")
