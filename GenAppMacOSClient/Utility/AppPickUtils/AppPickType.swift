@@ -168,4 +168,6 @@ enum AppPickType: String, CaseIterable {
     case kdGallery = "KDGallery"
     case kdNameGenerator = "KDNameGenerator"
     case kdNews = "KDNews"
+    
+    case kdFindUniversity = "KDFindUniversity"
 }

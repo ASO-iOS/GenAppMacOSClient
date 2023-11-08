@@ -768,6 +768,8 @@ extension GenMainViewViewModel {
                 "NameCommander",
                 "NameStar"
             ].randomElement() ?? ""
+        case .kdNews:
+            return ["Daily News", "Breaking News", "News Update", "Top Stories", "Latest News", "News Now", "News Alert", "News Flash", "Current Affairs", "World News", "Trending News", "Hot News", "Global News", "Fresh News", "Quick News", "Instant News", "Buzz News", "Live News", "Prime News", "Quick Updates"].randomElement() ?? ""
         default: return ""
         }
     }
