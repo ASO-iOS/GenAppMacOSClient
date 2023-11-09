@@ -31,11 +31,21 @@ extension GenAppController {
                     appName: values.mainData.appName
                 )
             ]
+
             
         case .kdNews:
             return [
                 KDNews.shared.template1(primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
                                         textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor)
+
+        case .kdFindUniversity:
+            return [
+                KDFindUniversityTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor
+                )
+
             ]
         default: return []
         }

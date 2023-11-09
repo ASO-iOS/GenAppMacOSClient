@@ -16,6 +16,7 @@
 		841B656A2ADE98FD000C6077 /* ITTicTacToeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B65692ADE98FD000C6077 /* ITTicTacToeTemplate.swift */; };
 		841B656C2ADEB02E000C6077 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B656B2ADEB02E000C6077 /* DictionaryExtension.swift */; };
 		841EDE0B2AD58D030030227D /* KLStopwatchTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841EDE0A2AD58D030030227D /* KLStopwatchTemplate.swift */; };
+		842C53F72AFBF74A00876FB2 /* KDFindUniversityTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C53F62AFBF74A00876FB2 /* KDFindUniversityTemplate.swift */; };
 		845E67B92AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */; };
 		848FC4DA2AEC6965007C3B10 /* EGFlappyBirdTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */; };
 		84BF5D752AF1086800A7141D /* KDGalleryTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */; };
@@ -248,6 +249,7 @@
 		841B65692ADE98FD000C6077 /* ITTicTacToeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITTicTacToeTemplate.swift; sourceTree = "<group>"; };
 		841B656B2ADEB02E000C6077 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		841EDE0A2AD58D030030227D /* KLStopwatchTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLStopwatchTemplate.swift; sourceTree = "<group>"; };
+		842C53F62AFBF74A00876FB2 /* KDFindUniversityTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDFindUniversityTemplate.swift; sourceTree = "<group>"; };
 		845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFrogClickerTemplate.swift; sourceTree = "<group>"; };
 		848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGFlappyBirdTemplate.swift; sourceTree = "<group>"; };
 		84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDGalleryTemplate.swift; sourceTree = "<group>"; };
@@ -489,6 +491,7 @@
 				84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */,
 				8410379D2AF5174400798249 /* KDNameGenerator.swift */,
 				8410379F2AF547E400798249 /* KDNews.swift */,
+				842C53F62AFBF74A00876FB2 /* KDFindUniversityTemplate.swift */,
 			);
 			path = KD;
 			sourceTree = "<group>";
@@ -1387,6 +1390,7 @@
 				84D1B5852AB0901200F98DB0 /* PRectChangerView.swift in Sources */,
 				84D1B51E2AB0901200F98DB0 /* KLTeaWikiTemplate.swift in Sources */,
 				84D1B4FA2AB0901100F98DB0 /* TP_AK.swift in Sources */,
+				842C53F72AFBF74A00876FB2 /* KDFindUniversityTemplate.swift in Sources */,
 				84D1B5062AB0901100F98DB0 /* RequestDto.swift in Sources */,
 				84D1B5502AB0901200F98DB0 /* VEEveryDayFactsTemplate.swift in Sources */,
 				84D1B5262AB0901200F98DB0 /* KLDodgerTemplate.swift in Sources */,
