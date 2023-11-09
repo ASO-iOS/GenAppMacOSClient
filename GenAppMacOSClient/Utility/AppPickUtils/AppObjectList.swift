@@ -645,7 +645,8 @@ extension GenMainViewViewModel {
             GenAppType(type: .kdGallery, prefix: .kd, protocolId: nil, appId: AppIDs.KD_GALLERY, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorSecondary, .buttonColorPrimary])),
             GenAppType(type: .kdNameGenerator, prefix: .kd, protocolId: nil, appId: AppIDs.KD_NAME_GENERATOR, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .buttonColorPrimary, .buttonTextColorPrimary, .onSurfaceColor, .textColorPrimary])),
             GenAppType(type: .kdNews, prefix: .kd, protocolId: nil, appId: AppIDs.KD_NEWS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary])),
-            GenAppType(type: .kdFindUniversity, prefix: .kd, protocolId: nil, appId: AppIDs.KD_FIND_UNIVERSITY, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary]))
+            GenAppType(type: .kdFindUniversity, prefix: .kd, protocolId: nil, appId: AppIDs.KD_FIND_UNIVERSITY, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary])),
+            GenAppType(type: .kdAssatiations, prefix: .kd, protocolId: nil, appId: AppIDs.KD_ASSATIATIONS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .surfaceColor, .onSurfaceColor, .primaryColor]))
         ]
     }
 }

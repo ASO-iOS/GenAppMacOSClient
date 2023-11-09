@@ -35,9 +35,22 @@ extension GenAppController {
             
         case .kdNews:
             return [
-                KDNews.shared.template1(primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
-                                        textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor)]
+                KDNews.shared.template1(
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor
+                )
+            ]
 
+        case .kdAssatiations:
+            return [
+                KDAssatiationsTemplate.shared.template1(
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
+                    surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .accentColor,
+                    onSurfaceColor: .init(hex: values.ui?.onSurfaceColor) ?? .accentColor,
+                    backColorSecondary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor
+                )
+            ]
+            
         case .kdFindUniversity:
             return [
                 KDFindUniversityTemplate.shared.template1(
@@ -45,6 +58,7 @@ extension GenAppController {
                     primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor
                 )
+                
 
             ]
         default: return []

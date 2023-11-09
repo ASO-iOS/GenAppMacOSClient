@@ -19,6 +19,7 @@
 		842C53F72AFBF74A00876FB2 /* KDFindUniversityTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C53F62AFBF74A00876FB2 /* KDFindUniversityTemplate.swift */; };
 		845E67B92AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */; };
 		848FC4DA2AEC6965007C3B10 /* EGFlappyBirdTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */; };
+		84ADF3092AFCF47200ADAC05 /* KDAssatiationsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ADF3082AFCF47200ADAC05 /* KDAssatiationsTemplate.swift */; };
 		84BF5D752AF1086800A7141D /* KDGalleryTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */; };
 		84BF5D772AF110EF00A7141D /* TP_KD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D762AF110EF00A7141D /* TP_KD.swift */; };
 		84D1B3B42AB08F1100F98DB0 /* GenAppMacOSClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B3B32AB08F1100F98DB0 /* GenAppMacOSClientApp.swift */; };
@@ -252,6 +253,7 @@
 		842C53F62AFBF74A00876FB2 /* KDFindUniversityTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDFindUniversityTemplate.swift; sourceTree = "<group>"; };
 		845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFrogClickerTemplate.swift; sourceTree = "<group>"; };
 		848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGFlappyBirdTemplate.swift; sourceTree = "<group>"; };
+		84ADF3082AFCF47200ADAC05 /* KDAssatiationsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAssatiationsTemplate.swift; sourceTree = "<group>"; };
 		84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDGalleryTemplate.swift; sourceTree = "<group>"; };
 		84BF5D762AF110EF00A7141D /* TP_KD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TP_KD.swift; sourceTree = "<group>"; };
 		84D1B3B02AB08F1100F98DB0 /* GenAppMacOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenAppMacOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -492,6 +494,7 @@
 				8410379D2AF5174400798249 /* KDNameGenerator.swift */,
 				8410379F2AF547E400798249 /* KDNews.swift */,
 				842C53F62AFBF74A00876FB2 /* KDFindUniversityTemplate.swift */,
+				84ADF3082AFCF47200ADAC05 /* KDAssatiationsTemplate.swift */,
 			);
 			path = KD;
 			sourceTree = "<group>";
@@ -1324,6 +1327,7 @@
 				84D1B53A2AB0901200F98DB0 /* AKCartoonLocationsTemplate.swift in Sources */,
 				84D1B5462AB0901200F98DB0 /* ITLearningCatsTemplate.swift in Sources */,
 				84D1B5452AB0901200F98DB0 /* ITTrySecretTemplate.swift in Sources */,
+				84ADF3092AFCF47200ADAC05 /* KDAssatiationsTemplate.swift in Sources */,
 				84D1B4F22AB0901100F98DB0 /* LogModel.swift in Sources */,
 				84D1B5482AB0901200F98DB0 /* ITStopwatchTemplate.swift in Sources */,
 				8407BD132AD3F53E003DC25B /* AppNamesExt.swift in Sources */,
