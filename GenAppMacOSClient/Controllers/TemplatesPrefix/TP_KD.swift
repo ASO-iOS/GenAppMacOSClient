@@ -36,7 +36,7 @@ extension GenAppController {
         case .kdNews:
             return [
                 KDNews.shared.template1(primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
-                                        textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor)
+                                        textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor)]
 
         case .kdFindUniversity:
             return [
