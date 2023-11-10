@@ -3,7 +3,7 @@
 //  GenAppMacOSClient
 //
 //  Created by admin on 11/10/23.
-//
+//Максимальгнр небольшое изменение
 
 import SwiftUI
 
