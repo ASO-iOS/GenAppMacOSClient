@@ -58,9 +58,22 @@ extension GenAppController {
                     primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor
                 )
-                
-
             ]
+            
+        case .kdConverter:
+            return [
+                KDConverterTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .accentColor,
+                    backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
+                    textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .accentColor,
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor,
+                    buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .accentColor,
+                    appName: values.mainData.appName
+                )
+            ]
+            
         default: return []
         }
     }
