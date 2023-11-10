@@ -11,6 +11,9 @@
 		84044B642AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */; };
 		8407BD132AD3F53E003DC25B /* AppNamesExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407BD122AD3F53E003DC25B /* AppNamesExt.swift */; };
 		840A92E02AFE4BFD00CCB82F /* KDPedometerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A92DF2AFE4BFD00CCB82F /* KDPedometerTemplate.swift */; };
+		840A92E82AFE755C00CCB82F /* KDAssatiationsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A92E72AFE755C00CCB82F /* KDAssatiationsTemplate.swift */; };
+		840A92EA2AFE757E00CCB82F /* KDCatsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A92E92AFE757E00CCB82F /* KDCatsTemplate.swift */; };
+		840A92EC2AFE75E800CCB82F /* KDConverterTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A92EB2AFE75E800CCB82F /* KDConverterTemplate.swift */; };
 		8410379E2AF5174400798249 /* KDNameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379D2AF5174400798249 /* KDNameGenerator.swift */; };
 		841037A02AF547E400798249 /* KDNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379F2AF547E400798249 /* KDNews.swift */; };
 		8419A76D2AE2983D00DEB819 /* ITSnakeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */; };
@@ -245,6 +248,9 @@
 		84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGTicTacToeTemplate.swift; sourceTree = "<group>"; };
 		8407BD122AD3F53E003DC25B /* AppNamesExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNamesExt.swift; sourceTree = "<group>"; };
 		840A92DF2AFE4BFD00CCB82F /* KDPedometerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDPedometerTemplate.swift; sourceTree = "<group>"; };
+		840A92E72AFE755C00CCB82F /* KDAssatiationsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KDAssatiationsTemplate.swift; path = ../../../../../../../.Trash/GenAppMacOSClient/GenAppMacOSClient/View/BannerView/Templates/KD/KDAssatiationsTemplate.swift; sourceTree = "<group>"; };
+		840A92E92AFE757E00CCB82F /* KDCatsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDCatsTemplate.swift; sourceTree = "<group>"; };
+		840A92EB2AFE75E800CCB82F /* KDConverterTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDConverterTemplate.swift; sourceTree = "<group>"; };
 		8410379D2AF5174400798249 /* KDNameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNameGenerator.swift; sourceTree = "<group>"; };
 		8410379F2AF547E400798249 /* KDNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNews.swift; sourceTree = "<group>"; };
 		8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITSnakeTemplate.swift; sourceTree = "<group>"; };
@@ -495,6 +501,9 @@
 				8410379F2AF547E400798249 /* KDNews.swift */,
 				842C53F62AFBF74A00876FB2 /* KDFindUniversityTemplate.swift */,
 				840A92DF2AFE4BFD00CCB82F /* KDPedometerTemplate.swift */,
+				840A92E72AFE755C00CCB82F /* KDAssatiationsTemplate.swift */,
+				840A92E92AFE757E00CCB82F /* KDCatsTemplate.swift */,
+				840A92EB2AFE75E800CCB82F /* KDConverterTemplate.swift */,
 			);
 			path = KD;
 			sourceTree = "<group>";
@@ -1269,6 +1278,7 @@
 				84D1B5702AB0901200F98DB0 /* MBLuckyNumberTemplate.swift in Sources */,
 				848FC4DA2AEC6965007C3B10 /* EGFlappyBirdTemplate.swift in Sources */,
 				84D1B5192AB0901200F98DB0 /* KLConverterTemplate.swift in Sources */,
+				840A92EC2AFE75E800CCB82F /* KDConverterTemplate.swift in Sources */,
 				84D1B5872AB0901200F98DB0 /* GMVSettingsView.swift in Sources */,
 				84D1B4F12AB0901100F98DB0 /* AppCounterModel.swift in Sources */,
 				84D1B5052AB0901100F98DB0 /* VEFindUniversityTemplate.swift in Sources */,
@@ -1336,6 +1346,7 @@
 				84D1B59D2AB0946000F98DB0 /* DTNutritionFinderTemplate.swift in Sources */,
 				84D1B5092AB0901100F98DB0 /* Downloader.swift in Sources */,
 				84D1B5432AB0901200F98DB0 /* ITHeroesQuestTemplate.swift in Sources */,
+				840A92EA2AFE757E00CCB82F /* KDCatsTemplate.swift in Sources */,
 				84D1B5612AB0901200F98DB0 /* VETypesOfAircraftTemplate.swift in Sources */,
 				84D1B5042AB0901100F98DB0 /* RequestDtoVersions.swift in Sources */,
 				84D1B50D2AB0901100F98DB0 /* RequestType.swift in Sources */,
@@ -1419,6 +1430,7 @@
 				84D1B4DC2AB0901100F98DB0 /* UnzipHandler.swift in Sources */,
 				84D1B55E2AB0901200F98DB0 /* VECalendarEventsTemplate.swift in Sources */,
 				84D1B5472AB0901200F98DB0 /* ITNumberGeneratorTemplate.swift in Sources */,
+				840A92E82AFE755C00CCB82F /* KDAssatiationsTemplate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

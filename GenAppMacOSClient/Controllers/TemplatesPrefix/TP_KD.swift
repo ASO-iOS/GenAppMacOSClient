@@ -37,6 +37,16 @@ extension GenAppController {
             return [
                 KDNews.shared.template1(primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
                                         textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor)]
+            
+        case .kdAssatiations:
+            return [
+                KDAssatiationsTemplate.shared.template1(
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
+                    surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .accentColor,
+                    onSurfaceColor: .init(hex: values.ui?.onSurfaceColor) ?? .accentColor,
+                    backColorSecondary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor
+                )
+            ]
 
         case .kdFindUniversity:
             return [
@@ -51,6 +61,31 @@ extension GenAppController {
         case .kdPedometer:
             return [
                 KDPedometerTemplate.shared.template1(primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor)
+            ]
+            
+        case .kdConverter:
+            return [
+                KDConverterTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    surfaceColor: .init(hex: values.ui?.surfaceColor) ?? .accentColor,
+                    backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
+                    textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .accentColor,
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor,
+                    buttonColorSecondary: .init(hex: values.ui?.buttonColorSecondary) ?? .accentColor,
+                    appName: values.mainData.appName
+                )
+            ]
+            
+        case .kdCats:
+            return [
+                KDCatsTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
+                    textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .accentColor,
+                    appName: values.mainData.appName
+                )
             ]
         default: return []
         }
