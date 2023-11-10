@@ -10,6 +10,7 @@
 		84044B602AE697610099DE30 /* ITCatcherTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84044B5F2AE697610099DE30 /* ITCatcherTemplate.swift */; };
 		84044B642AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */; };
 		8407BD132AD3F53E003DC25B /* AppNamesExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407BD122AD3F53E003DC25B /* AppNamesExt.swift */; };
+		840A92E02AFE4BFD00CCB82F /* KDPedometerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A92DF2AFE4BFD00CCB82F /* KDPedometerTemplate.swift */; };
 		8410379E2AF5174400798249 /* KDNameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379D2AF5174400798249 /* KDNameGenerator.swift */; };
 		841037A02AF547E400798249 /* KDNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379F2AF547E400798249 /* KDNews.swift */; };
 		8419A76D2AE2983D00DEB819 /* ITSnakeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */; };
@@ -243,6 +244,7 @@
 		84044B5F2AE697610099DE30 /* ITCatcherTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCatcherTemplate.swift; sourceTree = "<group>"; };
 		84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGTicTacToeTemplate.swift; sourceTree = "<group>"; };
 		8407BD122AD3F53E003DC25B /* AppNamesExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNamesExt.swift; sourceTree = "<group>"; };
+		840A92DF2AFE4BFD00CCB82F /* KDPedometerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDPedometerTemplate.swift; sourceTree = "<group>"; };
 		8410379D2AF5174400798249 /* KDNameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNameGenerator.swift; sourceTree = "<group>"; };
 		8410379F2AF547E400798249 /* KDNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNews.swift; sourceTree = "<group>"; };
 		8419A76C2AE2983D00DEB819 /* ITSnakeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITSnakeTemplate.swift; sourceTree = "<group>"; };
@@ -492,6 +494,7 @@
 				8410379D2AF5174400798249 /* KDNameGenerator.swift */,
 				8410379F2AF547E400798249 /* KDNews.swift */,
 				842C53F62AFBF74A00876FB2 /* KDFindUniversityTemplate.swift */,
+				840A92DF2AFE4BFD00CCB82F /* KDPedometerTemplate.swift */,
 			);
 			path = KD;
 			sourceTree = "<group>";
@@ -1234,6 +1237,7 @@
 				84E765432ACA9F6E000DD022 /* AKSpaceAttacker2Template.swift in Sources */,
 				84D1B5812AB0901200F98DB0 /* EGLoveCaclulatorTemplate.swift in Sources */,
 				84D1B5862AB0901200F98DB0 /* PTextChangerView.swift in Sources */,
+				840A92E02AFE4BFD00CCB82F /* KDPedometerTemplate.swift in Sources */,
 				84D1B5542AB0901200F98DB0 /* VEFactsAboutDogsTemplate.swift in Sources */,
 				84D1B59C2AB0946000F98DB0 /* DTWordWiseTemplate.swift in Sources */,
 				84D1B4EF2AB0901100F98DB0 /* ColorSets.swift in Sources */,
@@ -1544,7 +1548,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GenAppMacOSClient/Preview Content\"";
-				DEVELOPMENT_TEAM = 3X2Z9WBV75;
+				DEVELOPMENT_TEAM = QX8KLGPA32;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1571,7 +1575,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GenAppMacOSClient/Preview Content\"";
-				DEVELOPMENT_TEAM = 3X2Z9WBV75;
+				DEVELOPMENT_TEAM = QX8KLGPA32;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -47,6 +47,11 @@ extension GenAppController {
                 )
 
             ]
+            
+        case .kdPedometer:
+            return [
+                KDPedometerTemplate.shared.template1(primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor)
+            ]
         default: return []
         }
     }

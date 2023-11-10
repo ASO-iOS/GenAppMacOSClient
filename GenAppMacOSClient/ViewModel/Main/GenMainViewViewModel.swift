@@ -433,7 +433,7 @@ final class GenMainViewViewModel: ObservableObject {
         
         var result: [String] = []
         
-        let condition = PackageNameConditions(length: Int.random(in: 4...12), useUpperCase: Bool.random(), useRandomLetters: Bool.random(), useNames: .allCases.randomElement() ?? .none, useAppName: .allCases.randomElement() ?? .none, useRandomWord: Bool.random())
+        let condition = PackageNameConditions(length: Int.random(in: 4...12), useUpperCase: Int.random(in: 0...3) == 0, useRandomLetters: Bool.random(), useNames: .allCases.randomElement() ?? .none, useAppName: .allCases.randomElement() ?? .none, useRandomWord: Bool.random())
         var pName = ""
         var aName = ""
         var wName = ""
@@ -442,30 +442,46 @@ final class GenMainViewViewModel: ObservableObject {
         case .male:
             switch Int.random(in: 0...3) {
             case 0:
-                pName = maleNames.randomElement() ?? maleNames[0]
+                pName = maleNames.randomElement() ?? maleNames[0].lowercased()
             default:
-                pName = maleNames.randomElement()?.lowercased() ?? maleNames[0]
+                pName = maleNames.randomElement()?.lowercased() ?? maleNames[0].lowercased()
             }
             
         case .female:
             switch Int.random(in: 0...3) {
             case 0:
-                pName = femaleNames.randomElement() ?? femaleNames[0]
+                pName = femaleNames.randomElement() ?? femaleNames[0].lowercased()
             default:
-                pName = femaleNames.randomElement()?.lowercased() ?? femaleNames[0]
+                pName = femaleNames.randomElement()?.lowercased() ?? femaleNames[0].lowercased()
             }
         case .none:
             pName = ""
         }
         switch condition.useAppName {
         case .full:
-            aName = fullAppName(appName)
+            if Int.random(in: 0...3) == 0 {
+                aName = fullAppName(appName)
+            } else {
+                aName = fullAppName(appName).lowercased()
+            }
+            
         case .lower:
             aName = fullAppName(appName).lowercased()
         case .reverse:
-            aName = reverseString(appName)
+            if Int.random(in: 0...3) == 0 {
+                aName = reverseString(appName)
+            } else {
+                aName = reverseString(appName).lowercased()
+            }
+            
         case .separated:
-            aName = separated(appName)
+            
+                if Int.random(in: 0...3) == 0 {
+                    aName = separated(appName)
+                } else {
+                    aName = separated(appName).lowercased()
+                }
+            
         case .none:
             aName = ""
         case .separatedLower:
@@ -474,11 +490,11 @@ final class GenMainViewViewModel: ObservableObject {
         if condition.useRandomLetters {
             for _ in 0..<condition.length {
                 if condition.useUpperCase {
-                    switch Int.random(in: 0...2) {
-                    case 0, 1:
-                        lName.append(lettersLower.randomElement() ?? lettersLower[0])
-                    default:
+                    switch Int.random(in: 0...4) {
+                    case 0:
                         lName.append(lettersUpper.randomElement() ?? lettersUpper[0])
+                    default:
+                        lName.append(lettersLower.randomElement() ?? lettersLower[0])
                     }
                 } else {
                     lName.append(lettersLower.randomElement() ?? lettersLower[0])
