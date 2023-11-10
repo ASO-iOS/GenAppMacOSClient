@@ -647,7 +647,8 @@ extension GenMainViewViewModel {
             GenAppType(type: .kdNews, prefix: .kd, protocolId: nil, appId: AppIDs.KD_NEWS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary])),
             GenAppType(type: .kdFindUniversity, prefix: .kd, protocolId: nil, appId: AppIDs.KD_FIND_UNIVERSITY, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary])),
             GenAppType(type: .kdAssatiations, prefix: .kd, protocolId: nil, appId: AppIDs.KD_ASSATIATIONS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .surfaceColor, .onSurfaceColor, .primaryColor])),
-            GenAppType(type: .kdConverter, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CONVERTER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .surfaceColor, .textColorPrimary, .textColorSecondary, .buttonColorPrimary, .buttonColorSecondary]))
+            GenAppType(type: .kdConverter, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CONVERTER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .surfaceColor, .textColorPrimary, .textColorSecondary, .buttonColorPrimary, .buttonColorSecondary])),
+            GenAppType(type: .kdCats, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CATS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary, .textColorSecondary]))
         ]
     }
 }

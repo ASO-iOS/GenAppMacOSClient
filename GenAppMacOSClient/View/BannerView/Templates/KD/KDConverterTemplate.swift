@@ -11,6 +11,8 @@ struct KDConverterTemplate {
     static let shared = KDConverterTemplate()
     private init() {}
     
+
+    
     func template1(backColorPrimary: Color, surfaceColor: Color, backColorSecondary: Color, textColorPrimary: Color, textColorSecondary: Color, buttonColorPrimary: Color, buttonColorSecondary: Color, appName: String) -> TemplateData {
         let rect1693492386827 = RectShapeModel(shape: .rect, color: backColorSecondary, fill: true, x: 69, y: 0, width: 250, height: 50, rounded: false, cornerRadius: 0, lineWidth: 2)
         let rect1693492443986 = RectShapeModel(shape: .rect, color: backColorSecondary, fill: true, x: 387, y: 0, width: 250, height: 50, rounded: false, cornerRadius: 0, lineWidth: 2)

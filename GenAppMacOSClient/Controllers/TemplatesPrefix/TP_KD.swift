@@ -74,6 +74,17 @@ extension GenAppController {
                 )
             ]
             
+        case .kdCats:
+            return [
+                KDCatsTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
+                    textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .accentColor,
+                    appName: values.mainData.appName
+                )
+            ]
+            
         default: return []
         }
     }
