@@ -11,6 +11,8 @@ struct KDFindUniversityTemplate {
     static let shared = KDFindUniversityTemplate()
     private init() {}
     
+    //
+    
     private typealias Data = [String: CountryData]
     
     
