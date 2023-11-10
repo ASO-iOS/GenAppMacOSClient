@@ -11,7 +11,7 @@ extension GenAppController {
     func templateBC(_ appType: AppPickType) -> [TemplateData] {
         switch appType {
         case .bcNameGenerator:
-            return []
+            return [] //
         default: return []
         }
     }
