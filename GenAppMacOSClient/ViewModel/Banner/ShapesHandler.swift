@@ -239,8 +239,8 @@ class ShapesHandler: ObservableObject {
     func appendLogo() {
         var location = ""
         switch genAppController.values.appType {
-        case .egStopwatch, .itStopwatch, .mbStopwatch, .vsStopwatch, .klSpeedTest, .mbSpeedTest:
-            location = "/Users/admin/GeneratorProjects/resources/images/stopwatchlogo/logo\(Int.random(in: 0...17)).png"
+        case .egStopwatch, .itStopwatch, .mbStopwatch, .vsStopwatch, .klSpeedTest, .mbSpeedTest, .itOneMinTimer:
+            location = "/Users/admin/GeneratorProjects/resources/images/stopwatchlogo/logo\(Int.random(in: 0...24)).png"
         case .akAlarm, .mbAlarm, .veAlarmMaterial:
             location = "/Users/admin/GeneratorProjects/resources/images/alarmlogo/logo\(Int.random(in: 0...18)).png"
         case .mbPassGen, .vePassGenerator, .dtPasswordGenerator, .itTrySecret:
