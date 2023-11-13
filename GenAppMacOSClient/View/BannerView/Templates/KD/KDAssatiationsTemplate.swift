@@ -2,13 +2,12 @@
 //  KDAssatiationsTemplate.swift
 //  GenAppMacOSClient
 //
-//  Created by admin on 10.11.2023.
+//  Created by admin on 13.11.2023.
 //
 
 import SwiftUI
 
 struct KDAssatiationsTemplate {
-    
     
     static let shared = KDAssatiationsTemplate()
     private init() {}
@@ -176,3 +175,4 @@ struct Words {
     var word: String
     var assatiations: [String]
 }
+
