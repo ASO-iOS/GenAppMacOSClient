@@ -180,5 +180,6 @@ enum AppPickType: String, CaseIterable {
     
     case kdCalculator = "KDCalculator"
     
+    case kdCanvas = "KDCanvas"
     
 }

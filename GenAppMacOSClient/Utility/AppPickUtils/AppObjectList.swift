@@ -655,7 +655,9 @@ extension GenMainViewViewModel {
             
             GenAppType(type: .kdNotes, prefix: .kd, protocolId: nil, appId: AppIDs.KD_NOTES, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .primaryColor, .textColorPrimary])),
             
-            GenAppType(type: .kdCalculator, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CALCULATOR, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .textColorPrimary, .buttonColorPrimary]))
+            GenAppType(type: .kdCalculator, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CALCULATOR, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .textColorPrimary, .buttonColorPrimary])),
+            
+            GenAppType(type: .kdCanvas, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CANVAS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .onSurfaceColor, .primaryColor]))
         ]
     }
 }

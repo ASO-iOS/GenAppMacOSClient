@@ -12,6 +12,7 @@
 		84071F282B0212F0001B152C /* KDAffirmationsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84071F272B0212F0001B152C /* KDAffirmationsTemplate.swift */; };
 		84071F2A2B021CE0001B152C /* KDNotesTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84071F292B021CE0001B152C /* KDNotesTemplate.swift */; };
 		84071F2C2B024107001B152C /* KDCalculatorTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84071F2B2B024107001B152C /* KDCalculatorTemplate.swift */; };
+		84071F2E2B024B03001B152C /* KDCanvasTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84071F2D2B024B03001B152C /* KDCanvasTemplate.swift */; };
 		8407BD132AD3F53E003DC25B /* AppNamesExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407BD122AD3F53E003DC25B /* AppNamesExt.swift */; };
 		8410379E2AF5174400798249 /* KDNameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379D2AF5174400798249 /* KDNameGenerator.swift */; };
 		841037A02AF547E400798249 /* KDNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379F2AF547E400798249 /* KDNews.swift */; };
@@ -252,6 +253,7 @@
 		84071F272B0212F0001B152C /* KDAffirmationsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAffirmationsTemplate.swift; sourceTree = "<group>"; };
 		84071F292B021CE0001B152C /* KDNotesTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNotesTemplate.swift; sourceTree = "<group>"; };
 		84071F2B2B024107001B152C /* KDCalculatorTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDCalculatorTemplate.swift; sourceTree = "<group>"; };
+		84071F2D2B024B03001B152C /* KDCanvasTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDCanvasTemplate.swift; sourceTree = "<group>"; };
 		8407BD122AD3F53E003DC25B /* AppNamesExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNamesExt.swift; sourceTree = "<group>"; };
 		8410379D2AF5174400798249 /* KDNameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNameGenerator.swift; sourceTree = "<group>"; };
 		8410379F2AF547E400798249 /* KDNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNews.swift; sourceTree = "<group>"; };
@@ -513,6 +515,7 @@
 				84FA249A2AFE801600581CCF /* KDToDoTemplate.swift */,
 				84071F2B2B024107001B152C /* KDCalculatorTemplate.swift */,
 				84071F292B021CE0001B152C /* KDNotesTemplate.swift */,
+				84071F2D2B024B03001B152C /* KDCanvasTemplate.swift */,
 			);
 			path = KD;
 			sourceTree = "<group>";
@@ -1212,6 +1215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84071F2E2B024B03001B152C /* KDCanvasTemplate.swift in Sources */,
 				84D1B5272AB0901200F98DB0 /* KLBubblePickerTemplate.swift in Sources */,
 				84D1B4E32AB0901100F98DB0 /* ChangerFieldView.swift in Sources */,
 				84D1B56D2AB0901200F98DB0 /* MBStopwatchTemplate.swift in Sources */,

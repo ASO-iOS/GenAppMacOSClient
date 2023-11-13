@@ -123,6 +123,15 @@ extension GenAppController {
                 )
             ]
             
+        case .kdCanvas:
+            return [
+                KDCanvasTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    onSurfaceColor: .init(hex: values.ui?.onSurfaceColor) ?? .accentColor,
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor
+                )
+            ]
+            
         default: return []
         }
     }
