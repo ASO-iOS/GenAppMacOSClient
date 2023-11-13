@@ -22,6 +22,12 @@
 		841EDE0B2AD58D030030227D /* KLStopwatchTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841EDE0A2AD58D030030227D /* KLStopwatchTemplate.swift */; };
 		842C53F72AFBF74A00876FB2 /* KDFindUniversityTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C53F62AFBF74A00876FB2 /* KDFindUniversityTemplate.swift */; };
 		845E67B92AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */; };
+		8464C4BE2B026FD100DE0269 /* KDAffirmationsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464C4BD2B026FD100DE0269 /* KDAffirmationsTemplate.swift */; };
+		8464C4C02B026FE800DE0269 /* KDNotesTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464C4BF2B026FE800DE0269 /* KDNotesTemplate.swift */; };
+		8464C4C22B02700400DE0269 /* KDToDoTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464C4C12B02700400DE0269 /* KDToDoTemplate.swift */; };
+		8464C4C72B02703800DE0269 /* KDCalculatorTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464C4C52B02703800DE0269 /* KDCalculatorTemplate.swift */; };
+		8464C4C82B02703800DE0269 /* KDCanvasTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464C4C62B02703800DE0269 /* KDCanvasTemplate.swift */; };
+		8464C4CA2B0274B600DE0269 /* KDComposeQuizTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464C4C92B0274B600DE0269 /* KDComposeQuizTemplate.swift */; };
 		848FC4DA2AEC6965007C3B10 /* EGFlappyBirdTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */; };
 		84BF5D752AF1086800A7141D /* KDGalleryTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */; };
 		84BF5D772AF110EF00A7141D /* TP_KD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D762AF110EF00A7141D /* TP_KD.swift */; };
@@ -259,6 +265,12 @@
 		841EDE0A2AD58D030030227D /* KLStopwatchTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLStopwatchTemplate.swift; sourceTree = "<group>"; };
 		842C53F62AFBF74A00876FB2 /* KDFindUniversityTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDFindUniversityTemplate.swift; sourceTree = "<group>"; };
 		845E67B82AC34D6A00A8B9FE /* AKFrogClickerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKFrogClickerTemplate.swift; sourceTree = "<group>"; };
+		8464C4BD2B026FD100DE0269 /* KDAffirmationsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAffirmationsTemplate.swift; sourceTree = "<group>"; };
+		8464C4BF2B026FE800DE0269 /* KDNotesTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNotesTemplate.swift; sourceTree = "<group>"; };
+		8464C4C12B02700400DE0269 /* KDToDoTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDToDoTemplate.swift; sourceTree = "<group>"; };
+		8464C4C52B02703800DE0269 /* KDCalculatorTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCalculatorTemplate.swift; sourceTree = "<group>"; };
+		8464C4C62B02703800DE0269 /* KDCanvasTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDCanvasTemplate.swift; sourceTree = "<group>"; };
+		8464C4C92B0274B600DE0269 /* KDComposeQuizTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDComposeQuizTemplate.swift; sourceTree = "<group>"; };
 		848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGFlappyBirdTemplate.swift; sourceTree = "<group>"; };
 		84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDGalleryTemplate.swift; sourceTree = "<group>"; };
 		84BF5D762AF110EF00A7141D /* TP_KD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TP_KD.swift; sourceTree = "<group>"; };
@@ -496,6 +508,9 @@
 		84BF5D732AF1085500A7141D /* KD */ = {
 			isa = PBXGroup;
 			children = (
+				8464C4C92B0274B600DE0269 /* KDComposeQuizTemplate.swift */,
+				8464C4C52B02703800DE0269 /* KDCalculatorTemplate.swift */,
+				8464C4C62B02703800DE0269 /* KDCanvasTemplate.swift */,
 				84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */,
 				8410379D2AF5174400798249 /* KDNameGenerator.swift */,
 				8410379F2AF547E400798249 /* KDNews.swift */,
@@ -504,6 +519,9 @@
 				840A92E72AFE755C00CCB82F /* KDAssatiationsTemplate.swift */,
 				840A92E92AFE757E00CCB82F /* KDCatsTemplate.swift */,
 				840A92EB2AFE75E800CCB82F /* KDConverterTemplate.swift */,
+				8464C4BD2B026FD100DE0269 /* KDAffirmationsTemplate.swift */,
+				8464C4BF2B026FE800DE0269 /* KDNotesTemplate.swift */,
+				8464C4C12B02700400DE0269 /* KDToDoTemplate.swift */,
 			);
 			path = KD;
 			sourceTree = "<group>";
@@ -1211,7 +1229,9 @@
 				84D1B4E72AB0901100F98DB0 /* AppPrefix.swift in Sources */,
 				84D1B52B2AB0901200F98DB0 /* TemplateData.swift in Sources */,
 				84D1B5022AB0901100F98DB0 /* GenAppController.swift in Sources */,
+				8464C4CA2B0274B600DE0269 /* KDComposeQuizTemplate.swift in Sources */,
 				84D1B4D92AB0901100F98DB0 /* ShapesHandler.swift in Sources */,
+				8464C4C82B02703800DE0269 /* KDCanvasTemplate.swift in Sources */,
 				84D1B59A2AB0946000F98DB0 /* DTRiddleRealmTemplate.swift in Sources */,
 				84D1B51B2AB0901200F98DB0 /* KLHiddenParisTemplate.swift in Sources */,
 				8410379E2AF5174400798249 /* KDNameGenerator.swift in Sources */,
@@ -1244,9 +1264,11 @@
 				84D1B5592AB0901200F98DB0 /* VEEnglishDictionaryHelperTemplate.swift in Sources */,
 				84D1B52C2AB0901200F98DB0 /* AKRickNMortyTemplate.swift in Sources */,
 				84E765432ACA9F6E000DD022 /* AKSpaceAttacker2Template.swift in Sources */,
+				8464C4C22B02700400DE0269 /* KDToDoTemplate.swift in Sources */,
 				84D1B5812AB0901200F98DB0 /* EGLoveCaclulatorTemplate.swift in Sources */,
 				84D1B5862AB0901200F98DB0 /* PTextChangerView.swift in Sources */,
 				840A92E02AFE4BFD00CCB82F /* KDPedometerTemplate.swift in Sources */,
+				8464C4C02B026FE800DE0269 /* KDNotesTemplate.swift in Sources */,
 				84D1B5542AB0901200F98DB0 /* VEFactsAboutDogsTemplate.swift in Sources */,
 				84D1B59C2AB0946000F98DB0 /* DTWordWiseTemplate.swift in Sources */,
 				84D1B4EF2AB0901100F98DB0 /* ColorSets.swift in Sources */,
@@ -1273,6 +1295,7 @@
 				84D1B5422AB0901200F98DB0 /* DTPopularMoviesTemplate.swift in Sources */,
 				84D1B4EA2AB0901100F98DB0 /* AppPickType.swift in Sources */,
 				84D1B4FC2AB0901100F98DB0 /* TP_VE.swift in Sources */,
+				8464C4BE2B026FD100DE0269 /* KDAffirmationsTemplate.swift in Sources */,
 				84044B602AE697610099DE30 /* ITCatcherTemplate.swift in Sources */,
 				84D1B4D22AB0901100F98DB0 /* NavTransition.swift in Sources */,
 				84D1B5702AB0901200F98DB0 /* MBLuckyNumberTemplate.swift in Sources */,
@@ -1314,6 +1337,7 @@
 				84D1B4E52AB0901100F98DB0 /* ColorsNeedEnum.swift in Sources */,
 				84D1B54F2AB0901200F98DB0 /* ITQrGeneratorTemplate.swift in Sources */,
 				84D1B53D2AB0901200F98DB0 /* AKSpaceAttackerTemplate.swift in Sources */,
+				8464C4C72B02703800DE0269 /* KDCalculatorTemplate.swift in Sources */,
 				84D1B57D2AB0901200F98DB0 /* EGLearnSlangTemplate.swift in Sources */,
 				84D1B5292AB0901200F98DB0 /* KLClickFasterTemplate.swift in Sources */,
 				84D1B5182AB0901200F98DB0 /* KLColorSwatcherTemplate.swift in Sources */,
