@@ -113,6 +113,7 @@ extension GenAppController {
                     backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
                     primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor
+                    //MinorUpdate
                 )
             ]
         default: return []
