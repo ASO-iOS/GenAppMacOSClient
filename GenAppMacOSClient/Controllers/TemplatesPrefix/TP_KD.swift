@@ -133,16 +133,16 @@ extension GenAppController {
                 )
             ]
             
-//        case .kdComposeQuiz:
-//            return [
-//                KDComposeQuizTemplate.shared.template1(
-//                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
-//                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
-//                    backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
-//                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
-//                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor
-//                )
-//            ]
+        case .kdComposeQuiz:
+            return [
+                KDComposeQuizTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
+                    backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor
+                )
+            ]
         default: return []
         }
     }
