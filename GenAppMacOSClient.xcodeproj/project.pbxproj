@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		84044B602AE697610099DE30 /* ITCatcherTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84044B5F2AE697610099DE30 /* ITCatcherTemplate.swift */; };
 		84044B642AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */; };
+		84071F282B0212F0001B152C /* KDAffirmationsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84071F272B0212F0001B152C /* KDAffirmationsTemplate.swift */; };
+		84071F2A2B021CE0001B152C /* KDNotesTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84071F292B021CE0001B152C /* KDNotesTemplate.swift */; };
 		8407BD132AD3F53E003DC25B /* AppNamesExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407BD122AD3F53E003DC25B /* AppNamesExt.swift */; };
 		8410379E2AF5174400798249 /* KDNameGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379D2AF5174400798249 /* KDNameGenerator.swift */; };
 		841037A02AF547E400798249 /* KDNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410379F2AF547E400798249 /* KDNews.swift */; };
@@ -238,6 +240,7 @@
 		84E765432ACA9F6E000DD022 /* AKSpaceAttacker2Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E765422ACA9F6E000DD022 /* AKSpaceAttacker2Template.swift */; };
 		84F78C752AF3CAE10048BA11 /* PackageNameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F78C742AF3CAE10048BA11 /* PackageNameCreator.swift */; };
 		84FA24992AFE430900581CCF /* KDCatsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA24982AFE430900581CCF /* KDCatsTemplate.swift */; };
+		84FA249B2AFE801600581CCF /* KDToDoTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA249A2AFE801600581CCF /* KDToDoTemplate.swift */; };
 		84FEC65E2AB9B6930056810C /* AKQuizTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC65D2AB9B6930056810C /* AKQuizTemplate.swift */; };
 		84FEC6602AB9DC850056810C /* AKMythologyQuizTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEC65F2AB9DC850056810C /* AKMythologyQuizTemplate.swift */; };
 /* End PBXBuildFile section */
@@ -245,6 +248,8 @@
 /* Begin PBXFileReference section */
 		84044B5F2AE697610099DE30 /* ITCatcherTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITCatcherTemplate.swift; sourceTree = "<group>"; };
 		84044B632AE6DE6A0099DE30 /* EGTicTacToeTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGTicTacToeTemplate.swift; sourceTree = "<group>"; };
+		84071F272B0212F0001B152C /* KDAffirmationsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAffirmationsTemplate.swift; sourceTree = "<group>"; };
+		84071F292B021CE0001B152C /* KDNotesTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNotesTemplate.swift; sourceTree = "<group>"; };
 		8407BD122AD3F53E003DC25B /* AppNamesExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNamesExt.swift; sourceTree = "<group>"; };
 		8410379D2AF5174400798249 /* KDNameGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNameGenerator.swift; sourceTree = "<group>"; };
 		8410379F2AF547E400798249 /* KDNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDNews.swift; sourceTree = "<group>"; };
@@ -472,6 +477,7 @@
 		84E765422ACA9F6E000DD022 /* AKSpaceAttacker2Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKSpaceAttacker2Template.swift; sourceTree = "<group>"; };
 		84F78C742AF3CAE10048BA11 /* PackageNameCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageNameCreator.swift; sourceTree = "<group>"; };
 		84FA24982AFE430900581CCF /* KDCatsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDCatsTemplate.swift; sourceTree = "<group>"; };
+		84FA249A2AFE801600581CCF /* KDToDoTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDToDoTemplate.swift; sourceTree = "<group>"; };
 		84FEC65D2AB9B6930056810C /* AKQuizTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKQuizTemplate.swift; sourceTree = "<group>"; };
 		84FEC65F2AB9DC850056810C /* AKMythologyQuizTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKMythologyQuizTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -501,6 +507,9 @@
 				84ADF3082AFCF47200ADAC05 /* KDAssatiationsTemplate.swift */,
 				84ADF30A2AFD1F2700ADAC05 /* KDConverterTemplate.swift */,
 				84FA24982AFE430900581CCF /* KDCatsTemplate.swift */,
+				84071F272B0212F0001B152C /* KDAffirmationsTemplate.swift */,
+				84FA249A2AFE801600581CCF /* KDToDoTemplate.swift */,
+				84071F292B021CE0001B152C /* KDNotesTemplate.swift */,
 			);
 			path = KD;
 			sourceTree = "<group>";
@@ -1244,6 +1253,7 @@
 				84D1B5812AB0901200F98DB0 /* EGLoveCaclulatorTemplate.swift in Sources */,
 				84D1B5862AB0901200F98DB0 /* PTextChangerView.swift in Sources */,
 				84D1B5542AB0901200F98DB0 /* VEFactsAboutDogsTemplate.swift in Sources */,
+				84071F2A2B021CE0001B152C /* KDNotesTemplate.swift in Sources */,
 				84D1B59C2AB0946000F98DB0 /* DTWordWiseTemplate.swift in Sources */,
 				84D1B4EF2AB0901100F98DB0 /* ColorSets.swift in Sources */,
 				84D1B4CE2AB0901100F98DB0 /* ViewModelFactory.swift in Sources */,
@@ -1270,6 +1280,7 @@
 				84D1B4EA2AB0901100F98DB0 /* AppPickType.swift in Sources */,
 				84D1B4FC2AB0901100F98DB0 /* TP_VE.swift in Sources */,
 				84044B602AE697610099DE30 /* ITCatcherTemplate.swift in Sources */,
+				84071F282B0212F0001B152C /* KDAffirmationsTemplate.swift in Sources */,
 				84D1B4D22AB0901100F98DB0 /* NavTransition.swift in Sources */,
 				84D1B5702AB0901200F98DB0 /* MBLuckyNumberTemplate.swift in Sources */,
 				848FC4DA2AEC6965007C3B10 /* EGFlappyBirdTemplate.swift in Sources */,
@@ -1280,6 +1291,7 @@
 				84D1B5252AB0901200F98DB0 /* KLWordFinderTmplate.swift in Sources */,
 				84D1B5572AB0901200F98DB0 /* VEQuizVideoGamesTemplate.swift in Sources */,
 				84D1B4DE2AB0901100F98DB0 /* ProcessingState.swift in Sources */,
+				84FA249B2AFE801600581CCF /* KDToDoTemplate.swift in Sources */,
 				84D1B5582AB0901200F98DB0 /* VENightBirdTemplate.swift in Sources */,
 				841037A02AF547E400798249 /* KDNews.swift in Sources */,
 				84D1B5162AB0901200F98DB0 /* VSTorchTemplate.swift in Sources */,

@@ -648,7 +648,12 @@ extension GenMainViewViewModel {
             GenAppType(type: .kdFindUniversity, prefix: .kd, protocolId: nil, appId: AppIDs.KD_FIND_UNIVERSITY, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary])),
             GenAppType(type: .kdAssatiations, prefix: .kd, protocolId: nil, appId: AppIDs.KD_ASSATIATIONS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .surfaceColor, .onSurfaceColor, .primaryColor])),
             GenAppType(type: .kdConverter, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CONVERTER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .surfaceColor, .textColorPrimary, .textColorSecondary, .buttonColorPrimary, .buttonColorSecondary])),
-            GenAppType(type: .kdCats, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CATS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary, .textColorSecondary]))
+            GenAppType(type: .kdCats, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CATS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary, .textColorSecondary])),
+            GenAppType(type: .kdToDo, prefix: .kd, protocolId: nil, appId: AppIDs.KD_TODO, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary, .textColorSecondary])),
+            
+            GenAppType(type: .kdAffirmations, prefix: .kd, protocolId: nil, appId: AppIDs.KD_AFFIRMATIONS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .textColorPrimary])),
+            
+            GenAppType(type: .kdNotes, prefix: .kd, protocolId: nil, appId: AppIDs.KD_NOTES, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .primaryColor, .textColorPrimary]))
         ]
     }
 }

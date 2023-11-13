@@ -85,6 +85,35 @@ extension GenAppController {
                 )
             ]
             
+        case .kdToDo:
+            return [
+                KDToDoTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
+                    textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .accentColor,
+                    appName: values.mainData.appName
+                )
+            ]
+            
+        case .kdAffirmations:
+            return [
+                KDAffirmationsTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor
+                )
+            ]
+            
+        case .kdNotes:
+            return [
+                KDNotesTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor
+                )
+            ]
+            
         default: return []
         }
     }
