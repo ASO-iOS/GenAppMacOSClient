@@ -2,7 +2,7 @@
 //  KDToDoTemplate.swift
 //  GenAppMacOSClient
 //
-//  Created by admin on 11/10/23.
+//  Created by admin on 13.11.2023.
 //
 
 import SwiftUI
@@ -157,3 +157,4 @@ struct KDToDoTemplate {
         ])
     }
 }
+

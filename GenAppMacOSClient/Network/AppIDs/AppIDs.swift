@@ -205,4 +205,11 @@ struct AppIDs {
     static let KD_AFFIRMATIONS =        "kd-0011"
     
     static let KD_NOTES =               "kd-0013"
+    
+    static let KD_CALCULATOR =          "kd-0015"
+    
+    static let KD_CANVAS =              "kd-0017"
+    
+    static let KD_COMPOSE_QUIZ =        "kd-0019"
+
 }

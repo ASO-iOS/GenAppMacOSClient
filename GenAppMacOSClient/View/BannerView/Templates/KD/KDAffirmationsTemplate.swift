@@ -2,7 +2,7 @@
 //  KDAffirmationsTemplate.swift
 //  GenAppMacOSClient
 //
-//  Created by admin on 11/13/23.
+//  Created by admin on 13.11.2023.
 //
 
 import SwiftUI
@@ -39,3 +39,4 @@ struct KDAffirmationsTemplate {
         ])
     }
 }
+

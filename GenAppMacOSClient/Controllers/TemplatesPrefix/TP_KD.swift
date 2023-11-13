@@ -115,6 +115,34 @@ extension GenAppController {
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor
                 )
             ]
+        case .kdCalculator:
+            return [
+                KDCalculatorTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor
+                )
+            ]
+            
+        case .kdCanvas:
+            return [
+                KDCanvasTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    onSurfaceColor: .init(hex: values.ui?.onSurfaceColor) ?? .accentColor,
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor
+                )
+            ]
+            
+//        case .kdComposeQuiz:
+//            return [
+//                KDComposeQuizTemplate.shared.template1(
+//                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+//                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
+//                    backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
+//                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
+//                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor
+//                )
+//            ]
         default: return []
         }
     }

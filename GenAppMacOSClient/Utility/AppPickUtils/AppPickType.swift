@@ -178,4 +178,9 @@ enum AppPickType: String, CaseIterable {
     case kdAffirmations = "KDAffirmations"
     
     case kdNotes = "KDNotes"
+    case kdCalculator = "KDCalculator"
+    
+    case kdCanvas = "KDCanvas"
+    
+    case kdComposeQuiz = "KDComposeQuiz"
 }
