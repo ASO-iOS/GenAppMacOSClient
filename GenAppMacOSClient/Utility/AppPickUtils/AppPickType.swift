@@ -173,4 +173,9 @@ enum AppPickType: String, CaseIterable {
     case kdConverter = "KDConverter"
     case kdCats = "KDCats"
     case kdPedometer = "KDPedometer"
+    case kdExpenseTracker = "KDExpenseTracker"
+    
+    // MARK: - ea
+    case eaReminder = "EAReminder"
+    case eaTimer = "EATimer"
 }

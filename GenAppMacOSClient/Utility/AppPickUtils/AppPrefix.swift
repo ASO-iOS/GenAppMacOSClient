@@ -19,6 +19,7 @@ enum AppPrefix: String {
     case eg = "eg"
     case dt = "dt"
     case kd = "kd"
+    case ea = "ea"
     
     
     static func toPrefix(_ value: String) -> AppPrefix {
@@ -33,6 +34,7 @@ enum AppPrefix: String {
         case "eg": return AppPrefix.eg
         case "dt": return AppPrefix.dt
         case "kd": return AppPrefix.kd
+        case "ea": return AppPrefix.ea
         default: return AppPrefix.none
         }
     }

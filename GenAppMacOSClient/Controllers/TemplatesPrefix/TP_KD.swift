@@ -31,7 +31,7 @@ extension GenAppController {
                     appName: values.mainData.appName
                 )
             ]
-
+            
             
         case .kdNews:
             return [
@@ -47,7 +47,7 @@ extension GenAppController {
                     backColorSecondary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor
                 )
             ]
-
+            
         case .kdFindUniversity:
             return [
                 KDFindUniversityTemplate.shared.template1(
@@ -55,7 +55,7 @@ extension GenAppController {
                     primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor
                 )
-
+                
             ]
             
         case .kdPedometer:
@@ -85,6 +85,14 @@ extension GenAppController {
                     textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
                     textColorSecondary: .init(hex: values.ui?.textColorSecondary) ?? .accentColor,
                     appName: values.mainData.appName
+                )
+            ]
+        case .kdExpenseTracker:
+            return [
+                KDExpenseTrackerTemplate.shared.template(
+                    primaryColor: .init(hex: values.ui?.primaryColor) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor,
+                    buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor
                 )
             ]
         default: return []

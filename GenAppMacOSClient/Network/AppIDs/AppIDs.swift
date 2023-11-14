@@ -200,4 +200,9 @@ struct AppIDs {
     static let KD_CONVERTER =           "kd-0006"
     static let KD_CATS =                "kd-0007"
     static let KD_PEDOMETER =           "kd-0008"
+    static let KD_EXPENSE_TRACKER =     "kd-0010"
+    
+    static let EA_PREFIX =              "ea"
+    static let EA_REMINDER =            "ea-0001"
+    static let EA_TIMER =               "ea-0002"
 }
