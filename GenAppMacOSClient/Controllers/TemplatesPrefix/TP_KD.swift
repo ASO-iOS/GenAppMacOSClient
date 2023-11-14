@@ -161,6 +161,15 @@ extension GenAppController {
                 )
             ]
             
+        case .kdRandomText:
+            return [
+                KDRandomTextTemplate.shared.template1(
+                    backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                    backColorSecondary: .init(hex: values.ui?.backColorSecondary) ?? .accentColor,
+                    textColorPrimary: .init(hex: values.ui?.textColorPrimary) ?? .accentColor
+                )
+            ]
+            
         default: return []
         }
     }

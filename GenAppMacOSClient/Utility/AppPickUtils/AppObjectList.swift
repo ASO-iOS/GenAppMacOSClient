@@ -663,7 +663,9 @@ extension GenMainViewViewModel {
             
             GenAppType(type: .kdTopFilms, prefix: .kd, protocolId: nil, appId: AppIDs.KD_TOP_FILMS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary])),
             
-            GenAppType(type: .kdRandomDogs, prefix: .kd, protocolId: nil, appId: AppIDs.KD_RANDOM_DOGS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary]))
+            GenAppType(type: .kdRandomDogs, prefix: .kd, protocolId: nil, appId: AppIDs.KD_RANDOM_DOGS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary])),
+            
+            GenAppType(type: .kdRandomText, prefix: .kd, protocolId: nil, appId: AppIDs.KD_RANDOM_TEXT, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary]))
         ]
     }
 }

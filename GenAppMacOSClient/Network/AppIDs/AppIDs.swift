@@ -215,4 +215,6 @@ struct AppIDs {
     static let KD_TOP_FILMS =           "kd-0021"
     
     static let KD_RANDOM_DOGS =         "kd-0023"
+    
+    static let KD_RANDOM_TEXT =         "kd-0025"
 }

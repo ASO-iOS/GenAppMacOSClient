@@ -188,4 +188,6 @@ enum AppPickType: String, CaseIterable {
     
     case kdRandomDogs = "KDRandomDogs"
     
+    case kdRandomText = "KDRandomText"
+    
 }
