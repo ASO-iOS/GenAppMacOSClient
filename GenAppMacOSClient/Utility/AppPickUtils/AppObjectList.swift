@@ -659,7 +659,11 @@ extension GenMainViewViewModel {
             
             GenAppType(type: .kdCanvas, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CANVAS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .onSurfaceColor, .primaryColor])),
             
-            GenAppType(type: .kdComposeQuiz, prefix: .kd, protocolId: nil, appId: AppIDs.KD_COMPOSE_QUIZ, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .primaryColor, .textColorPrimary, .buttonColorPrimary]))
+            GenAppType(type: .kdComposeQuiz, prefix: .kd, protocolId: nil, appId: AppIDs.KD_COMPOSE_QUIZ, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .primaryColor, .textColorPrimary, .buttonColorPrimary])),
+            
+            GenAppType(type: .kdTopFilms, prefix: .kd, protocolId: nil, appId: AppIDs.KD_TOP_FILMS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary])),
+            
+            GenAppType(type: .kdRandomDogs, prefix: .kd, protocolId: nil, appId: AppIDs.KD_RANDOM_DOGS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary]))
         ]
     }
 }
