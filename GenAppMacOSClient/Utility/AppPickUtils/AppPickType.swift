@@ -178,4 +178,6 @@ enum AppPickType: String, CaseIterable {
     // MARK: - ea
     case eaReminder = "EAReminder"
     case eaTimer = "EATimer"
+    case eaClock = "EAClock"
+    case eaPassGen = "EAPassGen"
 }

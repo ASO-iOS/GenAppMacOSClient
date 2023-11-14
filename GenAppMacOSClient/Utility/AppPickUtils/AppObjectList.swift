@@ -652,7 +652,9 @@ extension GenMainViewViewModel {
             GenAppType(type: .kdCats, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CATS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary, .textColorSecondary])),
             GenAppType(type: .kdExpenseTracker, prefix: .kd, protocolId: nil, appId: AppIDs.KD_EXPENSE_TRACKER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary, .buttonColorPrimary])),
             GenAppType(type: .eaReminder, prefix: .ea, protocolId: nil, appId: AppIDs.EA_REMINDER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
-            GenAppType(type: .eaTimer, prefix: .ea, protocolId: nil, appId: AppIDs.EA_TIMER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary]))
+            GenAppType(type: .eaTimer, prefix: .ea, protocolId: nil, appId: AppIDs.EA_TIMER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
+            GenAppType(type: .eaClock, prefix: .ea, protocolId: nil, appId: AppIDs.EA_CLOCK, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor])),
+            GenAppType(type: .eaPassGen, prefix: .ea, protocolId: nil, appId: AppIDs.EA_PASSGEN, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
         ]
     }
 }

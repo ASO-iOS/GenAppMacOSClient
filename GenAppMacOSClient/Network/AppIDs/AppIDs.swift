@@ -205,4 +205,6 @@ struct AppIDs {
     static let EA_PREFIX =              "ea"
     static let EA_REMINDER =            "ea-0001"
     static let EA_TIMER =               "ea-0002"
+    static let EA_CLOCK =               "ea-0003"
+    static let EA_PASSGEN =             "ea-0004"
 }

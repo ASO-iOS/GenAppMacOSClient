@@ -25,6 +25,8 @@
 		8464CA682B028250002B9628 /* EAReminderTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464CA672B028250002B9628 /* EAReminderTemplate.swift */; };
 		8464CA6A2B02859F002B9628 /* TP_EA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464CA692B02859F002B9628 /* TP_EA.swift */; };
 		8464CA6C2B039542002B9628 /* EATimerTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464CA6B2B039542002B9628 /* EATimerTemplate.swift */; };
+		8464CA6E2B03B001002B9628 /* EAClockTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464CA6D2B03B001002B9628 /* EAClockTemplate.swift */; };
+		8464CA702B03C954002B9628 /* EAPassGenTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464CA6F2B03C954002B9628 /* EAPassGenTemplate.swift */; };
 		848FC4DA2AEC6965007C3B10 /* EGFlappyBirdTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */; };
 		84BF5D752AF1086800A7141D /* KDGalleryTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */; };
 		84BF5D772AF110EF00A7141D /* TP_KD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D762AF110EF00A7141D /* TP_KD.swift */; };
@@ -266,6 +268,8 @@
 		8464CA672B028250002B9628 /* EAReminderTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAReminderTemplate.swift; sourceTree = "<group>"; };
 		8464CA692B02859F002B9628 /* TP_EA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TP_EA.swift; sourceTree = "<group>"; };
 		8464CA6B2B039542002B9628 /* EATimerTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EATimerTemplate.swift; sourceTree = "<group>"; };
+		8464CA6D2B03B001002B9628 /* EAClockTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAClockTemplate.swift; sourceTree = "<group>"; };
+		8464CA6F2B03C954002B9628 /* EAPassGenTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAPassGenTemplate.swift; sourceTree = "<group>"; };
 		848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGFlappyBirdTemplate.swift; sourceTree = "<group>"; };
 		84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDGalleryTemplate.swift; sourceTree = "<group>"; };
 		84BF5D762AF110EF00A7141D /* TP_KD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TP_KD.swift; sourceTree = "<group>"; };
@@ -506,6 +510,8 @@
 			children = (
 				8464CA672B028250002B9628 /* EAReminderTemplate.swift */,
 				8464CA6B2B039542002B9628 /* EATimerTemplate.swift */,
+				8464CA6D2B03B001002B9628 /* EAClockTemplate.swift */,
+				8464CA6F2B03C954002B9628 /* EAPassGenTemplate.swift */,
 			);
 			path = EA;
 			sourceTree = "<group>";
@@ -875,8 +881,8 @@
 		84D1B4472AB0901100F98DB0 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				8464CA662B028236002B9628 /* EA */,
 				84D1B4602AB0901100F98DB0 /* TemplateData.swift */,
+				8464CA662B028236002B9628 /* EA */,
 				84BF5D732AF1085500A7141D /* KD */,
 				84D1B4482AB0901100F98DB0 /* VS */,
 				84D1B44C2AB0901100F98DB0 /* KL */,
@@ -1291,6 +1297,7 @@
 				84D1B5082AB0901100F98DB0 /* RequestDtoMainData.swift in Sources */,
 				84D1B5742AB0901200F98DB0 /* EGExpensetrackerTemplate.swift in Sources */,
 				84D1B5422AB0901200F98DB0 /* DTPopularMoviesTemplate.swift in Sources */,
+				8464CA6E2B03B001002B9628 /* EAClockTemplate.swift in Sources */,
 				84D1B4EA2AB0901100F98DB0 /* AppPickType.swift in Sources */,
 				84D1B4FC2AB0901100F98DB0 /* TP_VE.swift in Sources */,
 				84044B602AE697610099DE30 /* ITCatcherTemplate.swift in Sources */,
@@ -1407,6 +1414,7 @@
 				84D1B5382AB0901200F98DB0 /* AKPokerChancesTemplate.swift in Sources */,
 				84D1B53B2AB0901200F98DB0 /* AKAlarmTemplate.swift in Sources */,
 				841B656A2ADE98FD000C6077 /* ITTicTacToeTemplate.swift in Sources */,
+				8464CA702B03C954002B9628 /* EAPassGenTemplate.swift in Sources */,
 				84D1B54C2AB0901200F98DB0 /* ITQuickCalcTemplate.swift in Sources */,
 				84D1B5002AB0901100F98DB0 /* TP_VS.swift in Sources */,
 				84D1B51F2AB0901200F98DB0 /* KLRecorderTemplate.swift in Sources */,
