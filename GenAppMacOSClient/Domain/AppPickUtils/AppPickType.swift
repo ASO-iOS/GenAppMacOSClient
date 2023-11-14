@@ -183,4 +183,18 @@ enum AppPickType: String, CaseIterable {
     case kdCanvas = "KDCanvas"
     
     case kdComposeQuiz = "KDComposeQuiz"
+    case kdTopFilms = "KDTopFilms"
+    
+    case kdRandomDogs = "KDRandomDogs"
+    
+    case kdRandomText = "KDRandomText"
+    
+    case kdSearchMusic = "KDSearchMusic"
+    case kdExpenseTracker = "KDExpenseTracker"
+    
+    // MARK: - ea
+    case eaReminder = "EAReminder"
+    case eaTimer = "EATimer"
+    case eaClock = "EAClock"
+    case eaPassGen = "EAPassGen"
 }

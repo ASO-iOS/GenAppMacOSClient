@@ -101,6 +101,8 @@ class GenAppController: ObservableObject {
             return templateDT(appType)
         case .kd:
             return templateKD(appType)
+        case .ea:
+            return templateEA(appType)
         }
     }
 }

@@ -13,7 +13,6 @@ class ViewModelFactory {
     private let genAppController = GenAppController()
     private let fileHandler = FilesProcessing()
     private let graphicsController = GraphicsController()
-//    private let realmViewModel = AppTypeDBViewModel()
     
     func makeGenMainViewViewModel() -> GenMainViewViewModel {
         return GenMainViewViewModel(genAppController: genAppController)

@@ -659,8 +659,21 @@ extension GenMainViewViewModel {
             
             GenAppType(type: .kdCanvas, prefix: .kd, protocolId: nil, appId: AppIDs.KD_CANVAS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .onSurfaceColor, .primaryColor])),
             
-            GenAppType(type: .kdComposeQuiz, prefix: .kd, protocolId: nil, appId: AppIDs.KD_COMPOSE_QUIZ, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .primaryColor, .textColorPrimary, .buttonColorPrimary]))
+            GenAppType(type: .kdComposeQuiz, prefix: .kd, protocolId: nil, appId: AppIDs.KD_COMPOSE_QUIZ, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .primaryColor, .textColorPrimary, .buttonColorPrimary])),
             
+            
+            GenAppType(type: .kdTopFilms, prefix: .kd, protocolId: nil, appId: AppIDs.KD_TOP_FILMS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary])),
+            
+            GenAppType(type: .kdRandomDogs, prefix: .kd, protocolId: nil, appId: AppIDs.KD_RANDOM_DOGS, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary])),
+            
+            GenAppType(type: .kdRandomText, prefix: .kd, protocolId: nil, appId: AppIDs.KD_RANDOM_TEXT, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .textColorPrimary])),
+            
+            GenAppType(type: .kdSearchMusic, prefix: .kd, protocolId: nil, appId: AppIDs.KD_SEARCH_MUSIC, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .backColorSecondary, .primaryColor, .textColorPrimary])),
+            GenAppType(type: .kdExpenseTracker, prefix: .kd, protocolId: nil, appId: AppIDs.KD_EXPENSE_TRACKER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor, .textColorPrimary, .buttonColorPrimary])),
+            GenAppType(type: .eaReminder, prefix: .ea, protocolId: nil, appId: AppIDs.EA_REMINDER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
+            GenAppType(type: .eaTimer, prefix: .ea, protocolId: nil, appId: AppIDs.EA_TIMER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
+            GenAppType(type: .eaClock, prefix: .ea, protocolId: nil, appId: AppIDs.EA_CLOCK, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor])),
+            GenAppType(type: .eaPassGen, prefix: .ea, protocolId: nil, appId: AppIDs.EA_PASSGEN, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
             
             
         ]

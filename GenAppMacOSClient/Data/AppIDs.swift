@@ -211,5 +211,19 @@ struct AppIDs {
     static let KD_CANVAS =              "kd-0017"
     
     static let KD_COMPOSE_QUIZ =        "kd-0019"
-
+    static let KD_TOP_FILMS =           "kd-0021"
+    
+    static let KD_RANDOM_DOGS =         "kd-0023"
+    
+    static let KD_RANDOM_TEXT =         "kd-0025"
+    
+    static let KD_SEARCH_MUSIC =        "kd-0027"
+    
+    static let KD_EXPENSE_TRACKER =     "kd-0010"
+    
+    static let EA_PREFIX =              "ea"
+    static let EA_REMINDER =            "ea-0001"
+    static let EA_TIMER =               "ea-0002"
+    static let EA_CLOCK =               "ea-0003"
+    static let EA_PASSGEN =             "ea-0004"
 }
