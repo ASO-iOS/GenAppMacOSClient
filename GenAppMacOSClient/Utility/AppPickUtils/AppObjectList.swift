@@ -655,6 +655,10 @@ extension GenMainViewViewModel {
             GenAppType(type: .eaTimer, prefix: .ea, protocolId: nil, appId: AppIDs.EA_TIMER, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
             GenAppType(type: .eaClock, prefix: .ea, protocolId: nil, appId: AppIDs.EA_CLOCK, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .primaryColor])),
             GenAppType(type: .eaPassGen, prefix: .ea, protocolId: nil, appId: AppIDs.EA_PASSGEN, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
+            GenAppType(type: .eaColorQuiz, prefix: .ea, protocolId: nil, appId: AppIDs.EA_COLORQUIZ, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
+            GenAppType(type: .eaDeviceInfo, prefix: .ea, protocolId: nil, appId: AppIDs.EA_DEVICEINFO, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .textColorPrimary])),
+            GenAppType(type: .eaScramble, prefix: .ea, protocolId: nil, appId: AppIDs.EA_SCRAMBLE, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
+            GenAppType(type: .eaPlanetarium, prefix: .ea, protocolId: nil, appId: AppIDs.EA_PLANETARIUM, colorsNeeded: GenAppType.getColorsNeeded([.appBarColor, .backColorPrimary, .buttonColorPrimary, .buttonTextColorPrimary])),
         ]
     }
 }

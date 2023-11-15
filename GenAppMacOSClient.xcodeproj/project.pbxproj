@@ -30,6 +30,10 @@
 		848FC4DA2AEC6965007C3B10 /* EGFlappyBirdTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */; };
 		84BF5D752AF1086800A7141D /* KDGalleryTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */; };
 		84BF5D772AF110EF00A7141D /* TP_KD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5D762AF110EF00A7141D /* TP_KD.swift */; };
+		84C30F502B04D9EF00F6C7E0 /* EAColorQuizTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30F4F2B04D9EF00F6C7E0 /* EAColorQuizTemplate.swift */; };
+		84C30F522B04E25E00F6C7E0 /* EADeviceInfoTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30F512B04E25E00F6C7E0 /* EADeviceInfoTemplate.swift */; };
+		84C30F542B04F5BD00F6C7E0 /* EAScrambleTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30F532B04F5BD00F6C7E0 /* EAScrambleTemplate.swift */; };
+		84C30F562B05037D00F6C7E0 /* EAPlanetariumTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C30F552B05037D00F6C7E0 /* EAPlanetariumTemplate.swift */; };
 		84C76D5F2AFE7B4000E1438F /* KDAssatiationsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C76D5E2AFE7B4000E1438F /* KDAssatiationsTemplate.swift */; };
 		84D1B3B42AB08F1100F98DB0 /* GenAppMacOSClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B3B32AB08F1100F98DB0 /* GenAppMacOSClientApp.swift */; };
 		84D1B3B62AB08F1100F98DB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1B3B52AB08F1100F98DB0 /* ContentView.swift */; };
@@ -273,6 +277,10 @@
 		848FC4D92AEC6965007C3B10 /* EGFlappyBirdTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EGFlappyBirdTemplate.swift; sourceTree = "<group>"; };
 		84BF5D742AF1086800A7141D /* KDGalleryTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDGalleryTemplate.swift; sourceTree = "<group>"; };
 		84BF5D762AF110EF00A7141D /* TP_KD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TP_KD.swift; sourceTree = "<group>"; };
+		84C30F4F2B04D9EF00F6C7E0 /* EAColorQuizTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAColorQuizTemplate.swift; sourceTree = "<group>"; };
+		84C30F512B04E25E00F6C7E0 /* EADeviceInfoTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EADeviceInfoTemplate.swift; sourceTree = "<group>"; };
+		84C30F532B04F5BD00F6C7E0 /* EAScrambleTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAScrambleTemplate.swift; sourceTree = "<group>"; };
+		84C30F552B05037D00F6C7E0 /* EAPlanetariumTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAPlanetariumTemplate.swift; sourceTree = "<group>"; };
 		84C76D5E2AFE7B4000E1438F /* KDAssatiationsTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDAssatiationsTemplate.swift; sourceTree = "<group>"; };
 		84D1B3B02AB08F1100F98DB0 /* GenAppMacOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenAppMacOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D1B3B32AB08F1100F98DB0 /* GenAppMacOSClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenAppMacOSClientApp.swift; sourceTree = "<group>"; };
@@ -512,6 +520,10 @@
 				8464CA6B2B039542002B9628 /* EATimerTemplate.swift */,
 				8464CA6D2B03B001002B9628 /* EAClockTemplate.swift */,
 				8464CA6F2B03C954002B9628 /* EAPassGenTemplate.swift */,
+				84C30F4F2B04D9EF00F6C7E0 /* EAColorQuizTemplate.swift */,
+				84C30F512B04E25E00F6C7E0 /* EADeviceInfoTemplate.swift */,
+				84C30F532B04F5BD00F6C7E0 /* EAScrambleTemplate.swift */,
+				84C30F552B05037D00F6C7E0 /* EAPlanetariumTemplate.swift */,
 			);
 			path = EA;
 			sourceTree = "<group>";
@@ -1339,6 +1351,7 @@
 				84D1B4F42AB0901100F98DB0 /* ColorExtension.swift in Sources */,
 				84E1779E2AF01A1900507A86 /* EGJumperTemplate.swift in Sources */,
 				84D1B5832AB0901200F98DB0 /* PCreateView.swift in Sources */,
+				84C30F502B04D9EF00F6C7E0 /* EAColorQuizTemplate.swift in Sources */,
 				84D1B4E52AB0901100F98DB0 /* ColorsNeedEnum.swift in Sources */,
 				84D1B54F2AB0901200F98DB0 /* ITQrGeneratorTemplate.swift in Sources */,
 				84D1B53D2AB0901200F98DB0 /* AKSpaceAttackerTemplate.swift in Sources */,
@@ -1387,6 +1400,7 @@
 				84D1B55C2AB0901200F98DB0 /* VELuckySpanTemplate.swift in Sources */,
 				84D1B56C2AB0901200F98DB0 /* MBFactsTemplate.swift in Sources */,
 				84D1B5762AB0901200F98DB0 /* EGWhichSpfTemplate.swift in Sources */,
+				84C30F522B04E25E00F6C7E0 /* EADeviceInfoTemplate.swift in Sources */,
 				84D1B56A2AB0901200F98DB0 /* MBBmiTemplate.swift in Sources */,
 				84D1B4FE2AB0901100F98DB0 /* TP_EG.swift in Sources */,
 				84D1B5112AB0901200F98DB0 /* GenMainViewVersionsViewModel.swift in Sources */,
@@ -1415,6 +1429,7 @@
 				84D1B53B2AB0901200F98DB0 /* AKAlarmTemplate.swift in Sources */,
 				841B656A2ADE98FD000C6077 /* ITTicTacToeTemplate.swift in Sources */,
 				8464CA702B03C954002B9628 /* EAPassGenTemplate.swift in Sources */,
+				84C30F562B05037D00F6C7E0 /* EAPlanetariumTemplate.swift in Sources */,
 				84D1B54C2AB0901200F98DB0 /* ITQuickCalcTemplate.swift in Sources */,
 				84D1B5002AB0901100F98DB0 /* TP_VS.swift in Sources */,
 				84D1B51F2AB0901200F98DB0 /* KLRecorderTemplate.swift in Sources */,
@@ -1439,6 +1454,7 @@
 				84D1B4FA2AB0901100F98DB0 /* TP_AK.swift in Sources */,
 				842C53F72AFBF74A00876FB2 /* KDFindUniversityTemplate.swift in Sources */,
 				84D1B5062AB0901100F98DB0 /* RequestDto.swift in Sources */,
+				84C30F542B04F5BD00F6C7E0 /* EAScrambleTemplate.swift in Sources */,
 				84D1B5502AB0901200F98DB0 /* VEEveryDayFactsTemplate.swift in Sources */,
 				84D1B5262AB0901200F98DB0 /* KLDodgerTemplate.swift in Sources */,
 				84D1B59B2AB0946000F98DB0 /* DTPhoneValidatorTemplate.swift in Sources */,

@@ -180,4 +180,8 @@ enum AppPickType: String, CaseIterable {
     case eaTimer = "EATimer"
     case eaClock = "EAClock"
     case eaPassGen = "EAPassGen"
+    case eaColorQuiz = "EAColorQuiz"
+    case eaDeviceInfo = "EADeviceInfo"
+    case eaScramble = "EAScramble"
+    case eaPlanetarium = "EAPlanetarium"
 }

@@ -37,6 +37,34 @@ extension GenAppController {
                                                 buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .accentColor
                                                )
             ]
+        case .eaColorQuiz:
+            return [
+                EAColorQuizTemplate.shared.template(backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                                                buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor,
+                                                buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .accentColor
+                                               )
+            ]
+        case .eaDeviceInfo:
+            return [
+                EADeviceInfoTemplate.shared.template(backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                                                buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor,
+                                                textColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .accentColor
+                                               )
+            ]
+        case .eaScramble:
+            return [
+                EAScrambleTemplate.shared.template(backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                                                buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor,
+                                                buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .accentColor
+                                               )
+            ]
+        case .eaPlanetarium:
+            return [
+                EAPlanetariumTemplate.shared.template(backColorPrimary: .init(hex: values.ui?.backColorPrimary) ?? .accentColor,
+                                                buttonColorPrimary: .init(hex: values.ui?.buttonColorPrimary) ?? .accentColor,
+                                                buttonTextColorPrimary: .init(hex: values.ui?.buttonTextColorPrimary) ?? .accentColor
+                                               )
+            ]
         default: return []
         }
     }
